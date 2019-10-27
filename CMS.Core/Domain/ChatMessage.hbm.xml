@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="CMS.Core.Domain.ChatMessage, CMS.Core" table="os_ChatMessage">
+
+		<cache usage="read-write" />
+		
+		<id name="Id" column="Id" type="Int32" unsaved-value="0">
+			<generator class="native"></generator>
+		</id>
+
+	  <many-to-one name="ChatGroup" class="CMS.Core.Domain.ChatGroup, CMS.Core" column="GroupId" not-null="false" />
+		<many-to-one name="FromUser" column="UserId" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore"/>
+	  <many-to-one name="ToUser" column="ToUserId" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore"/>
+      
+		<property name="Message" column="Message" type="String" not-null="false" />
+		<property name="TimeStamp" column="TimeStamp" type="DateTime" />
+	  <property name="Status" type="CMS.Core.Util.ChatStatusType, CMS.Core"/>
+	</class>
+</hibernate-mapping>

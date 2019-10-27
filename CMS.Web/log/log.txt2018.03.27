@@ -1,0 +1,55 @@
+2018-03-27 11:15:36,299 [57] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT this_.Id as Id204_2_, this_.Deleted as Deleted204_2_, this_.IsApproved as IsApproved204_2_, this_.IsEarlyBird as IsEarlyB4_204_2_, this_.Special as Special204_2_, this_.CreatedDate as CreatedD6_204_2_, this_.Deadline as Deadline204_2_, this_.ModifiedDate as Modified8_204_2_, this_.StartDate as StartDate204_2_, this_.EndDate as EndDate204_2_, this_.Amended as Amended204_2_, this_.Status as Status204_2_, this_.AccountingStatus as Account13_204_2_, this_.AgencyCode as AgencyCode204_2_, this_.TripOption as TripOption204_2_, this_.Total as Total204_2_, this_.TransferCost as Transfe17_204_2_, this_.IsTransferred as IsTrans18_204_2_, this_.Paid as Paid204_2_, this_.Note as Note204_2_, this_.PickupAddress as PickupA21_204_2_, this_.DropoffAddress as Dropoff22_204_2_, this_.SpecialRequest as Special23_204_2_, this_.CurrencyRate as Currenc24_204_2_, this_.PaidBase as PaidBase204_2_, this_.IsPaid as IsPaid204_2_, this_.IsPaymentNeeded as IsPayme27_204_2_, this_.IsCharter as IsCharter204_2_, this_.TransferAdult as Transfe29_204_2_, this_.TransferChildren as Transfe30_204_2_, this_.TransferBaby as Transfe31_204_2_, this_.Invoice as Invoice204_2_, this_.CancelPay as CancelPay204_2_, this_.GuideOnboard as GuideOn34_204_2_, this_.Guide as Guide204_2_, this_.Driver as Driver204_2_, this_.PaidDate as PaidDate204_2_, this_.LockDate as LockDate204_2_, this_.VoucherCode as Voucher39_204_2_, this_.Inspection as Inspection204_2_, this_.CutOffDays as CutOffDays204_2_, this_.IsTotalUsd as IsTotalUsd204_2_, this_.Commission as Commission204_2_, this_.IsCommissionUsd as IsCommi44_204_2_, this_.CancelledReason as Cancell45_204_2_, this_.[Group] as Group46_204_2_, this_.Limousine as Limousine204_2_, this_.CreatedBy as CreatedBy204_2_, this_.ModifiedBy as ModifiedBy204_2_, this_.ConfirmedBy as Confirm50_204_2_, this_.PartnerId as PartnerId204_2_, this_.SaleId as SaleId204_2_, this_.BookerId as BookerId204_2_, this_.LockBy as LockBy204_2_, this_.TripId as TripId204_2_, this_.BatchId as BatchId204_2_, this_.CruiseId as CruiseId204_2_, this_.AgencyId as AgencyId204_2_, this_.TransferTo as TransferTo204_2_, this_.LockedId as LockedId204_2_, this_.SeriesId as SeriesId204_2_, agency1_.Id as Id170_0_, agency1_.Name as Name170_0_, agency1_.Phone as Phone170_0_, agency1_.Address as Address170_0_, agency1_.Fax as Fax170_0_, agency1_.TaxCode as TaxCode170_0_, agency1_.Email as Email170_0_, agency1_.ContractStatus as Contract8_170_0_, agency1_.Description as Descript9_170_0_, agency1_.Contract as Contract170_0_, agency1_.Accountant as Accountant170_0_, agency1_.PaymentPeriod as Payment12_170_0_, agency1_.CreatedDate as Created13_170_0_, agency1_.ModifiedDate as Modifie14_170_0_, agency1_.SaleStart as SaleStart170_0_, agency1_.Deleted as Deleted170_0_, agency1_.TenTiengViet as TenTien17_170_0_, agency1_.GiamDoc as GiamDoc170_0_, agency1_.RoleId as RoleId170_0_, agency1_.SaleId as SaleId170_0_, agency1_.LocationId as LocationId170_0_, agency1_.CreatedBy as CreatedBy170_0_, agency1_.ModifiedBy as ModifiedBy170_0_, bookingsal2_.Id as Id197_1_, bookingsal2_.SaleId as SaleId197_1_ FROM os_Booking this_ left outer join os_Agency agency1_ on this_.AgencyId=agency1_.Id inner join v_BookingSale bookingsal2_ on this_.Id=bookingsal2_.Id WHERE (((((this_.Status = @p0 and this_.Deadline >= @p1) or this_.Status = @p2) and this_.Deleted = @p3) and not (this_.IsTransferred = @p4)) and (this_.StartDate <= @p5 and this_.EndDate > @p6))
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Limousine'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:b8e11c50-0a5e-46af-91a2-ba2c3517f4fb
+Error Number:207,State:1,Class:16
+2018-03-27 11:15:36,366 [57] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'Limousine'.
+2018-03-27 11:15:36,368 [57] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'Limousine'.
+2018-03-27 11:15:36,369 [57] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'Limousine'.
+2018-03-27 11:32:30,945 [25] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute command:  ALTER TABLE os_Agency ADD TenTiengViet nvarchar(MAX), GiamDoc nvarchar(MAX)); 
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+ClientConnectionId:7c334330-4d88-44b3-80e6-bc8545203e53
+Error Number:102,State:1,Class:15
+2018-03-27 11:32:30,979 [25] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Incorrect syntax near ')'.
+2018-03-27 14:41:03,729 [94] ERROR CMS.Web.HttpModules.AuthenticationModule [(null)] <(null)> - An error occured while logging in user reservation3.
+2018-03-27 19:08:49,977 [46] ERROR CMS.Core.DataAccess.CommonDao [(null)] <(null)> - could not resolve property: agency of: Portal.Modules.OrientalSails.Domain.Booking
+NHibernate.QueryException: could not resolve property: agency of: Portal.Modules.OrientalSails.Domain.Booking
+   at NHibernate.Persister.Entity.AbstractPropertyMapping.ToType(String propertyName)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.GetSubclassPropertyTableNumber(String propertyPath)
+   at NHibernate.Persister.Entity.BasicEntityPropertyMapping.ToColumns(String alias, String propertyName)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.ToColumns(String alias, String propertyName)
+   at NHibernate.Loader.Criteria.CriteriaQueryTranslator.GetColumns(ICriteria subcriteria, String propertyName)
+   at NHibernate.Loader.Criteria.CriteriaQueryTranslator.GetColumnsUsingProjection(ICriteria subcriteria, String propertyName)
+   at NHibernate.Criterion.CriterionUtil.GetColumnNamesUsingPropertyName(ICriteriaQuery criteriaQuery, ICriteria criteria, String propertyName, Object value, ICriterion critertion)
+   at NHibernate.Criterion.CriterionUtil.GetColumnNamesForSimpleExpression(String propertyName, IProjection projection, ICriteriaQuery criteriaQuery, ICriteria criteria, IDictionary`2 enabledFilters, ICriterion criterion, Object value)
+   at NHibernate.Criterion.SimpleExpression.ToSqlString(ICriteria criteria, ICriteriaQuery criteriaQuery, IDictionary`2 enabledFilters)
+   at NHibernate.Criterion.LogicalExpression.ToSqlString(ICriteria criteria, ICriteriaQuery criteriaQuery, IDictionary`2 enabledFilters)
+   at NHibernate.Criterion.LogicalExpression.ToSqlString(ICriteria criteria, ICriteriaQuery criteriaQuery, IDictionary`2 enabledFilters)
+   at NHibernate.Loader.Criteria.CriteriaQueryTranslator.GetWhereCondition(IDictionary`2 enabledFilters)
+   at NHibernate.Loader.Criteria.CriteriaJoinWalker..ctor(IOuterJoinLoadable persister, CriteriaQueryTranslator translator, ISessionFactoryImplementor factory, ICriteria criteria, String rootEntityName, IDictionary`2 enabledFilters)
+   at NHibernate.Loader.Criteria.CriteriaLoader..ctor(IOuterJoinLoadable persister, ISessionFactoryImplementor factory, CriteriaImpl rootCriteria, String rootEntityName, IDictionary`2 enabledFilters)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at CMS.Core.DataAccess.CommonDao.CountObjectByCriterion(Type objectType, ICriterion criterion) in e:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Core\DataAccess\CommonDao.cs:line 216

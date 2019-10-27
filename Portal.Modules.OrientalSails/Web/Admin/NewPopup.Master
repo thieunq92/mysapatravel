@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NewPopup.master.cs" Inherits="Portal.Modules.OrientalSails.Web.Admin.NewPopup" %>
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="name" content="IE=edge" />
+    <link rel="shortcut icon" href="/favicon.gif" />
+    <%: System.Web.Optimization.Styles.Render("~/bundles/allcss/") %>
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+    <base href="/Modules/Sails/Admin/">
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+        <asp:ScriptManager ID="CommonScriptManager" runat="server" AsyncPostBackTimeout="120">
+        </asp:ScriptManager>
+        <div class="container-fluid">
+            <div class="alert alert-success" role="alert">
+                <%=Session["SuccessMessage"] %>
+            </div>
+            <div class="alert alert-info" role="alert">
+                <%=Session["InfoMessage"] %>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <%=Session["WarningMessage"] %>
+            </div>
+            <div class="alert alert-danger" role="alert">
+                <%=Session["ErrorMessage"] %>
+            </div>
+            <asp:ContentPlaceHolder ID="AdminContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <%: System.Web.Optimization.Scripts.Render("~/bundles/allscript/") %>
+    <script>
+        var tooltip = {
+            config: function () {
+                $('[data-toggle="tooltip"]').tooltip({
+                    trigger: "hover",
+                    html: true,
+                    container: "body",
+                });
+            },
+
+            hideIfBlank: function () {
+                $('[data-toggle="tooltip"]').each(function (i, e) {
+                    if ($(e).attr("data-original-title") == " ") {
+                        $(e).removeAttr("data-original-title");
+                    } else
+                        if ($(e).attr("data-original-title").trim() == "") {
+                            $(e).hide();
+                        }
+                })
+            }
+        }
+        var popOver = {
+            configBirdayReminder: function () {
+                $("#birthday-reminder").popover({
+                    html: true,
+                    placement: "bottom",
+                    title: "<em>Birthday reminder <%=DateTime.Today.ToString("dd/MM/yyyy")%></em>",
+                    content: $("#birthday-panel").html(),
+                    container: "body",
+                });
+            },
+
+            configBookingPending: function () {
+                $("#bookingpending").popover({
+                    html: true,
+                    placement: "bottom",
+                    content: $("#bookingpending-panel").html(),
+                    container: "body",
+                })
+            }
+        }
+        var textArea = {
+            autosize: function () {
+                autosize($("textarea"));
+            }
+        }
+        var message = {
+            hideIfBlank: function () {
+                $("[role='alert']").each(function (i, e) {
+                    if ($(e).html().trim() == "") {
+                        $(e).hide();
+                    }
+                })
+            }
+        }
+        var input = {
+            removeMultipleSpace: function () {
+                $("[type = 'text'], textarea").blur(function () {
+                    $(this).val($(this).val().replace(/[ \t]+/gm, " "));
+                })
+            }
+        }
+        $(function () {
+            tooltip.config();
+            tooltip.hideIfBlank();
+            popOver.configBirdayReminder();
+            popOver.configBookingPending();
+            textArea.autosize();
+            message.hideIfBlank();
+            input.removeMultipleSpace();
+        });
+    </script>
+    <script>
+        $('body').on('click', function (e) {
+            if ($(e.target).data('toggle') !== 'popover'
+                && $(e.target).parents('[data-toggle="popover"]').length === 0
+                && $(e.target).parents('.popover.in').length === 0) {
+                $('[data-toggle="popover"]').popover('hide');
+            }
+        });
+    </script>
+    <script>
+        $(function () {
+            $("[data-control='datetimepicker']").datetimepicker({
+                timepicker: false,
+                format: 'd/m/Y',
+                scrollInput: false,
+                scrollMonth: false,
+            })
+            $("[data-control='timepicker']").datetimepicker({
+                datepicker: false,
+                timepicker: true,
+                format: 'H:i',
+                scrollInput: false,
+                scrollMonth: false,
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".checkbox label").each(function (i, e) {
+                var label = $(e).find("label").html();
+                $(e).append(label);
+                $(e).find("label").remove();
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".radio-inline label").addClass("radio-inline").css("padding-left", "0");
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('input[type="text"]').keydown(function () {
+                $(this).trigger('input');
+                $(this).trigger('change');
+            });
+        })
+    </script>
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = 0;
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
+    <script>
+        function formatPhoneNumber(phoneNumberString) {
+            var cleaned = ('' + phoneNumberString).replace(/\D/g, '')
+            var match = cleaned.match(/(\d{3})(\d{4})(\d{1,})$/)
+            if (match) {
+                return '' + match[1] + ' ' + match[2] + ' ' + match[3]
+            }
+            return null
+        }
+        $(document).ready(function () {
+            $(".phone").each(function (i, e) {
+                $(e).html(formatPhoneNumber($(e).html()));
+            });
+
+            $("[data-control='phoneinputmask']").inputmask({
+                'mask': '999 9999 9999',
+                'placeholder': '',
+            });
+        })
+    </script>
+    <asp:ContentPlaceHolder ID="Scripts" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
+

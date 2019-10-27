@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Portal.Modules.OrientalSails.Domain.IvImport, Portal.Modules.OrientalSails" table="iv_Import">
+		<id name="Id" type="Int32" unsaved-value="0">
+			<column name="Id" length="4" sql-type="int" not-null="true" unique="true" index="PK_Location"/>
+			<generator class="native" />
+		</id>
+		<property name="Name" type="String">
+			<column name="Name" length="50" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="Deleted" type="Boolean">
+			<column name="`Deleted`" length="4" sql-type="bit" not-null="false"/>
+		</property>
+		<property name="CreatedDate" type="DateTime">
+			<column name="`CreatedDate`" length="4" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="ModifiedDate" type="DateTime">
+			<column name="`ModifiedDate`" length="4" sql-type="datetime" not-null="false"/>
+		</property>
+		<many-to-one name="CreatedBy" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore">
+			<column name="CreatedBy" length="4" sql-type="int" not-null="false"/>
+		</many-to-one>
+		<many-to-one name="ModifiedBy" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore">
+			<column name="ModifiedBy" length="4" sql-type="int" not-null="false"/>
+		</many-to-one>
+
+		<property name="Code" type="String">
+			<column name="Code" length="50" sql-type="ntext" not-null="false"/>
+		</property>
+		<property name="Detail" type="String">
+			<column name="Detail" length="50" sql-type="ntext" not-null="false"/>
+		</property>
+		<property name="ImportedBy" type="String">
+			<column name="ImportedBy" length="50" sql-type="ntext" not-null="false"/>
+		</property>
+		<property name="Total" type="Double">
+			<column name="Total" length="50" sql-type="money" not-null="false"/>
+		</property>
+		<property name="ImportDate" type="DateTime">
+			<column name="ImportDate" length="4" sql-type="datetime" not-null="false"/>
+		</property>
+		<many-to-one name="Agency" class="Portal.Modules.OrientalSails.Domain.Agency, Portal.Modules.OrientalSails" not-found="ignore">
+			<column name="AgencyId" length="4" sql-type="int" not-null="false"/>
+		</many-to-one>
+		<many-to-one name="Storage" class="Portal.Modules.OrientalSails.Domain.IvStorage, Portal.Modules.OrientalSails" not-found="ignore">
+			<column name="StorageId" length="4" sql-type="int" not-null="false"/>
+		</many-to-one>
+		<many-to-one name="Cruise" class="Portal.Modules.OrientalSails.Domain.Cruise, Portal.Modules.OrientalSails" not-found="ignore">
+			<column name="CruiseId" length="4" sql-type="int" not-null="false"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

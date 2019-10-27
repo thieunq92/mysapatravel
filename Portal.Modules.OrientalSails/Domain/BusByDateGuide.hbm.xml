@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+  <class name="BusByDateGuide" table="os_BusByDateAgency" batch-size="10">
+    <cache usage="read-write"/>
+    <id name="Id" column="BusByDateAgencyId">
+      <generator class="native" />
+    </id>
+    <property name="ModifiedDate"/>
+    <many-to-one name="BusByDate" column="BusByDateId" class="BusByDate"/>
+    <many-to-one name="Guide" column="AgencyId" class="Guide"/>
+  </class>
+</hibernate-mapping>

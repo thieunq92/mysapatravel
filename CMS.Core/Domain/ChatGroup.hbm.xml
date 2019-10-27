@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CMS.Core.Domain.ChatGroup, CMS.Core" table="os_ChatGroup">
+
+    <cache usage="read-write" />
+
+    <id name="Id" column="Id" type="Int32" unsaved-value="0">
+      <generator class="native">
+      </generator>
+    </id>
+    <property name="Name" column="Name" type="String" length="250" />
+
+    <!--    <bag name="ChatMessages" cascade="none" order-by="position asc" lazy="true">-->
+    <!--      <key column="GroupId" />-->
+    <!--	  <many-to-many class="CMS.Core.Domain.User, CMS.Core" column="UserId" outer-join="true" />-->
+    <!--    </bag>-->
+    <bag name="ChatGroupUsers" cascade="none" lazy="true">
+      <key column="GroupId" />
+      <one-to-many class="CMS.Core.Domain.ChatGroupUser, CMS.Core" />
+    </bag>
+  </class>
+</hibernate-mapping>

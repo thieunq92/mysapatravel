@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Portal.Modules.OrientalSails"
+                   namespace="Portal.Modules.OrientalSails.Domain">
+  <class name="ExpenseHistory" table="os_ExpenseHistory" batch-size="10">
+    <cache usage="read-write"/>
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <property name="ColumnName"/>
+    <property name ="OldValue"/>
+    <property name ="NewValue"/>
+    <property name ="CreatedDate"/>
+    <many-to-one name="CreatedBy" column="CreatedBy_UserId" class="CMS.Core.Domain.User,CMS.Core"/>
+    <many-to-one name="Expense" column="ExpenseId" class="Expense"/>
+  </class>
+</hibernate-mapping>

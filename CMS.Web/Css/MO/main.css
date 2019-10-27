@@ -1,0 +1,425 @@
+﻿html, body {
+    height: 100%;
+}
+
+.bs-docs-footer {
+    background-color: #2a2730;
+    color: #99979c;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.pager > span > span, .pager > span > a {
+    background-image: none !important;
+    background-color: #fff;
+    border: 1px solid #ddd !important;
+    color: #337ab7 !important;
+    float: none;
+    line-height: 1.42857;
+    margin-left: -1px !important;
+    padding: 6px 12px !important;
+    position: relative;
+    text-decoration: none;
+    width: auto !important;
+}
+
+.navbar-brand {
+    font-size: 18px;
+}
+
+.btn-pending {
+    background-color: #ffff00;
+    border-color: #ffff4c;
+    color: #333;
+}
+
+    .btn-pending:hover {
+        background-color: #ffd000;
+    }
+
+.booking-table .table > thead > tr > th,
+.booking-table .table > tbody > tr > th,
+.booking-table .table > tfoot > tr > th,
+.booking-table .table > thead > tr > td,
+.booking-table .table > tbody > tr > td,
+.booking-table .table > tfoot > tr > td {
+    border: 1px solid #bbb !important;
+    padding: 1px;
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+.approved {
+    background-color: #5cb85c;
+}
+
+.pending {
+    background-color: #ffff00;
+}
+
+.receivable-table .table > thead > tr > th,
+.receivable-table .table > tbody > tr > th,
+.receivable-table .table > tfoot > tr > th,
+.receivable-table .table > thead > tr > td,
+.receivable-table .table > tbody > tr > td,
+.receivable-table .table > tfoot > tr > td {
+    border: 1px solid #bbb !important;
+    padding: 1px;
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+.receivable-table a {
+    color: #333;
+}
+
+.custom-warning {
+    background-color: #ff0;
+    border-color: #ff0;
+}
+
+.custom-success {
+    background-color: #32e904;
+    border-color: #1b7d03;
+    color: white;
+}
+
+.good {
+    background-color: #5cb85c;
+}
+
+.important {
+    background-color: #d9534f;
+}
+
+.inspection {
+    background-color: #5858fa;
+}
+
+.paymenthistory-table .table > thead > tr > th,
+.paymenthistory-table .table > tbody > tr > th,
+.paymenthistory-table .table > tfoot > tr > th,
+.paymenthistory-table .table > thead > tr > td,
+.paymenthistory-table .table > tbody > tr > td,
+.paymenthistory-table .table > tfoot > tr > td {
+    border: 1px solid #bbb !important;
+    padding: 1px;
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+.bookinginfor-panel {
+    margin-top: 10px;
+}
+
+    .bookinginfor-panel .checkbox {
+        margin: 0;
+    }
+
+    .bookinginfor-panel .form-group {
+        margin-bottom: 5px;
+    }
+
+.nopadding {
+    padding: 0 !important;
+}
+
+.nopadding-left {
+    padding-left: 0 !important;
+}
+
+.nopadding-right {
+    padding-right: 0 !important;
+}
+
+body {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.col-xs-4 {
+    background-color: transparent !important;
+    border: none !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.custom-col-xs-1 {
+    width: 9.2% !important;
+}
+
+.custom-name-width {
+    width: 15% !important;
+}
+
+.customerinfo-panel .panel {
+    border: none;
+}
+
+.alert {
+    padding: 5px;
+}
+
+.btn {
+    padding: 3px 12px;
+}
+
+.form-control {
+    padding: 3px 12px;
+    height: 25px;
+}
+
+.bookinginfor-panel label {
+    font-weight: normal;
+}
+
+.radio, .checkbox {
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.custom-col-xs-offset-1-margin {
+    margin-left: 1.3333%;
+}
+
+.panel {
+    box-shadow: none;
+    margin-bottom: 0px;
+}
+
+.datetimepicker-trigger {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    left: 85%;
+}
+
+.total-locked {
+    background-color: #e9c0c0 !important;
+    border-color: #e9c0c0;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.width90percent {
+    width: 90%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.selectroom-panel select {
+    padding: 3px;
+}
+
+.booking-panel {
+    height: 312.75px !important;
+}
+
+.text-wrap {
+    overflow-wrap: break-word;
+}
+
+.overlay {
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+article {
+    overflow: hidden;
+}
+
+.navbar-nav > li > a {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.document-table.table > thead > tr > th,
+.document-table.table > tbody > tr > th,
+.document-table.table > tfoot > tr > th,
+.document-table.table > thead > tr > td,
+.document-table.table > tbody > tr > td,
+.document-table.table > tfoot > tr > td {
+    padding: 3px !important;
+}
+
+.table-agency.table > thead > tr > th,
+.table-agency.table > tbody > tr > th,
+.table-agency.table > tfoot > tr > th,
+.table-agency.table > thead > tr > td,
+.table-agency.table > tbody > tr > td,
+.table-agency.table > tfoot > tr > td {
+    padding: 3px !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.table-common.table > thead > tr > th,
+.table-common.table > tbody > tr > th,
+.table-common.table > tfoot > tr > th,
+.table-common.table > thead > tr > td,
+.table-common.table > tbody > tr > td,
+.table-common.table > tfoot > tr > td {
+    padding: 3px !important;
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+.input-group input[type="text"] {
+    height: 27px;
+}
+
+#overlay-wholepage {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+    #overlay-wholepage #image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 50px;
+        color: white;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+    }
+
+.btn-grid {
+    margin: -2px 0;
+}
+
+    .btn-grid > .btn {
+        margin: 2px 0;
+    }
+
+.table.borderless td, .table.borderless th {
+    border: none;
+}
+
+.table.table-expense > thead > tr > th, .table.table-expense > tbody > tr > th,
+.table.table-expense > tfoot > tr > th, .table.table-expense > thead > tr > td,
+.table.table-expense > tbody > tr > td, .table.table-expense > tfoot > tr > td {
+    padding: 1px;
+}
+
+.input-group input[type="text"] {
+    height: 25px;
+}
+
+.input-group-addon {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.custom-danger {
+    background-color: #F63A3AB3;
+    border-color: #B41B1B;
+    color: white;
+}
+
+.btn.custom-danger.active {
+    background-color: #CF2B2B;
+    border-color: #B41B1B;
+    color: white;
+}
+
+.btn.custom-danger:hover.active {
+    background-color: #A81A1A;
+    border-color: #B41B1B;
+    color: white;
+}
+
+.btn.custom-danger:hover, .btn.custom-danger:active, .btn.custom-danger:focus {
+    background-color: #CF2B2B;
+    border-color: #B41B1B;
+    color: white;
+}
+
+
+.text-disabled {
+    color: gray;
+}
+
+.control-grid > div {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.custom-text-danger {
+    color: #FE2828;
+}
+
+.navbar-nav > li > a {
+    padding: 4px !important;
+}
+
+.custom-info {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+    .custom-info a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+.busbydate {
+    z-index: 999 !important;
+    background-color: #fff;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+div.tooltip {
+    position: absolute;
+    z-index: 999;
+}
+
+.ajax__calendar_container {
+    z-index: 9999;
+}
+
+.bkv-roomName {
+    float: left;
+}
+
+.checkbox-extrabed {
+    float: left;
+    margin-left: 15px;
+}
+
+.checkbox {
+    margin-left: 20px;
+}

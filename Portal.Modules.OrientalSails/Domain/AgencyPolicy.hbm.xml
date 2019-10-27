@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Portal.Modules.OrientalSails.Domain.AgencyPolicy, Portal.Modules.OrientalSails" table="tmh_AgencyPolicy">
+		<id name="Id" type="Int32" unsaved-value="-1">
+			<column name="AgencyPolicyId" length="4" sql-type="int" not-null="true" unique="true" index="PK_tm_AgencyPolicyId"/>
+			<generator class="native" />
+		</id>
+    <property name="IsPercentage" type="Boolean">
+      <column name="IsPercentage" length="1" sql-type="bit" not-null="true"/>
+    </property>    
+    <many-to-one name="Role" class="CMS.Core.Domain.Role, CMS.Core">
+      <column name="`Role`" length="4" sql-type="int" not-null="true"/>
+    </many-to-one>
+		<property name="CostFrom" type="Double">
+			<column name="CostFrom" length="8" sql-type="money" not-null="true"/>
+		</property>
+		<property name="CostTo" type="Double">
+			<column name="CostTo" length="8" sql-type="money" not-null="false"/>
+		</property>
+		<property name="Percentage" type="Double">
+			<column name="Percentage" length="8" sql-type="float" not-null="true"/>
+		</property>
+    <property name="ModuleType" type="String">
+      <column name="ModuleType" length="200" sql-type="nvarchar" not-null="false"/>
+    </property>    
+	</class>
+</hibernate-mapping>

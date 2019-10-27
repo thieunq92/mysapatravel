@@ -1,0 +1,2 @@
+2017-10-04 17:08:23,399 [9] ERROR Castle.Services.Transaction.TransactionBase [(null)] <(null)> - Resource state: Castle.Facilities.NHibernateIntegration.Internal.ResourceAdapter
+2017-10-04 17:08:36,238 [10] ERROR Castle.Services.Transaction.TransactionBase [(null)] <(null)> - Resource state: Castle.Facilities.NHibernateIntegration.Internal.ResourceAdapter

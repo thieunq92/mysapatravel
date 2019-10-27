@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+	<class name="IvUnit" table="iv_Unit" batch-size="10">
+		<cache usage="read-write"/>
+		<id name="Id">
+			<generator class="native" />
+		</id>
+		<property name="Name"/>
+		<property name="Rate"/>
+		<property name="Math"/>
+		<property name="Note"/>
+		<many-to-one name="Parent" column="ParentId" class="Portal.Modules.OrientalSails.Domain.IvUnit, Portal.Modules.OrientalSails" not-found="ignore"/>
+	  <bag name="ListChild" inverse="true" batch-size="10" cascade="">
+	    <key column="ParentId"/>
+	    <one-to-many class="IvUnit"/>
+	  </bag>
+	</class>
+</hibernate-mapping>

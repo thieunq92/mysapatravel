@@ -1,0 +1,46 @@
+2018-05-02 13:49:42,217 [50] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.Contract.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.Contract.hbm.xml ---> NHibernate.DuplicateMappingException: duplicate import: Contract refers to both Portal.Modules.OrientalSails.Domain.Contract, Portal.Modules.OrientalSails, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null and CMS.Modules.TourManagement.Domain.Contract, CMS.Modules.TourManagement, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null (try using auto-import="false")
+   at NHibernate.Cfg.Mappings.AddImport(String className, String rename)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindPersistentClassCommonValues(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2018-05-02 14:28:34,486 [76] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.Contract.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.Contract.hbm.xml ---> NHibernate.DuplicateMappingException: duplicate import: Contract refers to both Portal.Modules.OrientalSails.Domain.Contract, Portal.Modules.OrientalSails, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null and CMS.Modules.TourManagement.Domain.Contract, CMS.Modules.TourManagement, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null (try using auto-import="false")
+   at NHibernate.Cfg.Mappings.AddImport(String className, String rename)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindPersistentClassCommonValues(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2018-05-02 14:29:18,550 [33] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.Contract.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.Contract.hbm.xml ---> NHibernate.DuplicateMappingException: duplicate import: Contract refers to both Portal.Modules.OrientalSails.Domain.Contract, Portal.Modules.OrientalSails, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null and CMS.Modules.TourManagement.Domain.Contract, CMS.Modules.TourManagement, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null (try using auto-import="false")
+   at NHibernate.Cfg.Mappings.AddImport(String className, String rename)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindPersistentClassCommonValues(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2018-05-02 15:13:23,944 [46] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.Contracts.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.Contracts.hbm.xml ---> NHibernate.DuplicateMappingException: duplicate import: Contract refers to both Portal.Modules.OrientalSails.Domain.Contract, Portal.Modules.OrientalSails, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null and CMS.Modules.TourManagement.Domain.Contract, CMS.Modules.TourManagement, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null (try using auto-import="false")
+   at NHibernate.Cfg.Mappings.AddImport(String className, String rename)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindPersistentClassCommonValues(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2018-05-02 15:14:39,971 [76] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - An association from the table os_ContractValid refers to an unmapped class: Portal.Modules.OrientalSails.Domain.Contract
+NHibernate.MappingException: An association from the table os_ContractValid refers to an unmapped class: Portal.Modules.OrientalSails.Domain.Contract

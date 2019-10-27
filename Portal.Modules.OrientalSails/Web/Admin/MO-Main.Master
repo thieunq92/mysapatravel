@@ -1,0 +1,487 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MO-Main.master.cs" Inherits="Portal.Modules.OrientalSails.Web.Admin.MO_Main" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/favicon.gif" />
+    <%: Styles.Render("~/bundles/allcss/") %>
+    <asp:ContentPlaceHolder ID="HeadMain" runat="server">
+    </asp:ContentPlaceHolder>
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = 0;
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
+</head>
+<body class="sneak" style="position: relative">
+    <form id="form1" runat="server" enctype="multipart/form-data" ng-app="myApp" style="height: inherit">
+        <asp:ContentPlaceHolder ID="ScriptManagerMain" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="container-fluid container__body --no-padding-leftright">
+            <div class="row site-header">
+                <div class="wrapper wrapper__header">
+                    <div class="col-xs-2 site-name --no-padding-leftright">
+                        <a href="DashBoardManager.aspx?NodeId=1&SectionId=15"><img src="/Admin/Images/logo.png" /></a>
+                    </div>
+                    <div class="col-xs-10 right-container --no-padding-leftright">
+                        <div class="input-group search-box">
+                            <span class="input-group-addon" id="basic-addon1"><i class="fas fa-search"></i></span>
+                            <input name="search" class="form-control" placeholder="Search" autocomplete="off" />
+                        </div>
+                        <a href="javascript:void(0)" id="birthday-reminder" data-toggle="popover" class="notify">
+                            <i class="fa fa-birthday-cake fa-lg icon" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Pending booking">
+                                <span class="badge"><%= AgencyContactBirthdayCount() %></span></i>
+                        </a>
+                        <a href="javascript:void(0)" id="bookingpending" data-toggle="popover" class="notify">
+                            <i class="fa fa-clock fa-lg icon" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Birthday reminder">
+                                <span class="badge"><%= MyBookingPendingCount()%></span></i>
+                        </a>
+                        <div class="dropdown">
+                            <button class="btn-avartar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color:#333">
+                                <img src="/Images/no_image.gif" class="avartar" />
+                                <span class="fas fa-angle-down"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <asp:HyperLink ID="hlUserPanel" runat="server">Profile</asp:HyperLink></li>
+                                <li>
+                                    <asp:LinkButton ID="lbLogout" runat="server" OnClick="lbLogOut_Click">Log Out</asp:LinkButton></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-default">
+                <div class="wrapper wrapper__menu">
+                    <div id="navbar">
+                        <ul class="nav navbar-nav col-xs-12">
+                            <li class="dropdown" id="tabBooking" runat="server">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Booking <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li id="pAddBooking" runat="server">
+                                        <asp:HyperLink ID="hlAddBooking" runat="server">Booking Adding</asp:HyperLink></li>
+                                    <li id="pBookingList" runat="server">
+                                        <asp:HyperLink ID="hlBookingList" runat="server">Booking Management</asp:HyperLink></li>
+                                    <li id="pOrders" runat="server">
+                                        <asp:HyperLink ID="hlOrders" runat="server">Booking Pending</asp:HyperLink></li>
+                                    <li id="pBookingDate" runat="server">
+                                        <asp:HyperLink ID="hlBookingDate" runat="server">Booking By Date</asp:HyperLink></li>
+                                    <li id="pBookingReport" runat="server">
+                                        <asp:HyperLink ID="hlBookingPeriod" runat="server">Booking By Period</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="tabReports" runat="server">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Report <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li id="pIncomeReport" runat="server">
+                                        <asp:HyperLink ID="hlIncomeReport" runat="server">Revenue</asp:HyperLink></li>
+                                    <li id="pReceivable" runat="server">
+                                        <asp:HyperLink ID="hlIncomeOwn" runat="server">Receivable</asp:HyperLink></li>
+                                    <li id="Li5" runat="server">
+                                        <asp:HyperLink ID="hplPaymentHistory" runat="server">Payment History</asp:HyperLink></li>
+                                    <li id="pDebtReceivable" runat="server">
+                                        <asp:HyperLink ID="hplDebtReceivable" runat="server">Report Debt Receivable</asp:HyperLink></li>
+                                    <li id="pExpenseReport" runat="server">
+                                        <asp:HyperLink ID="hlExpenseReport" runat="server">Expense Report</asp:HyperLink></li>
+                                    <li id="pPayable" runat="server">
+                                        <asp:HyperLink ID="hlExpenseDebt" runat="server">Payable Report</asp:HyperLink></li>
+                                    <li id="pBalance" runat="server">
+                                        <asp:HyperLink ID="hlBalance" runat="server">Balance</asp:HyperLink></li>
+                                    <li id="pSummary" runat="server">
+                                        <asp:HyperLink ID="hlReceiablePayable" runat="server">Receivable/Payable Summary</asp:HyperLink></li>
+                                    <li id="pInspection" runat="server">
+                                        <asp:HyperLink ID="hlInspection" runat="server">Inspection Report</asp:HyperLink></li>
+                                    <li id="pReportDebtReceivables" runat="server">
+                                        <asp:HyperLink ID="hplReportDebtReceivables" runat="server">Current Receivables</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="tabConfiguration" runat="server">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partner <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li id="pAgencyEdit" runat="server">
+                                        <asp:HyperLink ID="hlAgencyEdit" runat="server">Partner Adding</asp:HyperLink></li>
+                                    <li id="pAgencyList" runat="server">
+                                        <asp:HyperLink ID="hlAgencyList" runat="server">Partner Management</asp:HyperLink></li>
+                                    <li id="pAgencyPolicies" runat="server">
+                                        <asp:HyperLink ID="hlAgentList" runat="server">Partner Price Policy</asp:HyperLink></li>
+                                    <li id="pVoucherEdit" runat="server">
+                                        <asp:HyperLink ID="hlVoucherEdit" runat="server">Voucher Batch Creating</asp:HyperLink></li>
+                                    <li id="pVoucherList" runat="server">
+                                        <asp:HyperLink ID="hlVoucherList" runat="server">Voucher Batch Management</asp:HyperLink></li>
+                                    <li id="pVoucherTemplates" runat="server">
+                                        <asp:HyperLink ID="hlVoucherTemplates" runat="server">Voucher Template</asp:HyperLink>
+                                    </li>
+                                    <li id="pAgencyViewMeetings" runat="server">
+                                        <asp:HyperLink ID="hlViewMeetings" runat="server">Meeting Viewing</asp:HyperLink></li>
+                                    <li id="pAgencyLocation" runat="server">
+                                        <asp:HyperLink ID="hlAgencyLocation" runat="server">Location Management</asp:HyperLink></li>
+                                    <li>
+                                        <asp:HyperLink ID="hlQuotationManagement" runat="server">Quotation Management</asp:HyperLink>
+                                    </li>
+                                    <li>
+                                        <asp:HyperLink ID="hlContractManagement" runat="server">Contract Management</asp:HyperLink>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="tabTrips" runat="server">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trip <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li id="pTripEdit" runat="server">
+                                        <asp:HyperLink ID="hlTripEdit" runat="server">Trip Adding</asp:HyperLink></li>
+                                    <li id="pTripList" runat="server">
+                                        <asp:HyperLink ID="hlTripList" runat="server">Trip Management</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="tabCost" runat="server">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cost configuration <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li id="pExtraService" runat="server">
+                                        <asp:HyperLink ID="hlExtraOption" runat="server">Extra Option Manager</asp:HyperLink></li>
+                                    <li id="pCostingConfig" runat="server">
+                                        <asp:HyperLink ID="hlCosting" runat="server">Customer Expense</asp:HyperLink></li>
+                                    <li id="pDailyManualCost" runat="server">
+                                        <asp:HyperLink ID="hlExpenseDate" runat="server">Daily Expense</asp:HyperLink></li>
+                                    <li id="pExpensePeriod" runat="server">
+                                        <asp:HyperLink ID="hlExpensePeriod" runat="server">Monthly/Year Expense</asp:HyperLink></li>
+                                    <li id="pHaiPhong" runat="server">
+                                        <asp:HyperLink ID="hlHaiPhong" runat="server">Hai Phong Expense</asp:HyperLink></li>
+                                    <li id="pCostTypes" runat="server">
+                                        <asp:HyperLink ID="hlCostTypes" runat="server">Expense Type Configuration</asp:HyperLink></li>
+                                    <li id="pUSDRate" runat="server">
+                                        <asp:HyperLink ID="hlUSDRate" runat="server">USD to VND rate</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="tabSetting" runat="server">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Setting <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <asp:HyperLink ID="hlPermissions" runat="server">Permission</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                          
+                            <li class="dropdown">   
+                                <ul class="nav navbar-nav" style="padding-top: 3px; padding-left: 10px; display: none">
+                                    <strong>
+                                        <asp:Label ID="lblTitle" runat="server" Style="font-size: 15px; color: #777"></asp:Label></strong>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="alert alert-success" role="alert">
+                <%=Session["SuccessMessage"] %>
+            </div>
+            <div class="alert alert-info" role="alert">
+                <%=Session["InfoMessage"] %>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <%=Session["WarningMessage"] %>
+            </div>
+            <div class="alert alert-danger" role="alert">
+                <%=Session["ErrorMessage"] %>
+            </div>
+            <asp:ContentPlaceHolder ID="AdminContentMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="birthday-panel" class="hidden">
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <th>Contact</th>
+                    <th>Agency</th>
+                </tr>
+                <tr>
+                    <asp:Repeater runat="server" ID="rptBirthday">
+                        <ItemTemplate>
+                            <div title="AgencyContact" style="display: block; margin-top: 6px">
+                                <td>
+                                    <a href='AgencyEdit.aspx?NodeId=1&SectionId=15&AgencyId=<%#Eval("Agency.Id") %>'>
+                                        <%#Eval("Name")%></a></td>
+                                <td>
+                                    <a href='AgencyEdit.aspx?NodeId=1&SectionId=15&AgencyId=<%#Eval("Agency.Id") %>'>
+                                        <%#Eval("Agency.Name")%></a></td>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </tr>
+            </table>
+        </div>
+        <div id="bookingpending-panel" class="hidden">
+            <p>
+                You have <strong>(<%= MyBookingPendingCount() %>)</strong> booking(s) pending
+            </p>
+            <p>
+                You have <strong style="color: red;">(<%= MyTodayBookingPendingCount() %>)</strong> booking(s) pending need confirm in 36h
+            </p>
+            <p><%= SystemBookingPendingMessaging() %></p>
+            <a href="OrderReport.aspx?NodeId=1&SectionId=15">My booking pending</a><br />
+            <asp:HyperLink runat="server" ID="hlAllPending" Text="All pending"></asp:HyperLink>
+        </div>
+        <footer>
+        </footer>
+        <a href="javascript:" id="return-to-top"><i class="fas fa-angle-double-up"></i></a>
+    </form>
+    <%: Scripts.Render("~/bundles/allscript/") %>
+    <script>
+        var tooltip = {
+            config: function () {
+                $('[data-toggle="tooltip"]').tooltip({
+                    trigger: "hover",
+                    html: true,
+                    container: "body",
+                });
+            },
+
+            hideIfBlank: function () {
+                $('[data-toggle="tooltip"]').each(function (i, e) {
+                    if ($(e).attr("data-original-title").trim() == "") {
+                        $(e).hide();
+                    }
+                })
+            }
+        }
+        var popOver = {
+            configBirdayReminder: function () {
+                $("#birthday-reminder").popover({
+                    html: true,
+                    placement: "bottom",
+                    title: "<em>Birthday reminder <%=DateTime.Today.ToString("dd/MM/yyyy")%></em>",
+                    content: $("#birthday-panel").html(),
+                    container: "body",
+                });
+            },
+
+            configBookingPending: function () {
+                $("#bookingpending").popover({
+                    html: true,
+                    placement: "bottom",
+                    content: $("#bookingpending-panel").html(),
+                    container: "body",
+                })
+            }
+        }
+        var textArea = {
+            autosize: function () {
+                autosize($("textarea"));
+            }
+        }
+        var message = {
+            hideIfBlank: function () {
+                $("[role='alert']").each(function (i, e) {
+                    if ($(e).html().trim() == "") {
+                        $(e).hide();
+                    }
+                })
+            }
+        }
+        var input = {
+            removeMultipleSpace: function () {
+                $("[type = 'text'], textarea").blur(function () {
+                    $(this).val($(this).val().replace(/[ \t]+/gm, " "));
+                })
+            }
+        }
+        $(function () {
+            tooltip.config();
+            tooltip.hideIfBlank();
+            popOver.configBirdayReminder();
+            popOver.configBookingPending();
+            textArea.autosize();
+            message.hideIfBlank();
+            input.removeMultipleSpace();
+        });
+    </script>
+    <script>
+        $('body').on('click', function (e) {
+            if ($(e.target).data('toggle') !== 'popover'
+                && $(e.target).parents('[data-toggle="popover"]').length === 0
+                && $(e.target).parents('.popover.in').length === 0) {
+                $('[data-toggle="popover"]').popover('hide');
+            }
+        });
+    </script>
+    <script>
+        $(function () {
+            $("[data-control='datetimepicker']").datetimepicker({
+                timepicker: false,
+                format: 'd/m/Y',
+                scrollInput: false,
+                scrollMonth: false,
+            });
+            if (jQuery(window).width() < 1000) {
+                $("[data-control='datetimepicker']").focus(function () {
+                    $(this).blur();
+                })
+            }
+            $("[data-control='datepicker-inline']").datetimepicker({
+                timepicker: false,
+                format: 'd/m/Y',
+                inline: true,
+                value: '<%=DateTime.Today.ToString("dd/MM/yyyy")%>',
+            });
+        })
+        $(document).ready(function () {
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+            function EndRequestHandler(sender, args) {
+                $(function () {
+                    $("[data-control='datetimepicker']").datetimepicker({
+                        timepicker: false,
+                        format: 'd/m/Y',
+                        scrollInput: false,
+                        scrollMonth: false,
+                    })
+                })
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".checkbox label").each(function (i, e) {
+                var label = $(e).find("label").html();
+                $(e).append(label);
+                $(e).find("label").remove();
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".radio label").each(function (i, e) {
+                var label = $(e).find("label").html();
+                $(e).append(label);
+                $(e).find("label").remove();
+            });
+        })
+    </script>
+    <script>
+        function formatPhoneNumber(phoneNumberString) {
+            var cleaned = ('' + phoneNumberString).replace(/\D/g, '')
+            var match = cleaned.match(/(\d{4})(\d{3})(\d{1,})$/)
+            if (match) {
+                return '' + match[1] + '.' + match[2] + '.' + match[3]
+            }
+            return null
+        }
+        $(document).ready(function () {
+            $(".phone").each(function (i, e) {
+                $(e).html(formatPhoneNumber($(e).html()));
+            });
+
+            $("[data-control='phoneinputmask']").inputmask({
+                'mask': '9999.999.9999',
+                'placeholder': '',
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-submenu .submenu--collapser').on('click', function (e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+                $('.dropdown-submenu .submenu--collapser').not($(this)).next('ul').hide();
+            });
+        });
+    </script>
+    <script>
+        //Scoll xuống vị trí theo id
+        function goToByScroll(id) {
+            $('html,body').animate({ scrollTop: $("#" + id).offset().top }, 'slow');
+        }
+    </script>
+    <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0                       // Scroll to top of body
+            }, 500);
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            let index = 0;
+            let readmoreInterval = null;
+            let articles = $('article').filter(function (i, obj) {
+                return obj.innerText != '';
+            })
+            readmoreInterval = setInterval(function () {
+                $(articles[index]).readmore({
+                    collapsedHeight: 85,
+                });
+                index++;
+                if (index >= articles.length) {
+                    clearInterval(readmoreInterval);
+                }
+            }, 1)
+        });
+    </script>
+    <script>
+        function clearForm(panel) {
+            panel.find(':input').each(function () {
+                switch (this.type) {
+                    case 'password':
+                    case 'text':
+                    case 'textarea':
+                    case 'file':
+                    case 'select-multiple':
+                    case 'date':
+                    case 'number':
+                    case 'tel':
+                    case 'email':
+                        jQuery(this).val('');
+                        break;
+                    case 'checkbox':
+                    case 'radio':
+                        this.checked = false;
+                        break;
+                    case 'select-one':
+                        jQuery(this).val('0');
+                        break;
+                }
+            });
+        }
+    </script>
+    <script>
+        let submit = 0;
+        function checkDouble(control) {
+            if ($("#aspnetForm").valid()) submit++;
+            if (submit > 1) {
+                control.disabled = true;
+                control.value = 'Please wait...';
+                return false;
+            }
+        }
+    </script>
+    <script>
+        function getParameterValues(param) {
+            var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < url.length; i++) {
+                var urlparam = url[i].split('=');
+                if (urlparam[0] == param) {
+                    return urlparam[1];
+                }
+            }
+        }
+        function addParameterToUrl(parameterString) {
+            var newurl = '';
+            if (window.location.search == '')
+                newurl = window.location.protocol + '//' + window.location.host + window.location.pathname + '?' + parameterString;
+            else
+                newurl = window.location.protocol + '//' + window.location.host + window.location.pathname + window.location.search + '&' + parameterString;
+            window.history.pushState({ path: newurl }, '', newurl);
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="ScriptsMain" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

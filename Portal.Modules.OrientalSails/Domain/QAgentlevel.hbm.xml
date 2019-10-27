@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Portal.Modules.OrientalSails" namespace="Portal.Modules.OrientalSails.Domain" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="QAgentLevel" table="os_QAgentLevel" lazy="true" >
+    <id name="Id" column="Id">
+      <generator class="identity" />
+    </id>
+    <property name="Name">
+      <column name="Name" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="Code"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+	<class name="IvInStock" table="v_ProductInStock" batch-size="10">
+		<cache usage="read-write"/>
+		<id name="RID">
+			<generator class="native" />
+		</id>
+		<property name="Id"/>
+		<property name="Name"/>
+		<property name="Code"/>
+		<property name="CategoryId"/>
+		<property name="CategoryName"/>
+		<property name="StorageName"/>
+		<property name="StorageId"/>
+		<property name="CruiseId"/>
+		<property name="Quantity"/>
+		<property name="WarningLimit"/>
+		<property name="UnitId"/>
+		<property name="UnitName"/>
+		<property name="IsTool"/>
+	</class>
+</hibernate-mapping>

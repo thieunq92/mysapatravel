@@ -1,0 +1,91 @@
+2017-10-15 21:32:24,006 [50] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: INSERT INTO os_Series (SeriesCode, CutoffDate, NoOfDays, AgencyId, BookerId) VALUES (@p0, @p1, @p2, @p3, @p4); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'os_Series'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:983e72cd-7931-495c-92ad-4a57d9083278
+Error Number:208,State:1,Class:16
+2017-10-15 21:32:38,229 [50] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid object name 'os_Series'.
+2017-10-15 21:45:12,674 [39] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute command: query
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'query'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+ClientConnectionId:5d7a8cf8-07a9-498b-9c28-c3c7cbe6f608
+Error Number:2812,State:62,Class:16
+2017-10-15 21:45:12,690 [39] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Could not find stored procedure 'query'.
+2017-10-15 21:53:21,610 [48] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute command: SET ANSI_NULLS ON GOSET QUOTED_IDENTIFIER ON GOCREATE TABLE [dbo].[os_Series]( [Id] [int] IDENTITY(1,1) NOT NULL, [AgencyId] [int] NULL, [BookerId] [int] NULL, [SeriesCode] [nvarchar](max) NULL, [NoOfDays] [int] NULL, [CutoffDate] [datetime] NULL, CONSTRAINT [PK_os_Series] PRIMARY KEY CLUSTERED ( [Id] ASC )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY] ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY] GOALTER TABLE [dbo].[os_Series] WITH CHECK ADD CONSTRAINT [FK_os_Series_os_Agency] FOREIGN KEY([AgencyId]) REFERENCES [dbo].[os_Agency] ([Id]) ON UPDATE CASCADE ON DELETE SET NULL GOALTER TABLE [dbo].[os_Series] CHECK CONSTRAINT [FK_os_Series_os_Agency] GOALTER TABLE [dbo].[os_Series] WITH CHECK ADD CONSTRAINT [FK_os_Series_os_AgencyContact] FOREIGN KEY([BookerId]) REFERENCES [dbo].[os_AgencyContact] ([Id]) ON UPDATE CASCADE ON DELETE SET NULL GOALTER TABLE [dbo].[os_Series] CHECK CONSTRAINT [FK_os_Series_os_AgencyContact] GO
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'GOSET'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+ClientConnectionId:31b3c619-c40f-4097-8907-f66d1545d7a8
+Error Number:102,State:1,Class:15
+2017-10-15 21:53:21,633 [48] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Incorrect syntax near 'GOSET'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+2017-10-15 21:54:40,370 [42] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute command: SET ANSI_NULLS ON GO SET QUOTED_IDENTIFIER ON GO CREATE TABLE [dbo].[os_Series]( [Id] [int] IDENTITY(1,1) NOT NULL, [AgencyId] [int] NULL, [BookerId] [int] NULL, [SeriesCode] [nvarchar](max) NULL, [NoOfDays] [int] NULL, [CutoffDate] [datetime] NULL, CONSTRAINT [PK_os_Series] PRIMARY KEY CLUSTERED ( [Id] ASC )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY] ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY] GO ALTER TABLE [dbo].[os_Series] WITH CHECK ADD CONSTRAINT [FK_os_Series_os_Agency] FOREIGN KEY([AgencyId]) REFERENCES [dbo].[os_Agency] ([Id]) ON UPDATE CASCADE ON DELETE SET NULL GO ALTER TABLE [dbo].[os_Series] CHECK CONSTRAINT [FK_os_Series_os_Agency] GO ALTER TABLE [dbo].[os_Series] WITH CHECK ADD CONSTRAINT [FK_os_Series_os_AgencyContact] FOREIGN KEY([BookerId]) REFERENCES [dbo].[os_AgencyContact] ([Id]) ON UPDATE CASCADE ON DELETE SET NULL GO ALTER TABLE [dbo].[os_Series] CHECK CONSTRAINT [FK_os_Series_os_AgencyContact] GO 
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near the keyword 'ALTER'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+ClientConnectionId:bae92c1d-4bb1-4403-a5e5-c977c36a111e
+Error Number:102,State:1,Class:15
+2017-10-15 21:54:40,390 [42] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near the keyword 'ALTER'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+2017-10-15 22:40:03,668 [29] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute command: BEGIN TRANSACTION SET QUOTED_IDENTIFIER ON SET ARITHABORT ON SET NUMERIC_ROUNDABORT OFF SET CONCAT_NULL_YIELDS_NULL ON SET ANSI_NULLS ON SET ANSI_PADDING ON SET ANSI_WARNINGS ON COMMIT BEGIN TRANSACTION GO ALTER TABLE dbo.os_Series SET (LOCK_ESCALATION = TABLE) GO COMMIT BEGIN TRANSACTION GO ALTER TABLE dbo.os_Booking ADD SeriesId int NULL GO ALTER TABLE dbo.os_Booking ADD CONSTRAINT FK_os_Booking_os_Series FOREIGN KEY (SeriesId) REFERENCES dbo.os_Series(Id) ON UPDATE  NO ACTION ON DELETE  NO ACTION GO ALTER TABLE dbo.os_Booking SET (LOCK_ESCALATION = TABLE) GO COMMIT 
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+ClientConnectionId:5cb8ea27-40d0-4cca-be38-3635d51b0349
+Error Number:102,State:1,Class:15
+2017-10-15 22:40:03,696 [29] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.
+Incorrect syntax near 'GO'.

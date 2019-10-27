@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Portal.Modules.OrientalSails.Domain.vBookingRoomNull, Portal.Modules.OrientalSails" table="v_BookingRoomNull">
+		<id name="Id" type="Int32" unsaved-value="-1" access="readonly">
+			<column name="Id" length="4" sql-type="int" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<!--<many-to-one name="Room" class="Portal.Modules.OrientalSails.Domain.Room, Portal.Modules.OrientalSails">
+      <column name="RoomId" length="4" sql-type="int" not-null="false"/>
+    </many-to-one>
+    <many-to-one name="Booking" class="Portal.Modules.OrientalSails.Domain.Booking, Portal.Modules.OrientalSails">
+      <column name="BookId" length="4" sql-type="int" not-null="false"/>
+    </many-to-one>-->
+		<property name="StartDate" type="DateTime" access="readonly">
+			<column name="StartDate" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="BookingId" type="Int32" access="readonly">
+			<column name="BookingId" length="8" sql-type="int" not-null="false"/>
+		</property>
+		<property name="CruiseId" type="Int32" access="readonly">
+			<column name="CruiseId" length="8" sql-type="int" not-null="false"/>
+		</property>
+		<property name="RoomId" type="Int32" access="readonly">
+			<column name="RoomId" length="8" sql-type="int" not-null="false"/>
+		</property>
+		<property name="NumberOfDay" type="Int32" access="readonly">
+			<column name="NumberOfDay" length="8" sql-type="int" not-null="false"/>
+		</property>
+		<property name="TripDate" type="DateTime" access="readonly">
+			<column name="TripDate" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="EndDate" type="DateTime" access="readonly">
+			<column name="EndDate" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="Status" type="Portal.Modules.OrientalSails.Web.Util.StatusType, Portal.Modules.OrientalSails" access="readonly">
+			<column name="Status" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="Adult" type="Int32" access="readonly">
+			<column name="Adult" length="8" sql-type="int" not-null="false"/>
+		</property>
+		<property name="Child" type="Int32" access="readonly">
+			<column name="Child" length="8" sql-type="int" not-null="false"/>
+		</property>
+		<property name="IsCharter" type="Boolean" access="readonly">
+			<column name="IsCharter" length="1" sql-type="bit" not-null="false"/>
+		</property>
+		<property name="CustomBookingId" type="Int32" access="readonly">
+			<column name="CustomBookingId" length="8" sql-type="int" not-null="false"/>
+		</property>
+		<property name="Total" type="Double" access="readonly">
+			<column name="Total" length="8" sql-type="money" not-null="false"/>
+		</property>
+		<property name="HasBaby" type="Boolean" access="readonly">
+			<column name="HasBaby" length="1" sql-type="bit" not-null="true"/>
+		</property>
+		<property name="RName" type="string" access="readonly">
+			<column name="RName" length="1" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="RoomTypeId" type="Int32" access="readonly">
+			<column name="RoomTypeId" length="8" sql-type="int" not-null="false"/>
+		</property>
+		<property name="RTName" type="string" access="readonly">
+			<column name="RTName" length="1" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="RCName" type="string" access="readonly">
+			<column name="RCName" length="1" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="AgencyCode" type="string" access="readonly">
+			<column name="AgencyCode" length="1" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="AgencyName" type="string" access="readonly">
+			<column name="AgencyName" length="1" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="SaleName" type="string" access="readonly">
+			<column name="SaleName" length="1" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="TripCode" type="string" access="readonly">
+			<column name="TripCode" length="1" sql-type="nvarchar" not-null="false"/>
+		</property>
+	</class>
+</hibernate-mapping>

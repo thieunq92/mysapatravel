@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+  <class name="ContractValid" table="os_ContractValid" batch-size="10">
+    <cache usage="read-write"/>
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <property name="ValidFrom"/>
+    <property name="ValidTo"/>
+    <many-to-one name="Contract" column="ContractId" class="Contracts"/>
+    <bag name="ListContractPrice" inverse="true" batch-size="10">
+      <key column="ContractValidId"/>
+      <one-to-many class="ContractPrice"/>
+    </bag>
+  </class>
+</hibernate-mapping>

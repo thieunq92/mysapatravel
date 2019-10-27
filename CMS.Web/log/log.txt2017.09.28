@@ -1,0 +1,178 @@
+2017-09-28 15:49:22,701 [6] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+2017-09-28 15:49:22,715 [6] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Portal.Modules.OrientalSails.Domain.BookingRoom entry (don't flush the Session after an exception occurs)
+2017-09-28 15:49:50,925 [6] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+2017-09-28 15:56:54,127 [6] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Portal.Modules.OrientalSails.Domain.BookingRoom entry (don't flush the Session after an exception occurs)
+2017-09-28 16:12:31,548 [6] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+2017-09-28 16:12:55,706 [6] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Portal.Modules.OrientalSails.Domain.BookingRoom entry (don't flush the Session after an exception occurs)
+2017-09-28 16:13:42,085 [9] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+2017-09-28 16:13:58,946 [9] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Portal.Modules.OrientalSails.Domain.BookingRoom entry (don't flush the Session after an exception occurs)
+2017-09-28 16:15:01,891 [8] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+2017-09-28 16:15:20,121 [8] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Portal.Modules.OrientalSails.Domain.BookingRoom entry (don't flush the Session after an exception occurs)
+2017-09-28 16:16:56,622 [5] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+2017-09-28 16:16:56,623 [5] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Portal.Modules.OrientalSails.Domain.BookingRoom entry (don't flush the Session after an exception occurs)
+2017-09-28 16:28:30,815 [5] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] <(null)> - Could not synchronize database state with session
+NHibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing. Type: Portal.Modules.OrientalSails.Domain.BookingRoom, Entity: Portal.Modules.OrientalSails.Domain.BookingRoom
+   at NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   at NHibernate.Type.EntityType.GetIdentifier(Object value, ISessionImplementor session)
+   at NHibernate.Type.ManyToOneType.NullSafeSet(IDbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(IDbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.Recreate(IPersistentCollection collection, Object id, ISessionImplementor session)
+   at NHibernate.Action.CollectionRecreateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2017-09-28 16:29:54,052 [5] ERROR Castle.Services.Transaction.TransactionBase [(null)] <(null)> - Resource state: Castle.Facilities.NHibernateIntegration.Internal.ResourceAdapter
+2017-09-28 16:31:16,116 [12] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] <(null)> - Could not synchronize database state with session
+NHibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing. Type: Portal.Modules.OrientalSails.Domain.BookingRoom, Entity: Portal.Modules.OrientalSails.Domain.BookingRoom
+   at NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   at NHibernate.Type.EntityType.GetIdentifier(Object value, ISessionImplementor session)
+   at NHibernate.Type.ManyToOneType.NullSafeSet(IDbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(IDbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.Recreate(IPersistentCollection collection, Object id, ISessionImplementor session)
+   at NHibernate.Action.CollectionRecreateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2017-09-28 16:31:16,130 [12] ERROR Castle.Services.Transaction.TransactionBase [(null)] <(null)> - Resource state: Castle.Facilities.NHibernateIntegration.Internal.ResourceAdapter
+2017-09-28 16:33:16,578 [19] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+2017-09-28 16:33:16,589 [19] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Portal.Modules.OrientalSails.Domain.BookingRoom entry (don't flush the Session after an exception occurs)
+2017-09-28 16:47:27,257 [9] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+2017-09-28 16:47:38,916 [9] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Portal.Modules.OrientalSails.Domain.BookingRoom entry (don't flush the Session after an exception occurs)
+2017-09-28 16:48:58,111 [10] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.RoomClass#1]-Illegally attempted to associate a proxy with two open Sessions
+2017-09-28 16:48:58,122 [10] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Portal.Modules.OrientalSails.Domain.BookingRoom entry (don't flush the Session after an exception occurs)
+2017-09-28 16:55:26,025 [1] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2017-09-28 16:57:06,566 [13] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type NHibernate.Caches.SysCache.SysCacheProvider, NHibernate.Caches.SysCache.
+System.IO.FileNotFoundException: Could not load file or assembly 'NHibernate.Caches.SysCache' or one of its dependencies. The system cannot find the file specified.
+File name: 'NHibernate.Caches.SysCache'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2017-09-28 16:57:54,341 [14] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type CMS.Modules.TourManagement.Domain.ProviderTypeClass, CMS.Modules.TourManagement.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2017-09-28 17:00:02,891 [9] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type CMS.Modules.TourManagement.Domain.ProviderTypeClass, CMS.Modules.TourManagement.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2017-09-28 17:00:46,098 [15] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type CMS.Modules.TourManagement.Domain.ProviderTypeClass, CMS.Modules.TourManagement.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2017-09-28 17:01:32,282 [9] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type CMS.Modules.TourManagement.Domain.ProviderTypeClass, CMS.Modules.TourManagement.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2017-09-28 17:06:12,936 [23] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type CMS.Modules.TourManagement.Domain.ProviderTypeClass, CMS.Modules.TourManagement.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2017-09-28 17:06:46,346 [15] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type CMS.Modules.TourManagement.Domain.ProviderTypeClass, CMS.Modules.TourManagement.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+

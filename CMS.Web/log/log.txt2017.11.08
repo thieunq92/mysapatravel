@@ -1,0 +1,6 @@
+2017-11-08 15:24:22,834 [93] ERROR NHibernate.Impl.MultiCriteriaImpl [(null)] <(null)> - Error executing multi criteria : [SELECT distinct TOP (@p0) this_.Id as y0_ FROM os_Series this_ inner join os_Booking bookingali1_ on this_.Id=bookingali1_.SeriesId WHERE bookingali1_.Deleted = @p1 and bookingali1_.StartDate >= @p2 and not (bookingali1_.Status = @p3);
+]
+2017-11-08 16:42:44,793 [101] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.Agency#2491]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.Agency#2491]-Could not initialize proxy - no Session.
+2017-11-08 16:43:05,463 [68] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.Agency#2491]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.Agency#2491]-Could not initialize proxy - no Session.

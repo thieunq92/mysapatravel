@@ -1,0 +1,31 @@
+2019-05-27 01:22:17,936 [1] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - CMS.Core.Domain.User.hbm.xml(27,6): XML validation error: The element 'property' in namespace 'urn:nhibernate-mapping-2.2' has invalid child element 'property' in namespace 'urn:nhibernate-mapping-2.2'. List of possible elements expected: 'meta, column, formula, type' in namespace 'urn:nhibernate-mapping-2.2'.
+NHibernate.MappingException: CMS.Core.Domain.User.hbm.xml(27,6): XML validation error: The element 'property' in namespace 'urn:nhibernate-mapping-2.2' has invalid child element 'property' in namespace 'urn:nhibernate-mapping-2.2'. List of possible elements expected: 'meta, column, formula, type' in namespace 'urn:nhibernate-mapping-2.2'. ---> System.Xml.Schema.XmlSchemaValidationException: The element 'property' in namespace 'urn:nhibernate-mapping-2.2' has invalid child element 'property' in namespace 'urn:nhibernate-mapping-2.2'. List of possible elements expected: 'meta, column, formula, type' in namespace 'urn:nhibernate-mapping-2.2'.
+   --- End of inner exception stack trace ---
+2019-05-27 01:22:38,869 [1] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - CMS.Core.Domain.User.hbm.xml(27,6): XML validation error: The element 'property' in namespace 'urn:nhibernate-mapping-2.2' has invalid child element 'property' in namespace 'urn:nhibernate-mapping-2.2'. List of possible elements expected: 'meta, column, formula, type' in namespace 'urn:nhibernate-mapping-2.2'.
+NHibernate.MappingException: CMS.Core.Domain.User.hbm.xml(27,6): XML validation error: The element 'property' in namespace 'urn:nhibernate-mapping-2.2' has invalid child element 'property' in namespace 'urn:nhibernate-mapping-2.2'. List of possible elements expected: 'meta, column, formula, type' in namespace 'urn:nhibernate-mapping-2.2'. ---> System.Xml.Schema.XmlSchemaValidationException: The element 'property' in namespace 'urn:nhibernate-mapping-2.2' has invalid child element 'property' in namespace 'urn:nhibernate-mapping-2.2'. List of possible elements expected: 'meta, column, formula, type' in namespace 'urn:nhibernate-mapping-2.2'.
+   --- End of inner exception stack trace ---
+2019-05-27 01:23:19,220 [1] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - CMS.Core.Domain.User.hbm.xml(27,6): XML validation error: The element 'property' in namespace 'urn:nhibernate-mapping-2.2' has invalid child element 'property' in namespace 'urn:nhibernate-mapping-2.2'. List of possible elements expected: 'meta, column, formula, type' in namespace 'urn:nhibernate-mapping-2.2'.
+NHibernate.MappingException: CMS.Core.Domain.User.hbm.xml(27,6): XML validation error: The element 'property' in namespace 'urn:nhibernate-mapping-2.2' has invalid child element 'property' in namespace 'urn:nhibernate-mapping-2.2'. List of possible elements expected: 'meta, column, formula, type' in namespace 'urn:nhibernate-mapping-2.2'. ---> System.Xml.Schema.XmlSchemaValidationException: The element 'property' in namespace 'urn:nhibernate-mapping-2.2' has invalid child element 'property' in namespace 'urn:nhibernate-mapping-2.2'. List of possible elements expected: 'meta, column, formula, type' in namespace 'urn:nhibernate-mapping-2.2'.
+   --- End of inner exception stack trace ---
+2019-05-27 01:24:09,625 [7] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] <(null)> - Could not synchronize database state with session
+NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [CMS.Core.Domain.User#14]
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Check(Int32 rows, Object id, Int32 tableNumber, IExpectation expectation, IDbCommand statement)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-05-27 01:38:39,074 [24] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] <(null)> - Could not synchronize database state with session
+NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [CMS.Core.Domain.User#14]
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Check(Int32 rows, Object id, Int32 tableNumber, IExpectation expectation, IDbCommand statement)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)

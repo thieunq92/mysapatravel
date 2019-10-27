@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.HangFire.Domain"
+                   assembly="Portal.Modules.OrientalSails.HangFire">
+  <class name="AgencyContact" table="os_AgencyContact" batch-size="10">
+    <cache usage="read-write"/>
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <property name="Birthday"/>
+    <property name="Enabled"/>
+    <property name="Name"/>
+    <property name="Email"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+2019-05-25 11:17:41,016 [36] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute command: ALTER PROCEDURE [dbo].[sp_DashBoardManager_getAgenciesSendNoBookingLast3Month]	-- Add the parameters for the stored procedure hereASBEGIN	-- SET NOCOUNT ON added to prevent extra result sets from	-- interfering with SELECT statements.	SET NOCOUNT ON;	-- Insert statements for procedure here	DECLARE @last3month DATETIME 	SET		@last3month = DATEADD(MONTH, -3, GETDATE()) 	SELECT		lbba.LastBookingDate,		lbba.AgencyId,		lbba.AgencyName,		lmba.LastMeetingDate,		lmba.MeetingDetails 	FROM		dbo.v_DashBoardManager_LastBookingByAgency AS lbba 		LEFT OUTER JOIN			v_DashBoardManager_LastMeetingByAgency AS lmba 			ON lbba.AgencyId = lmba.AgencyId 	WHERE		lbba.LastBookingDate < @last3month	ORDER BY lbba.LastBookingDate ASCEND
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'sp_DashBoardManager_getAgenciesSendNoBookingLast3Month'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+ClientConnectionId:13a1b559-55f0-470a-b1b1-e24b77c57bd2
+Error Number:102,State:1,Class:15
+2019-05-25 11:17:41,047 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Incorrect syntax near 'sp_DashBoardManager_getAgenciesSendNoBookingLast3Month'.

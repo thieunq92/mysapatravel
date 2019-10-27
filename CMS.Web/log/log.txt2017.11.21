@@ -1,0 +1,30 @@
+2017-11-21 19:39:37,944 [61] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT moduletype0_.moduletypeid as modulety1_261_0_, moduletype0_.name as name261_0_, moduletype0_.friendlyname as friendly3_261_0_, moduletype0_.assemblyname as assembly4_261_0_, moduletype0_.classname as classname261_0_, moduletype0_.path as path261_0_, moduletype0_.editpath as editpath261_0_, moduletype0_.autoactivate as autoacti8_261_0_ FROM bitportal_moduletype moduletype0_ WHERE moduletype0_.moduletypeid=@p0
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:2e97f999-beef-4f0e-b1ff-8cb484c1977d
+Error Number:-2,State:0,Class:11
+2017-11-21 19:39:38,327 [96] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=308; handshake=13460; [Login] initialization=0; authentication=0; [Post-Login] complete=1522; 
+2017-11-21 19:40:03,843 [96] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-11-21 19:40:03,843 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-11-21 19:40:03,843 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-11-21 19:40:03,845 [96] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=308; handshake=13460; [Login] initialization=0; authentication=0; [Post-Login] complete=1522; 
+2017-11-21 19:40:03,845 [96] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-11-21 19:40:03,845 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-11-21 19:40:03,845 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out

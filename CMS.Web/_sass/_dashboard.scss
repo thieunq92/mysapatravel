@@ -1,0 +1,110 @@
+﻿.table__archivement {
+    tr {
+        td:last-of-type {
+            font-weight: bold;
+            text-align: right;
+        }
+
+        td {
+            padding-left: 0 !important;
+            padding-bottom: 0 !important;
+        }
+    }
+}
+
+.table__cruise-avaiability {
+    td.td__not-avaiable {
+        color: #fff;
+        background-color: #f15636;
+    }
+     td.td__no-room-using{
+        background-color: #ffff005e; 
+    }
+}
+
+.table__top10partner {
+    tr {
+        td {
+            padding-bottom: 0 !important;
+        }
+    }
+}
+
+.table__agencies-no-bookings {
+    tr {
+        td {
+            padding: 3px !important;
+            padding-bottom: 0 !important;
+        }
+    }
+}
+
+.col__today-booking {
+    padding-right: 50px;
+}
+
+.col__buttons {
+    width: 29%;
+}
+
+.col__golden-day {
+    .xdsoft_datetimepicker.xdsoft_inline {
+        border: none;
+        padding-right: 0;
+        width: 96%;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_datepicker {
+        margin: 0;
+        width: 100%;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_next, .xdsoft_datetimepicker .xdsoft_prev, .xdsoft_datetimepicker .xdsoft_today_button {
+        margin-left: 0;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_month {
+        width: 44%;
+        z-index:9;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_year {
+        width: 23%;
+        padding-left: 0;
+         z-index:9;
+    }
+
+    .col__golden-day .xdsoft_datetimepicker .xdsoft_next, .col__golden-day .xdsoft_datetimepicker .xdsoft_prev, .col__golden-day .xdsoft_datetimepicker .xdsoft_today_button {
+        position: relative;
+        width: 10px;
+    }
+
+    .golden-day__header {
+        position: absolute;
+        top: -25px;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_calendar td:hover, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+        background-color: #f5f5f5 !important;
+        color: #666 !important;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_highlighted_default:hover {
+        background: #ffe9d2 !important;
+        box-shadow: #ffb871 0 1px 4px 0 inset !important;
+        color: #000 !important;
+    }
+
+    .xdsoft_datepicker .xdsoft_calendar tr td.xdsoft_date.hightlight__golden-day,
+     .xdsoft_datepicker .xdsoft_calendar tr td.xdsoft_date.hightlight__golden-day:hover,
+     .xdsoft_datepicker .xdsoft_calendar tr td.xdsoft_datehightlight__golden-day:focus {
+        background: #f6f96299!important;
+        box-shadow: #f9ff00cc 0 1px 4px 0 inset!important;
+        color: #e41d1d!important;
+    }
+}
+.meeting-modal{
+    .meeting-modal__modal-dialog{
+        width: 800px;
+    }
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Portal.Modules.OrientalSails.Domain.vBookingRoom, Portal.Modules.OrientalSails" table="vBookingRoom">
+    <id name="Id" type="Int32" unsaved-value="-1">
+      <column name="Id" length="4" sql-type="int" not-null="true" unique="true"/>
+      <generator class="native" />
+    </id>
+    <!--<many-to-one name="Room" class="Portal.Modules.OrientalSails.Domain.Room, Portal.Modules.OrientalSails">
+      <column name="RoomId" length="4" sql-type="int" not-null="false"/>
+    </many-to-one>
+    <many-to-one name="Booking" class="Portal.Modules.OrientalSails.Domain.Booking, Portal.Modules.OrientalSails">
+      <column name="BookId" length="4" sql-type="int" not-null="false"/>
+    </many-to-one>-->
+    <property name="StartDate" type="DateTime">
+      <column name="StartDate" length="8" sql-type="datetime" not-null="false"/>
+    </property>
+    <property name="BookingId" type="Int32">
+      <column name="BookingId" length="8" sql-type="int" not-null="false"/>
+    </property>
+    <property name="CruiseId" type="Int32">
+      <column name="CruiseId" length="8" sql-type="int" not-null="false"/>
+    </property>
+    <property name="RoomId" type="Int32">
+      <column name="RoomId" length="8" sql-type="int" not-null="false"/>
+    </property>
+    <property name="NumberOfDay" type="Int32">
+      <column name="NumberOfDay" length="8" sql-type="int" not-null="false"/>
+    </property>
+    <property name="TripDate" type="DateTime">
+      <column name="TripDate" length="8" sql-type="datetime" not-null="false"/>
+    </property>
+    <property name="EndDate" type="DateTime">
+      <column name="EndDate" length="8" sql-type="datetime" not-null="false"/>
+    </property>
+    <property name="Status" type="Portal.Modules.OrientalSails.Web.Util.StatusType, Portal.Modules.OrientalSails">
+      <column name="Status" length="4" sql-type="int" not-null="false"/>
+    </property>
+    <property name="Adult" type="Int32">
+      <column name="Adult" length="8" sql-type="int" not-null="false"/>
+    </property>
+    <property name="Child" type="Int32">
+      <column name="Child" length="8" sql-type="int" not-null="false"/>
+    </property>
+    <property name="IsCharter" type="Boolean">
+      <column name="IsCharter" length="1" sql-type="bit" not-null="false"/>
+    </property>
+    <property name="CustomBookingId" type="Int32">
+      <column name="CustomBookingId" length="8" sql-type="int" not-null="false"/>
+    </property>
+    <property name="Total" type="Double">
+      <column name="Total" length="8" sql-type="money" not-null="false"/>
+    </property>
+    <property name="HasBaby" type="Boolean">
+      <column name="HasBaby" length="1" sql-type="bit" not-null="true"/>
+    </property>
+    <property name="RName" type="string">
+      <column name="RName" length="1" sql-type="nvarchar" not-null="false"/>
+    </property>
+    <property name="RTName" type="string">
+      <column name="RTName" length="1" sql-type="nvarchar" not-null="false"/>
+    </property>
+    <property name="RCName" type="string">
+      <column name="RCName" length="1" sql-type="nvarchar" not-null="false"/>
+    </property>
+    <property name="AgencyCode" type="string">
+      <column name="AgencyCode" length="1" sql-type="nvarchar" not-null="false"/>
+    </property>
+    <property name="AgencyName" type="string">
+      <column name="AgencyName" length="1" sql-type="nvarchar" not-null="false"/>
+    </property>
+    <property name="SaleName" type="string">
+      <column name="SaleName" length="1" sql-type="nvarchar" not-null="false"/>
+    </property>
+    <property name="TripCode" type="string">
+      <column name="TripCode" length="1" sql-type="nvarchar" not-null="false"/>
+    </property>
+  </class>
+</hibernate-mapping>

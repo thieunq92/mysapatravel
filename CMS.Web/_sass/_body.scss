@@ -1,0 +1,208 @@
+﻿.container__body{
+	min-height:85%
+}
+.wrapper.wrapper__body{
+	font-size:12px;
+	.row__search{
+		display:flex;
+		flow-flex:row nowrap;
+		justify-content:flex-end;
+		margin-bottom:25px;
+		.textbox{
+			height:26px;
+			border:1px solid #f0f0f0;
+			outline:none;
+			box-shadow:none;
+			.textbox__bookingcode{
+				width:176px;
+			}
+			.textbox__date{
+				width:176px;
+			}
+		}
+		.col__btn-search{
+			padding-left:11px;
+			.btn__search{
+				font-size:9.25px;
+				font-weight:900;
+				font-family:'Arial', sans-serif;
+				width:100%;
+				height:26px;
+				padding-left:21px;
+				background-size:20px 20px;
+				background-position:2px 1px;
+			}
+		}
+		
+	}
+	.form-group__btn-cruise{
+		.col__cruise{
+			width:100.2%;
+			.btn-group__cruise{
+				width:100;
+				a{
+					font-size:12.81px !important;
+				}
+				.btn__cruise{
+					height:41px;
+					padding-top:10px;
+					padding-right:5px;
+					padding-left:5px;
+					border:1px solid #f0f0f0;
+					border-left:none;
+					width:16.74%
+				}
+				.btn__cruise.cruiseActive{
+					color:#fff;
+				}
+				.btn__cruise:first-child{
+					border-left:1px solid #f0f0f0;
+				}
+			}	
+		}
+		text-transform:uppercase;
+		font-family:"Arial" sans-serif;
+		margin-bottom:20px;
+		
+	}
+	.row__btn-charter{
+		margin-bottom:28px;
+		.col__left-side{
+		}
+		.col__right-side{
+			display:flex;
+			flex-flow:row wrap;
+			justify-content:flex-end;
+		.btn__add-booking{
+				width:18%;
+				margin-left:7px;
+			}
+		}	
+	}
+	.row__date-label{
+		margin-bottom:16px;
+		font-size:17.08px;
+		.lbl__date{
+			font-size:10.68px;
+		}
+		.col__left-side{
+			width:48%;
+            padding-left:5.5%;
+		}
+        .col__right-side{
+            padding-left:5.5%;
+        }
+	}
+	.row__floor{
+		margin-bottom:28px;
+		.lbl__floor{
+			font-size:10.68px;
+		}
+		.col__left-side{
+			width:45.8%;
+			.rooms{
+				.rooms__room{
+					width:152px;
+					.room__container{
+						height:125px;
+						.room__name{
+							font-size:21.35px;
+						}
+						.room__bookingid{
+							font-size:12.81px;
+							text-align:right;
+							margin-top: -5px;
+							margin-right: 8px;
+						}
+						.room__partner{
+							font-size:10.5px;
+							font-weight:bold;
+							text-transform:capitalize
+						}
+						.room__customer-name{
+							margin-top:10px;
+							font-size: 9px;
+							font-style: italic;
+							text-transform: capitalize;
+							width: 80%;
+						}
+						.room__number-of-pax{
+							margin-top: 10px;
+							background-color: #d6d6d6;
+							font-size: 11px;
+							border-radius: 3px;
+							height: 15px;
+							width: 19px;
+							padding: 0 7px;
+							color: #111;
+						}
+					}				
+				}
+			}
+		}
+		.col__right-side{
+			position:relative;
+			left:26px;
+			width:45.8%;
+			.rooms{
+				padding-right:10px;	
+				.rooms__room{
+					width:146px;
+					.room__container{
+						height:125px;
+						.room__name{
+							font-size:21.35px;
+						}
+						.room__bookingid{
+							font-size:12.81px;
+							text-align:right;
+							margin-top: -5px;
+							margin-right: 8px;
+						}
+						.room__partner{
+							font-size:10.5px;
+							font-weight:bold;
+							text-transform:capitalize
+						}
+						.room__customer-name{
+							margin-top:10px;
+							font-size: 9px;
+							font-style: italic;
+							text-transform: capitalize;
+							width:80%
+						}
+						.room__number-of-pax{
+							margin-top: 10px;
+							background-color: #d6d6d6;
+							font-size: 11px;
+							border-radius: 3px;
+							height: 15px;
+							width: 19px;
+							padding: 0 7px;
+							color: #111;
+						}
+					}
+				}
+			}
+		}
+	}
+	.row__explaintation{
+		font-size:12px;
+		.col__bk-approved{
+			width:12%;
+		}
+		.col__bk-pending{
+			width:12%;
+		}
+		.col__bk3d{
+			width:12%;
+		}
+		.col__bk2d{
+			width:12%;
+		}
+		.col__missing-customer-infomation{
+			width:18%
+		}
+	}
+}
+

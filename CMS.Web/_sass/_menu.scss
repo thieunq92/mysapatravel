@@ -1,0 +1,30 @@
+﻿$menu-item-text-color-active:#ff4e00;
+$menu-item-bgcolor-active:#ffffff;
+.navbar{
+	height:auto!important;
+	vertical-align:middle;
+	.wrapper__menu{
+		height:100%;
+		padding-top:12px;
+		font-family:'Arial', sans-serif;
+		font-size:13.88px;
+		ul{
+			li{
+				a{
+					margin-right:8px;
+				}
+				a:active,a:focus,a:hover{
+					color:$menu-item-text-color-active;
+				}
+				ul.dropdown-menu{
+					left:-1px;
+					li{
+						a{
+							margin-right:0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

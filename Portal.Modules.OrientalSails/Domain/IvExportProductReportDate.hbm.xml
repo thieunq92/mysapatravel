@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+	<class name="IvExportProductReportDate" table="v_ReportProductExport" batch-size="10">
+		<cache usage="read-write"/>
+		<id name="RID">
+			<generator class="native" />
+		</id>
+		<property name="Name" type="String">
+			<column name="Name" length="50" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="StorageName" type="String">
+			<column name="StorageName" length="50" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="ExportDate" type="DateTime">
+			<column name="ExportDate" length="4" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="Total" type="Double">
+			<column name="Total" length="4" sql-type="money" not-null="false"/>
+		</property>
+		<property name="Unit" type="String">
+			<column name="Unit" length="50" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="CruiseId"/>
+
+		<property name="IsDebt" type="Boolean">
+			<column name="IsDebt" length="4" sql-type="bit" not-null="false"/>
+		</property>
+	</class>
+</hibernate-mapping>

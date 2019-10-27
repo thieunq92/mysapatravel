@@ -1,0 +1,944 @@
+2017-10-25 10:26:04,351 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:11 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:26:15,377 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #5) in 00:00:25 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:26:54,737 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:09 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:27:15,013 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:13 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:27:28,493 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:12 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:27:48,404 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:11 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:28:22,373 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:14 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:28:40,158 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:15 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:28:54,363 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:14 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:29:12,574 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:16 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:29:24,221 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:11 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:29:44,655 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:11 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:30:33,385 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:10 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:31:24,423 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:09 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:31:55,560 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:16 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:32:17,424 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:09 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:32:54,949 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:16 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:33:10,965 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #5) in 00:00:18 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:33:24,145 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:09 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:33:57,012 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:10 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:35:00,590 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:14 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:36:34,472 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:13 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:40:52,174 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:16 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:44:18,509 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:14 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:44:32,524 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #5) in 00:00:24 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 10:47:00,551 [BackgroundProcessingServer] ERROR Hangfire.Server.BackgroundProcessingServer [(null)] <(null)> - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt #4) in 00:00:15 seconds.
+System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at Hangfire.Common.JobHelper.ToJson(Object value)
+   at Hangfire.SqlServer.SqlServerConnection.<>c__DisplayClass16_0.<AnnounceServer>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.<>c__DisplayClass24_0.<UseConnection>b__0(DbConnection connection)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : Hangfire.Core, Version=1.6.17.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/Newtonsoft.Json/Newtonsoft.Json.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-25 14:00:01,025 [Worker #fbbede8b] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2017-10-25 14:13:01,783 [Worker #11776058] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2017-10-25 14:14:04,090 [Worker #11776058] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2017-10-25 14:15:09,672 [Worker #5a1395fc] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2017-10-25 14:17:47,217 [Worker #63da8710] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2017-10-25 14:20:42,921 [Worker #35c72734] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type Portal.Modules.OrientalSails.HangFire.Domain.AgencyContact, Portal.Modules.OrientalSails.HangFire.
+System.TypeLoadException: Could not load type 'Portal.Modules.OrientalSails.HangFire.Domain.AgencyContact' from assembly 'Portal.Modules.Orientalsails.HangFire, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+2017-10-25 14:20:42,999 [Worker #35c72734] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - Could not compile the mapping document: Portal.Modules.Orientalsails.HangFire.Domain.AgencyContact.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: Portal.Modules.Orientalsails.HangFire.Domain.AgencyContact.hbm.xml ---> NHibernate.MappingException: persistent class Portal.Modules.OrientalSails.HangFire.Domain.AgencyContact, Portal.Modules.OrientalSails.HangFire not found ---> System.TypeLoadException: Could not load type 'Portal.Modules.OrientalSails.HangFire.Domain.AgencyContact' from assembly 'Portal.Modules.Orientalsails.HangFire, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.ClassForName(String name)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForNameChecked(String name, Mappings mappings, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---

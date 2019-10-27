@@ -1,0 +1,315 @@
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.dll.config
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.pdb
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.pdb
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Core.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Windsor.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Core.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Web.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Services.Transaction.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\NHibernate.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Facilities.NHibernateIntegration.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\log4net.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Lucene.Net.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.Core.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.ServerControls.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Owin.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\itextsharp.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Microsoft.Owin.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\AjaxControlToolkit.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.SqlServer.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.HangFire.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\GemBox.Spreadsheet.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Aspose.Words.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\FredCK.FCKeditorV2.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\EPPlus.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Iesi.Collections.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Remotion.Data.Linq.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Core.pdb
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Web.pdb
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.pdb
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.Core.xml
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.ServerControls.pdb
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Microsoft.Owin.xml
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.SqlServer.xml
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.HangFire.pdb
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\EPPlus.xml
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\it\CMS.Web.resources.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\nl\CMS.Web.resources.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\sv\CMS.Web.resources.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\en-GB\Portal.Modules.OrientalSails.resources.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\vi\Portal.Modules.OrientalSails.resources.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\es\Hangfire.Core.resources.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\zh\Hangfire.Core.resources.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.dll.config
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.pdb
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Core.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Windsor.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Core.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Web.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Services.Transaction.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\NHibernate.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Facilities.NHibernateIntegration.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\log4net.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Lucene.Net.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.Core.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\CMS.ServerControls.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Owin.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\itextsharp.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Microsoft.Owin.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\AjaxControlToolkit.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.SqlServer.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.HangFire.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\GemBox.Spreadsheet.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Aspose.Words.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\FredCK.FCKeditorV2.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\EPPlus.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Iesi.Collections.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Remotion.Data.Linq.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Core.pdb
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Web.pdb
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.pdb
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.Core.xml
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\CMS.ServerControls.pdb
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Microsoft.Owin.xml
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.SqlServer.xml
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.HangFire.pdb
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\EPPlus.xml
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\it\CMS.Web.resources.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\nl\CMS.Web.resources.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\sv\CMS.Web.resources.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\en-GB\Portal.Modules.OrientalSails.resources.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\vi\Portal.Modules.OrientalSails.resources.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\es\Hangfire.Core.resources.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\zh\Hangfire.Core.resources.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.pdb
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\WebGrease.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\AutoMapper.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.ValueTuple.dll
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\AutoMapper.pdb
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\AutoMapper.xml
+C:\Users\Administrator\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.ValueTuple.xml
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\WebGrease.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\AutoMapper.dll
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\AutoMapper.pdb
+C:\Users\Administrator\Desktop\mo orientalsails\Portal.Modules.Orientalsails.API\bin\AutoMapper.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.csprojResolveAssemblyReference.cache
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.dll.config
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.pdb
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Core.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Windsor.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Core.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Web.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Services.Transaction.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\NHibernate.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Castle.Facilities.NHibernateIntegration.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\log4net.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Lucene.Net.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.Core.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.ServerControls.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Optimization.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Owin.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\itextsharp.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Microsoft.Owin.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\AjaxControlToolkit.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.SqlServer.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.HangFire.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.WebHost.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Net.Http.Formatting.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Newtonsoft.Json.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\GemBox.Spreadsheet.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Aspose.Words.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\FredCK.FCKeditorV2.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\EPPlus.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\AutoMapper.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Iesi.Collections.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Remotion.Data.Linq.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\WebGrease.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.ValueTuple.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Core.pdb
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.Web.pdb
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.pdb
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.Core.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\CMS.ServerControls.pdb
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Optimization.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Microsoft.Owin.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Hangfire.SqlServer.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.HangFire.pdb
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.WebHost.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Web.Http.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.Net.Http.Formatting.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Newtonsoft.Json.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\EPPlus.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\AutoMapper.pdb
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\AutoMapper.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\System.ValueTuple.xml
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\it\CMS.Web.resources.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\nl\CMS.Web.resources.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\sv\CMS.Web.resources.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\en-GB\Portal.Modules.OrientalSails.resources.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\vi\Portal.Modules.OrientalSails.resources.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\es\Hangfire.Core.resources.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\bin\zh\Hangfire.Core.resources.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.dll
+C:\Users\Thieu\Desktop\moorientalsails\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.pdb
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.dll.config
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.pdb
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Castle.Core.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\CMS.Core.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\CMS.Web.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Castle.Services.Transaction.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\NHibernate.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Castle.Facilities.NHibernateIntegration.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\log4net.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Hangfire.Core.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\CMS.ServerControls.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\System.Web.Optimization.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Owin.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\itextsharp.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Microsoft.Owin.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\AjaxControlToolkit.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Hangfire.SqlServer.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.HangFire.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\System.Web.Http.WebHost.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\System.Web.Http.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\System.Net.Http.Formatting.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Newtonsoft.Json.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\GemBox.Spreadsheet.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Aspose.Words.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\FredCK.FCKeditorV2.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\EPPlus.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\AutoMapper.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Iesi.Collections.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Remotion.Data.Linq.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\WebGrease.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\System.ValueTuple.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\CMS.Core.pdb
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\CMS.Web.pdb
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.pdb
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Hangfire.Core.xml
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\CMS.ServerControls.pdb
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\System.Web.Optimization.xml
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Microsoft.Owin.xml
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Hangfire.SqlServer.xml
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.HangFire.pdb
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\System.Web.Http.WebHost.xml
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\System.Web.Http.xml
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\System.Net.Http.Formatting.xml
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Newtonsoft.Json.xml
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\EPPlus.xml
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\AutoMapper.pdb
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\AutoMapper.xml
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\System.ValueTuple.xml
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\it\CMS.Web.resources.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\nl\CMS.Web.resources.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\sv\CMS.Web.resources.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\en-GB\Portal.Modules.OrientalSails.resources.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\vi\Portal.Modules.OrientalSails.resources.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\es\Hangfire.Core.resources.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\bin\zh\Hangfire.Core.resources.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.csprojResolveAssemblyReference.cache
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.pdb
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.dll.config
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.API.pdb
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Castle.Core.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\CMS.Core.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\CMS.Web.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Castle.Services.Transaction.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\NHibernate.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Castle.Facilities.NHibernateIntegration.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\log4net.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Lucene.Net.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Hangfire.Core.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\CMS.ServerControls.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\System.Web.Optimization.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Owin.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\itextsharp.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Microsoft.Owin.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\AjaxControlToolkit.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Hangfire.SqlServer.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.HangFire.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\System.Web.Http.WebHost.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\System.Web.Http.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\System.Net.Http.Formatting.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Newtonsoft.Json.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\GemBox.Spreadsheet.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Aspose.Words.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\FredCK.FCKeditorV2.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\EPPlus.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\AutoMapper.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Iesi.Collections.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Remotion.Data.Linq.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\WebGrease.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\System.ValueTuple.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\CMS.Core.pdb
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\CMS.Web.pdb
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.pdb
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Hangfire.Core.xml
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\CMS.ServerControls.pdb
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\System.Web.Optimization.xml
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Microsoft.Owin.xml
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Hangfire.SqlServer.xml
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Portal.Modules.Orientalsails.HangFire.pdb
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\System.Web.Http.WebHost.xml
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\System.Web.Http.xml
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\System.Net.Http.Formatting.xml
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Newtonsoft.Json.xml
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\EPPlus.xml
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\AutoMapper.pdb
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\AutoMapper.xml
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\System.ValueTuple.xml
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\it\CMS.Web.resources.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\nl\CMS.Web.resources.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\sv\CMS.Web.resources.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\en-GB\Portal.Modules.OrientalSails.resources.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\vi\Portal.Modules.OrientalSails.resources.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\es\Hangfire.Core.resources.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\bin\zh\Hangfire.Core.resources.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.csprojResolveAssemblyReference.cache
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.dll
+C:\Users\Thieu\Desktop\mysapatravel\Portal.Modules.Orientalsails.API\obj\Debug\Portal.Modules.Orientalsails.API.pdb

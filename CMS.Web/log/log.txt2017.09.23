@@ -1,0 +1,21 @@
+2017-09-23 18:03:10,559 [6] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT this_.userid as userid17_0_, this_.updatetimestamp as updateti2_17_0_, this_.username as username17_0_, this_.password as password17_0_, this_.firstname as firstname17_0_, this_.lastname as lastname17_0_, this_.email as email17_0_, this_.website as website17_0_, this_.timezone as timezone17_0_, this_.isactive as isactive17_0_, this_.lastlogin as lastlogin17_0_, this_.lastip as lastip17_0_, this_.inserttimestamp as insertt13_17_0_, this_.ConnectionId as Connect14_17_0_, this_.ConnectionIds as Connect15_17_0_, this_.FirstName +' '+ this_.LastName as formula0_0_ FROM bitportal_user this_ WHERE this_.username = @p0 and this_.password = @p1
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ConnectionIds'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:72d946e7-cba1-4f43-b9cc-d080a336270c
+2017-09-23 18:03:10,682 [6] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'ConnectionIds'.
+2017-09-23 18:03:10,685 [6] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'ConnectionIds'.
+2017-09-23 18:03:10,686 [6] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'ConnectionIds'.
+2017-09-23 18:03:10,687 [6] ERROR CMS.Web.HttpModules.AuthenticationModule [(null)] <(null)> - An error occured while logging in user corporate1.

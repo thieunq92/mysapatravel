@@ -1,0 +1,33 @@
+2017-08-02 15:29:10,302 [1] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type NHibernate.Caches.SysCache.SysCacheProvider, NHibernate.Caches.SysCache.
+System.IO.FileNotFoundException: Could not load file or assembly 'NHibernate.Caches.SysCache' or one of its dependencies. The system cannot find the file specified.
+File name: 'NHibernate.Caches.SysCache'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+=== Pre-bind state information ===
+LOG: DisplayName = NHibernate.Caches.SysCache
+ (Partial)
+WRN: Partial binding information was supplied for an assembly:
+WRN: Assembly Name: NHibernate.Caches.SysCache | Domain ID: 3
+WRN: A partial bind occurs when only part of the assembly display name is provided.
+WRN: This might result in the binder loading an incorrect assembly.
+WRN: It is recommended to provide a fully specified textual identity for the assembly,
+WRN: that consists of the simple name, version, culture, and public key token.
+WRN: See whitepaper http://go.microsoft.com/fwlink/?LinkId=109270 for more information and common solutions to this issue.
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-.net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-.net45\CMS.Web\bin
+Calling assembly : NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-.net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Policy not being applied to reference at this time (private, custom, partial, or location-based assembly bind).
+LOG: The same bind was seen before, and was failed with hr = 0x80070002.
+
+2017-08-02 15:58:25,776 [13] ERROR Castle.Services.Transaction.TransactionBase [(null)] <(null)> - Resource state: Castle.Facilities.NHibernateIntegration.Internal.ResourceAdapter

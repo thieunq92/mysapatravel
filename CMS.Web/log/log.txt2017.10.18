@@ -1,0 +1,187 @@
+2017-10-18 15:57:59,942 [1] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type NHibernate.Caches.SysCache.SysCacheProvider, NHibernate.Caches.SysCache.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : NHibernate.Caches.SysCache, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=6876f2ea66c9f443.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 3.0.0.4000 redirected to 3.0.0.4000.
+LOG: Post-policy reference: NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate/NHibernate.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/NHibernate.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Minor Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-18 15:58:52,171 [1] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type NHibernate.Caches.SysCache.SysCacheProvider, NHibernate.Caches.SysCache.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : NHibernate.Caches.SysCache, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=6876f2ea66c9f443.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate/NHibernate.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/NHibernate.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Minor Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-18 15:59:31,390 [1] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type NHibernate.Caches.SysCache.SysCacheProvider, NHibernate.Caches.SysCache.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : NHibernate.Caches.SysCache, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=6876f2ea66c9f443.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate/NHibernate.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/NHibernate.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Minor Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-18 16:05:37,147 [1] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type NHibernate.Caches.SysCache.SysCacheProvider, NHibernate.Caches.SysCache.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : NHibernate.Caches.SysCache, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=6876f2ea66c9f443.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate/NHibernate.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/NHibernate.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Minor Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-18 16:20:07,188 [6] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : NHibernate.ByteCode.Castle, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate/NHibernate.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/NHibernate.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Minor Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-10-18 16:22:31,739 [46] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle.
+System.IO.FileLoadException: Could not load file or assembly 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+Assembly manager loaded from:  C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+Running under executable  C:\Program Files (x86)\IIS Express\iisexpress.exe
+--- A detailed error log follows. 
+
+=== Pre-bind state information ===
+LOG: DisplayName = NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+ (Fully-specified)
+LOG: Appbase = file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/
+LOG: Initial PrivatePath = D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\bin
+Calling assembly : NHibernate.ByteCode.Castle, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Web\web.config
+LOG: Using host configuration file: C:\Users\thieu\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/1efefef9/c6c1465b/NHibernate/NHibernate.DLL.
+LOG: Attempting download of new URL file:///D:/Workspace/Visual Studio 2013 Projects/orientalsails-net45/CMS.Web/bin/NHibernate.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Minor Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Portal.Modules.OrientalSails" namespace="Portal.Modules.OrientalSails.Domain" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="QRoomPrice" table="os_QRoomPrice" lazy="true" >
+    <id name="Id" column="Id">
+      <generator class="identity" />
+    </id>
+    <many-to-one name="QQuotation" column="QuotationId" class="QQuotation"/>
+    <many-to-one name="Group" column="GroupId" class="QCruiseGroup"/>
+    
+    <many-to-one name="QRoomClass" column="QRoomClassId" class="QRoomClass"/>
+
+    <many-to-one name="QRoomType" column="QRoomTypeId" class="QRoomType"/>
+    <property name="Trip">
+      <column name="Trip" sql-type="int" not-null="false" />
+    </property>
+    <property name="Pricevnd">
+      <column name="PriceVND" sql-type="money" not-null="false" />
+    </property>
+    <property name="Priceusd">
+      <column name="PriceUSD" sql-type="money" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

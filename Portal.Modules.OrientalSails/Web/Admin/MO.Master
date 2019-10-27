@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MO.Master.cs" MasterPageFile="MO-Main.Master"
+    Inherits="Portal.Modules.OrientalSails.Web.Admin.MO" %>
+<%@ MasterType VirtualPath="MO-Main.Master" %>
+<asp:Content ID="HeadMain" ContentPlaceHolderID="HeadMain" runat="server">
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="ScriptManagerMain" ContentPlaceHolderID="ScriptManagerMain" runat="server">
+    <asp:ScriptManager ID="CommonScriptManager" runat="server" AsyncPostBackTimeout="120">
+    </asp:ScriptManager>
+    <asp:UpdateProgress ID="updateProcessAdmin" runat="server">
+        <ProgressTemplate>
+            <div id="overlay-wholepage">
+                <div id="image">
+                    <img src="/Images/loading.gif" alt="loading" />
+                </div>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+</asp:Content>
+<asp:Content ID="AdminContentMain" ContentPlaceHolderID="AdminContentMain" runat="server">
+    <asp:ContentPlaceHolder ID="AdminContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="ScriptsMain" ContentPlaceHolderID="ScriptsMain" runat="server">
+    <asp:ContentPlaceHolder ID="Scripts" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

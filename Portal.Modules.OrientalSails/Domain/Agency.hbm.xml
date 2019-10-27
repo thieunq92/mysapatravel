@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+  <class name="Agency" table="os_Agency" batch-size="10" discriminator-value="null">
+    <cache usage="read-write"/>
+    <id name="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <discriminator column="AgencyType"/>
+    <property name="Name"/>
+    <property name="Phone"/>
+    <property name="Address"/>
+    <property name="Fax"/>
+    <property name="TaxCode"/>
+    <property name="Email"/>
+    <property name="ContractStatus"/>
+    <property name="Description"/>
+    <property name="Contract"/>
+    <property name="Accountant"/>
+    <property name="PaymentPeriod" type="PaymentPeriodClass"/>
+    <property name="CreatedDate"/>
+    <property name="ModifiedDate"/>
+    <property name="SaleStart"/>
+    <property name="Deleted"/>
+    <property name="TradingName"/>
+    <property name="Representative"/>
+    <property name="RepresentativePosition"/>
+    <property name="Contact"/>
+    <property name="ContactAddress"/>
+    <property name="ContactPosition"/>
+    <property name="ContactEmail"/>
+    <property name="Website"/>
+    <property name="ContractAddress"/>
+    <property name="ContractPhone"/>
+    <property name="ContractTaxCode"/>
+    <many-to-one name="Role" column="RoleId" class="CMS.Core.Domain.Role, CMS.Core"/>
+    <many-to-one name="Sale" column="SaleId" class="CMS.Core.Domain.User, CMS.Core"/>
+    <many-to-one name="Location" column="LocationId" class="AgencyLocation"/>
+    <many-to-one name="CreatedBy" column="CreatedBy" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore"/>
+    <many-to-one name="ModifiedBy" column="ModifiedBy" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore"/>
+    <many-to-one name="QAgentlevel" column="AgentLevelId" class="QAgentLevel" not-found="ignore"/>
+
+    <bag name="Users" inverse = "true" table="os_AgencyUser" batch-size="10">
+      <key column="AgencyId"/>
+      <many-to-many column="UserId"
+			   class="CMS.Core.Domain.User, CMS.Core"/>
+    </bag>
+    <bag name="Bookings" inverse="true" cascade="all-delete-orphan" batch-size="10">
+      <key column="AgencyId"/>
+      <one-to-many class="Booking"/>
+    </bag>
+    <bag name="History" inverse="true" cascade="all-delete-orphan" order-by="ApplyFrom desc" batch-size="10">
+      <key column="AgencyId"/>
+      <one-to-many class="AgencyHistory"/>
+    </bag>
+    <bag name="ListSeries" inverse="true" batch-size="10">
+      <key column="AgencyId"/>
+      <one-to-many class="Series"/>
+    </bag>
+    <bag name="ListExpense" inverse="true" batch-size="10" cascade="all-delete-orphan">
+      <key column="Guide_AgencyId"/>
+      <one-to-many class="Expense"/>
+    </bag>
+    <subclass name="Guide" discriminator-value="Guide">
+      <bag name="BusByDatesGuides" batch-size="10" cascade="all-delete-orphan" inverse="true">
+        <key column="AgencyId"/>
+        <one-to-many class="BusByDateGuide"/>
+      </bag>
+    </subclass>
+  </class>
+</hibernate-mapping>

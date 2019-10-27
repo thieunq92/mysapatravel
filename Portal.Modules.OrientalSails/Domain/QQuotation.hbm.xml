@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Portal.Modules.OrientalSails" namespace="Portal.Modules.OrientalSails.Domain" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="QQuotation" table="q_Quotation" lazy="true" >
+    <id name="Id" column="Id">
+      <generator class="identity" />
+    </id>
+    <property name="Validfrom">
+      <column name="ValidFrom" sql-type="datetime" not-null="false" />
+    </property>
+    <property name="Validto">
+      <column name="ValidTo" sql-type="datetime" not-null="false" />
+    </property>
+    <many-to-one name="GroupCruise" column="GroupCruiseId" class="QCruiseGroup"/>
+
+    <property name="Enable">
+      <column name="Enable" sql-type="bit" not-null="false" />
+    </property>
+    <property name="ModifiedDate"/>
+    <property name="CreatedDate"/>
+    <many-to-one name="CreatedBy" column="CreatedBy" class="CMS.Core.Domain.User, CMS.Core"/>
+    <many-to-one name="ModifiedBy" column="ModifiedBy" class="CMS.Core.Domain.User, CMS.Core"/>
+  </class>
+</hibernate-mapping>

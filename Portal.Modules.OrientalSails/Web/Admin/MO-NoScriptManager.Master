@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MO-NoScriptManager.master.cs" Inherits="Portal.Modules.OrientalSails.Web.Admin.MO_NoScriptManager" 
+    MasterPageFile="MO-Main.Master" %>
+<%@ MasterType VirtualPath="MO-Main.Master" %>
+<asp:Content ID="HeadMain" ContentPlaceHolderID="HeadMain" runat="server">
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="AdminContentMain" ContentPlaceHolderID="AdminContentMain" runat="server">
+    <asp:ContentPlaceHolder ID="AdminContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="ScriptsMain" ContentPlaceHolderID="ScriptsMain" runat="server">
+    <asp:ContentPlaceHolder ID="Scripts" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+  <class name="Quotation" table="os_Quotation" batch-size="10">
+    <cache usage="read-write"/>
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <property name="CreatedDate"/>
+    <property name="ValidFrom"/>
+    <property name="ValidTo"/>
+    <property name="Name"/>
+    <property name="Currency"/>
+    <many-to-one name="CreatedBy" column="CreatedBy" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore"/>
+    <bag name="ListQuotationPrice" inverse="true" batch-size="10">
+      <key column="QuotationId"/>
+      <one-to-many class="QuotationPrice"/>
+    </bag>
+    <bag name="ListAgencyContract" inverse="true" batch-size="10">
+      <key column="QuotationId"/>
+      <one-to-many class="AgencyContract"/>
+    </bag>
+  </class>
+</hibernate-mapping>

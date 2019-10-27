@@ -1,0 +1,105 @@
+2018-04-01 19:04:03,983 [6] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: INSERT INTO os_AgencyContract (ContractName, ExpiredDate, ContractFile, FileName, FilePath, CreateDate, Received, AgencyId) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7); select SCOPE_IDENTITY()
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2018-04-01 19:04:04,030 [6] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Portal.Modules.OrientalSails.Domain.AgencyContract entry (don't flush the Session after an exception occurs)
+2018-04-01 19:05:02,863 [5] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: INSERT INTO os_AgencyContract (ContractName, ExpiredDate, ContractFile, FileName, FilePath, CreateDate, Received, AgencyId) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7); select SCOPE_IDENTITY()
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2018-04-01 19:05:16,411 [5] ERROR NHibernate.AssertionFailure [(null)] <(null)> - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Portal.Modules.OrientalSails.Domain.AgencyContract entry (don't flush the Session after an exception occurs)
+2018-04-01 20:23:03,074 [99] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT this_.Id as Id186_0_, this_.ContractName as Contract2_186_0_, this_.ExpiredDate as ExpiredD3_186_0_, this_.ContractFile as Contract4_186_0_, this_.FileName as FileName186_0_, this_.FilePath as FilePath186_0_, this_.CreateDate as CreateDate186_0_, this_.Received as Received186_0_, this_.ContractTemplate as Contract9_186_0_, this_.ContractValidFromDate as Contrac10_186_0_, this_.ContractValidToDate as Contrac11_186_0_, this_.QuotationTemplate as Quotati12_186_0_, this_.QuotationValidFromDate as Quotati13_186_0_, this_.QuotationValidToDate as Quotati14_186_0_, this_.AgencyId as AgencyId186_0_ FROM os_AgencyContract this_ WHERE this_.AgencyId = @p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ContractTemplate'.
+Invalid column name 'ContractValidFromDate'.
+Invalid column name 'ContractValidToDate'.
+Invalid column name 'QuotationTemplate'.
+Invalid column name 'QuotationValidFromDate'.
+Invalid column name 'QuotationValidToDate'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:e8e88e53-4384-4679-9197-514f0c99c308
+Error Number:207,State:1,Class:16
+2018-04-01 20:23:03,180 [99] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'ContractTemplate'.
+Invalid column name 'ContractValidFromDate'.
+Invalid column name 'ContractValidToDate'.
+Invalid column name 'QuotationTemplate'.
+Invalid column name 'QuotationValidFromDate'.
+Invalid column name 'QuotationValidToDate'.
+2018-04-01 20:23:03,182 [99] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'ContractTemplate'.
+Invalid column name 'ContractValidFromDate'.
+Invalid column name 'ContractValidToDate'.
+Invalid column name 'QuotationTemplate'.
+Invalid column name 'QuotationValidFromDate'.
+Invalid column name 'QuotationValidToDate'.
+2018-04-01 20:23:03,182 [99] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'ContractTemplate'.
+Invalid column name 'ContractValidFromDate'.
+Invalid column name 'ContractValidToDate'.
+Invalid column name 'QuotationTemplate'.
+Invalid column name 'QuotationValidFromDate'.
+Invalid column name 'QuotationValidToDate'.
+2018-04-01 20:23:03,183 [99] ERROR CMS.Core.DataAccess.CommonDao [(null)] <(null)> - could not execute query
+[ SELECT this_.Id as Id186_0_, this_.ContractName as Contract2_186_0_, this_.ExpiredDate as ExpiredD3_186_0_, this_.ContractFile as Contract4_186_0_, this_.FileName as FileName186_0_, this_.FilePath as FilePath186_0_, this_.CreateDate as CreateDate186_0_, this_.Received as Received186_0_, this_.ContractTemplate as Contract9_186_0_, this_.ContractValidFromDate as Contrac10_186_0_, this_.ContractValidToDate as Contrac11_186_0_, this_.QuotationTemplate as Quotati12_186_0_, this_.QuotationValidFromDate as Quotati13_186_0_, this_.QuotationValidToDate as Quotati14_186_0_, this_.AgencyId as AgencyId186_0_ FROM os_AgencyContract this_ WHERE this_.AgencyId = @p0 ]
+Positional parameters:  #0>Castle.Proxies.AgencyProxy
+[SQL: SELECT this_.Id as Id186_0_, this_.ContractName as Contract2_186_0_, this_.ExpiredDate as ExpiredD3_186_0_, this_.ContractFile as Contract4_186_0_, this_.FileName as FileName186_0_, this_.FilePath as FilePath186_0_, this_.CreateDate as CreateDate186_0_, this_.Received as Received186_0_, this_.ContractTemplate as Contract9_186_0_, this_.ContractValidFromDate as Contrac10_186_0_, this_.ContractValidToDate as Contrac11_186_0_, this_.QuotationTemplate as Quotati12_186_0_, this_.QuotationValidFromDate as Quotati13_186_0_, this_.QuotationValidToDate as Quotati14_186_0_, this_.AgencyId as AgencyId186_0_ FROM os_AgencyContract this_ WHERE this_.AgencyId = @p0]
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT this_.Id as Id186_0_, this_.ContractName as Contract2_186_0_, this_.ExpiredDate as ExpiredD3_186_0_, this_.ContractFile as Contract4_186_0_, this_.FileName as FileName186_0_, this_.FilePath as FilePath186_0_, this_.CreateDate as CreateDate186_0_, this_.Received as Received186_0_, this_.ContractTemplate as Contract9_186_0_, this_.ContractValidFromDate as Contrac10_186_0_, this_.ContractValidToDate as Contrac11_186_0_, this_.QuotationTemplate as Quotati12_186_0_, this_.QuotationValidFromDate as Quotati13_186_0_, this_.QuotationValidToDate as Quotati14_186_0_, this_.AgencyId as AgencyId186_0_ FROM os_AgencyContract this_ WHERE this_.AgencyId = @p0 ]
+Positional parameters:  #0>Castle.Proxies.AgencyProxy
+[SQL: SELECT this_.Id as Id186_0_, this_.ContractName as Contract2_186_0_, this_.ExpiredDate as ExpiredD3_186_0_, this_.ContractFile as Contract4_186_0_, this_.FileName as FileName186_0_, this_.FilePath as FilePath186_0_, this_.CreateDate as CreateDate186_0_, this_.Received as Received186_0_, this_.ContractTemplate as Contract9_186_0_, this_.ContractValidFromDate as Contrac10_186_0_, this_.ContractValidToDate as Contrac11_186_0_, this_.QuotationTemplate as Quotati12_186_0_, this_.QuotationValidFromDate as Quotati13_186_0_, this_.QuotationValidToDate as Quotati14_186_0_, this_.AgencyId as AgencyId186_0_ FROM os_AgencyContract this_ WHERE this_.AgencyId = @p0] ---> System.Data.SqlClient.SqlException: Invalid column name 'ContractTemplate'.
+Invalid column name 'ContractValidFromDate'.
+Invalid column name 'ContractValidToDate'.
+Invalid column name 'QuotationTemplate'.
+Invalid column name 'QuotationValidFromDate'.
+Invalid column name 'QuotationValidToDate'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at CMS.Core.DataAccess.CommonDao.GetObjectByCriterion(Type objectType, ICriterion criterion, Order[] orders) in e:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Core\DataAccess\CommonDao.cs:line 152

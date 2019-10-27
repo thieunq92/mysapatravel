@@ -1,0 +1,548 @@
+2017-12-14 09:55:36,379 [39] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: select series0_.Id as Id456_, series0_.SeriesCode as SeriesCode456_, series0_.CutoffDate as CutoffDate456_, series0_.NoOfDays as NoOfDays456_, series0_.CreatedDate as CreatedD5_456_, series0_.LastEditedDate as LastEdit6_456_, series0_.SpecialRequest as SpecialR7_456_, series0_.CreatedBy as CreatedBy456_, series0_.LastEditedBy as LastEdit9_456_, series0_.AgencyId as AgencyId456_, series0_.BookerId as BookerId456_ from os_Series series0_ where lower(series0_.SeriesCode)=@p0;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:f908773f-5530-4141-8bf5-87ff36a25b16
+Error Number:207,State:1,Class:16
+2017-12-14 09:55:58,778 [52] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: select series0_.Id as Id456_, series0_.SeriesCode as SeriesCode456_, series0_.CutoffDate as CutoffDate456_, series0_.NoOfDays as NoOfDays456_, series0_.CreatedDate as CreatedD5_456_, series0_.LastEditedDate as LastEdit6_456_, series0_.SpecialRequest as SpecialR7_456_, series0_.CreatedBy as CreatedBy456_, series0_.LastEditedBy as LastEdit9_456_, series0_.AgencyId as AgencyId456_, series0_.BookerId as BookerId456_ from os_Series series0_ where lower(series0_.SeriesCode)=@p0;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:aaa4de8c-cf4b-49c0-992e-ac3be0c64b15
+Error Number:207,State:1,Class:16
+2017-12-14 09:58:46,309 [39] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: select series0_.Id as Id456_, series0_.SeriesCode as SeriesCode456_, series0_.CutoffDate as CutoffDate456_, series0_.NoOfDays as NoOfDays456_, series0_.CreatedDate as CreatedD5_456_, series0_.LastEditedDate as LastEdit6_456_, series0_.SpecialRequest as SpecialR7_456_, series0_.CreatedBy as CreatedBy456_, series0_.LastEditedBy as LastEdit9_456_, series0_.AgencyId as AgencyId456_, series0_.BookerId as BookerId456_ from os_Series series0_ where lower(series0_.SeriesCode)=@p0;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:8403ae45-f129-417f-b178-11789f697498
+Error Number:207,State:1,Class:16
+2017-12-14 09:58:46,309 [42] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: select series0_.Id as Id806_, series0_.SeriesCode as SeriesCode806_, series0_.CutoffDate as CutoffDate806_, series0_.NoOfDays as NoOfDays806_, series0_.CreatedDate as CreatedD5_806_, series0_.LastEditedDate as LastEdit6_806_, series0_.SpecialRequest as SpecialR7_806_, series0_.CreatedBy as CreatedBy806_, series0_.LastEditedBy as LastEdit9_806_, series0_.AgencyId as AgencyId806_, series0_.BookerId as BookerId806_ from os_Series series0_ where lower(series0_.SeriesCode)=@p0;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:29fc0ed6-7a46-4977-91c3-076d01327fd1
+Error Number:207,State:1,Class:16
+2017-12-14 09:58:46,309 [79] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: select series0_.Id as Id476_, series0_.SeriesCode as SeriesCode476_, series0_.CutoffDate as CutoffDate476_, series0_.NoOfDays as NoOfDays476_, series0_.CreatedDate as CreatedD5_476_, series0_.LastEditedDate as LastEdit6_476_, series0_.SpecialRequest as SpecialR7_476_, series0_.CreatedBy as CreatedBy476_, series0_.LastEditedBy as LastEdit9_476_, series0_.AgencyId as AgencyId476_, series0_.BookerId as BookerId476_ from os_Series series0_ where lower(series0_.SeriesCode)=@p0;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:e64ace81-c9ec-4fa1-a78e-9b50978b778b
+Error Number:207,State:1,Class:16
+2017-12-14 09:58:46,314 [12] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: select series0_.Id as Id863_, series0_.SeriesCode as SeriesCode863_, series0_.CutoffDate as CutoffDate863_, series0_.NoOfDays as NoOfDays863_, series0_.CreatedDate as CreatedD5_863_, series0_.LastEditedDate as LastEdit6_863_, series0_.SpecialRequest as SpecialR7_863_, series0_.CreatedBy as CreatedBy863_, series0_.LastEditedBy as LastEdit9_863_, series0_.AgencyId as AgencyId863_, series0_.BookerId as BookerId863_ from os_Series series0_ where lower(series0_.SeriesCode)=@p0;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:1b124be5-2819-4ec4-83c4-c8496c8014f7
+Error Number:207,State:1,Class:16
+2017-12-14 09:59:29,055 [12] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT TOP (@p0) this_.Id as Id863_0_, this_.SeriesCode as SeriesCode863_0_, this_.CutoffDate as CutoffDate863_0_, this_.NoOfDays as NoOfDays863_0_, this_.CreatedDate as CreatedD5_863_0_, this_.LastEditedDate as LastEdit6_863_0_, this_.SpecialRequest as SpecialR7_863_0_, this_.CreatedBy as CreatedBy863_0_, this_.LastEditedBy as LastEdit9_863_0_, this_.AgencyId as AgencyId863_0_, this_.BookerId as BookerId863_0_ FROM os_Series this_ WHERE this_.Id in (SELECT distinct this_0_.Id as y0_ FROM os_Series this_0_ inner join os_Agency agencyalia1_ on this_0_.AgencyId=agencyalia1_.Id inner join os_Booking bookingali2_ on this_0_.Id=bookingali2_.SeriesId) ORDER BY this_.Id desc;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:c04869ea-07f3-43db-af1f-6ec11cc81a47
+Error Number:207,State:1,Class:16
+2017-12-14 10:00:39,634 [47] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT TOP (@p0) this_.Id as Id863_0_, this_.SeriesCode as SeriesCode863_0_, this_.CutoffDate as CutoffDate863_0_, this_.NoOfDays as NoOfDays863_0_, this_.CreatedDate as CreatedD5_863_0_, this_.LastEditedDate as LastEdit6_863_0_, this_.SpecialRequest as SpecialR7_863_0_, this_.CreatedBy as CreatedBy863_0_, this_.LastEditedBy as LastEdit9_863_0_, this_.AgencyId as AgencyId863_0_, this_.BookerId as BookerId863_0_ FROM os_Series this_ WHERE this_.Id in (SELECT distinct this_0_.Id as y0_ FROM os_Series this_0_ inner join os_Agency agencyalia1_ on this_0_.AgencyId=agencyalia1_.Id inner join os_Booking bookingali2_ on this_0_.Id=bookingali2_.SeriesId) ORDER BY this_.Id desc;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:28df5489-a617-4888-9670-ba9daa3be867
+Error Number:207,State:1,Class:16
+2017-12-14 10:00:45,856 [8] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT TOP (@p0) this_.Id as Id863_0_, this_.SeriesCode as SeriesCode863_0_, this_.CutoffDate as CutoffDate863_0_, this_.NoOfDays as NoOfDays863_0_, this_.CreatedDate as CreatedD5_863_0_, this_.LastEditedDate as LastEdit6_863_0_, this_.SpecialRequest as SpecialR7_863_0_, this_.CreatedBy as CreatedBy863_0_, this_.LastEditedBy as LastEdit9_863_0_, this_.AgencyId as AgencyId863_0_, this_.BookerId as BookerId863_0_ FROM os_Series this_ WHERE this_.Id in (SELECT distinct this_0_.Id as y0_ FROM os_Series this_0_ inner join os_Agency agencyalia1_ on this_0_.AgencyId=agencyalia1_.Id inner join os_Booking bookingali2_ on this_0_.Id=bookingali2_.SeriesId) ORDER BY this_.Id desc;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:28df5489-a617-4888-9670-ba9daa3be867
+Error Number:207,State:1,Class:16
+2017-12-14 10:01:00,213 [12] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT TOP (@p0) this_.Id as Id863_0_, this_.SeriesCode as SeriesCode863_0_, this_.CutoffDate as CutoffDate863_0_, this_.NoOfDays as NoOfDays863_0_, this_.CreatedDate as CreatedD5_863_0_, this_.LastEditedDate as LastEdit6_863_0_, this_.SpecialRequest as SpecialR7_863_0_, this_.CreatedBy as CreatedBy863_0_, this_.LastEditedBy as LastEdit9_863_0_, this_.AgencyId as AgencyId863_0_, this_.BookerId as BookerId863_0_ FROM os_Series this_ WHERE this_.Id in (SELECT distinct this_0_.Id as y0_ FROM os_Series this_0_ inner join os_Agency agencyalia1_ on this_0_.AgencyId=agencyalia1_.Id inner join os_Booking bookingali2_ on this_0_.Id=bookingali2_.SeriesId) ORDER BY this_.Id desc;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:28df5489-a617-4888-9670-ba9daa3be867
+Error Number:207,State:1,Class:16
+2017-12-14 10:01:34,533 [42] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT TOP (@p0) this_.Id as Id863_0_, this_.SeriesCode as SeriesCode863_0_, this_.CutoffDate as CutoffDate863_0_, this_.NoOfDays as NoOfDays863_0_, this_.CreatedDate as CreatedD5_863_0_, this_.LastEditedDate as LastEdit6_863_0_, this_.SpecialRequest as SpecialR7_863_0_, this_.CreatedBy as CreatedBy863_0_, this_.LastEditedBy as LastEdit9_863_0_, this_.AgencyId as AgencyId863_0_, this_.BookerId as BookerId863_0_ FROM os_Series this_ WHERE this_.Id in (SELECT distinct this_0_.Id as y0_ FROM os_Series this_0_ inner join os_Agency agencyalia1_ on this_0_.AgencyId=agencyalia1_.Id inner join os_Booking bookingali2_ on this_0_.Id=bookingali2_.SeriesId) ORDER BY this_.Id desc;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:c04869ea-07f3-43db-af1f-6ec11cc81a47
+Error Number:207,State:1,Class:16
+2017-12-14 10:02:02,073 [41] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT TOP (@p0) this_.Id as Id863_0_, this_.SeriesCode as SeriesCode863_0_, this_.CutoffDate as CutoffDate863_0_, this_.NoOfDays as NoOfDays863_0_, this_.CreatedDate as CreatedD5_863_0_, this_.LastEditedDate as LastEdit6_863_0_, this_.SpecialRequest as SpecialR7_863_0_, this_.CreatedBy as CreatedBy863_0_, this_.LastEditedBy as LastEdit9_863_0_, this_.AgencyId as AgencyId863_0_, this_.BookerId as BookerId863_0_ FROM os_Series this_ WHERE this_.Id in (SELECT distinct this_0_.Id as y0_ FROM os_Series this_0_ inner join os_Agency agencyalia1_ on this_0_.AgencyId=agencyalia1_.Id inner join os_Booking bookingali2_ on this_0_.Id=bookingali2_.SeriesId) ORDER BY this_.Id desc;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:28df5489-a617-4888-9670-ba9daa3be867
+Error Number:207,State:1,Class:16
+2017-12-14 10:02:04,431 [42] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT TOP (@p0) this_.Id as Id863_0_, this_.SeriesCode as SeriesCode863_0_, this_.CutoffDate as CutoffDate863_0_, this_.NoOfDays as NoOfDays863_0_, this_.CreatedDate as CreatedD5_863_0_, this_.LastEditedDate as LastEdit6_863_0_, this_.SpecialRequest as SpecialR7_863_0_, this_.CreatedBy as CreatedBy863_0_, this_.LastEditedBy as LastEdit9_863_0_, this_.AgencyId as AgencyId863_0_, this_.BookerId as BookerId863_0_ FROM os_Series this_ WHERE this_.Id in (SELECT distinct this_0_.Id as y0_ FROM os_Series this_0_ inner join os_Agency agencyalia1_ on this_0_.AgencyId=agencyalia1_.Id inner join os_Booking bookingali2_ on this_0_.Id=bookingali2_.SeriesId) ORDER BY this_.Id desc;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SpecialRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:28df5489-a617-4888-9670-ba9daa3be867
+Error Number:207,State:1,Class:16
+2017-12-14 10:03:42,584 [52] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.Series.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.Series.hbm.xml ---> NHibernate.MappingException: Problem trying to set property type by reflection ---> NHibernate.MappingException: class Portal.Modules.OrientalSails.Domain.Series, Portal.Modules.OrientalSails, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null not found while looking for property: test ---> NHibernate.PropertyNotFoundException: Could not find a getter for property 'test' in class 'Portal.Modules.OrientalSails.Domain.Series'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Util.ReflectHelper.GetGetter(Type theClass, String propertyName, String propertyAccessorName)
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.CreateProperty(IEntityPropertyMapping propertyMapping, String propertyOwnerClassName, IValue value, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, Table table, IDictionary`2 inheritedMetas, Action`1 modifier, Action`1 addToModelAction)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas, Action`1 modifier)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2017-12-14 10:05:09,903 [79] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT TOP (@p0) this_.Id as Id456_0_, this_.SeriesCode as SeriesCode456_0_, this_.CutoffDate as CutoffDate456_0_, this_.NoOfDays as NoOfDays456_0_, this_.CreatedDate as CreatedD5_456_0_, this_.LastEditedDate as LastEdit6_456_0_, this_.test as test456_0_, this_.CreatedBy as CreatedBy456_0_, this_.LastEditedBy as LastEdit9_456_0_, this_.AgencyId as AgencyId456_0_, this_.BookerId as BookerId456_0_ FROM os_Series this_ WHERE this_.Id in (SELECT distinct this_0_.Id as y0_ FROM os_Series this_0_ inner join os_Agency agencyalia1_ on this_0_.AgencyId=agencyalia1_.Id inner join os_Booking bookingali2_ on this_0_.Id=bookingali2_.SeriesId) ORDER BY this_.Id desc;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'test'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:8761d28e-5fad-4583-8ea2-c77674f1041e
+Error Number:207,State:1,Class:16
+2017-12-14 10:12:28,427 [8] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT TOP (@p0) this_.Id as Id456_0_, this_.SeriesCode as SeriesCode456_0_, this_.CutoffDate as CutoffDate456_0_, this_.NoOfDays as NoOfDays456_0_, this_.CreatedDate as CreatedD5_456_0_, this_.LastEditedDate as LastEdit6_456_0_, this_.test as test456_0_, this_.CreatedBy as CreatedBy456_0_, this_.LastEditedBy as LastEdit9_456_0_, this_.AgencyId as AgencyId456_0_, this_.BookerId as BookerId456_0_ FROM os_Series this_ WHERE this_.Id in (SELECT distinct this_0_.Id as y0_ FROM os_Series this_0_ inner join os_Agency agencyalia1_ on this_0_.AgencyId=agencyalia1_.Id inner join os_Booking bookingali2_ on this_0_.Id=bookingali2_.SeriesId) ORDER BY this_.Id desc;
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'test'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:8761d28e-5fad-4583-8ea2-c77674f1041e
+Error Number:207,State:1,Class:16
+2017-12-14 15:38:06,064 [115] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT this_.Id as Id204_1_, this_.Deleted as Deleted204_1_, this_.IsApproved as IsApproved204_1_, this_.IsEarlyBird as IsEarlyB4_204_1_, this_.Special as Special204_1_, this_.CreatedDate as CreatedD6_204_1_, this_.Deadline as Deadline204_1_, this_.ModifiedDate as Modified8_204_1_, this_.StartDate as StartDate204_1_, this_.EndDate as EndDate204_1_, this_.Amended as Amended204_1_, this_.Status as Status204_1_, this_.AccountingStatus as Account13_204_1_, this_.AgencyCode as AgencyCode204_1_, this_.TripOption as TripOption204_1_, this_.Total as Total204_1_, this_.TransferCost as Transfe17_204_1_, this_.IsTransferred as IsTrans18_204_1_, this_.Paid as Paid204_1_, this_.Note as Note204_1_, this_.PickupAddress as PickupA21_204_1_, this_.DropoffAddress as Dropoff22_204_1_, this_.SpecialRequest as Special23_204_1_, this_.CurrencyRate as Currenc24_204_1_, this_.PaidBase as PaidBase204_1_, this_.IsPaid as IsPaid204_1_, this_.IsPaymentNeeded as IsPayme27_204_1_, this_.IsCharter as IsCharter204_1_, this_.TransferAdult as Transfe29_204_1_, this_.TransferChildren as Transfe30_204_1_, this_.TransferBaby as Transfe31_204_1_, this_.Invoice as Invoice204_1_, this_.CancelPay as CancelPay204_1_, this_.GuideOnboard as GuideOn34_204_1_, this_.Guide as Guide204_1_, this_.Driver as Driver204_1_, this_.PaidDate as PaidDate204_1_, this_.LockDate as LockDate204_1_, this_.VoucherCode as Voucher39_204_1_, this_.Inspection as Inspection204_1_, this_.CutOffDays as CutOffDays204_1_, this_.IsTotalUsd as IsTotalUsd204_1_, this_.Commission as Commission204_1_, this_.IsCommissionUsd as IsCommi44_204_1_, this_.CancelledReason as Cancell45_204_1_, this_.[Group] as Group46_204_1_, this_.CreatedBy as CreatedBy204_1_, this_.ModifiedBy as ModifiedBy204_1_, this_.ConfirmedBy as Confirm49_204_1_, this_.PartnerId as PartnerId204_1_, this_.SaleId as SaleId204_1_, this_.BookerId as BookerId204_1_, this_.LockBy as LockBy204_1_, this_.TripId as TripId204_1_, this_.BatchId as BatchId204_1_, this_.CruiseId as CruiseId204_1_, this_.AgencyId as AgencyId204_1_, this_.TransferTo as TransferTo204_1_, this_.LockedId as LockedId204_1_, this_.SeriesId as SeriesId204_1_, trip1_.Id as Id203_0_, trip1_.Deleted as Deleted203_0_, trip1_.ModifiedDate as Modified3_203_0_, trip1_.Name as Name203_0_, trip1_.NumberOfDay as NumberOf5_203_0_, trip1_.WhatToTake as WhatToTake203_0_, trip1_.Itinerary as Itinerary203_0_, trip1_.Inclusions as Inclusions203_0_, trip1_.Exclusions as Exclusions203_0_, trip1_.Description as Descrip10_203_0_, trip1_.Image as Image203_0_, trip1_.NumberOfOptions as NumberO12_203_0_, trip1_.TripCode as TripCode203_0_, trip1_.HalfDay as HalfDay203_0_, trip1_.CreatedDate as Created15_203_0_, trip1_.CreatedBy as CreatedBy203_0_, trip1_.ModifiedBy as ModifiedBy203_0_ FROM os_Booking this_ inner join os_SailsTrip trip1_ on this_.TripId=trip1_.Id WHERE this_.Deleted = @p0 and this_.CruiseId = @p1 and ((this_.Status = @p2 or (this_.Deadline >= @p3 and this_.Status = @p4)) and this_.IsTransferred = @p5) and (this_.StartDate < @p6 and this_.EndDate > @p7)
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:e084ba7c-5c0c-472a-a6af-5b63d78adcf1
+Error Number:-2,State:0,Class:11
+2017-12-14 15:38:07,996 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:08,856 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:10,125 [60] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - While preparing select agencycont0_.Id as Id489_, agencycont0_.Name as Name489_, agencycont0_.Position as Position489_, agencycont0_.Phone as Phone489_, agencycont0_.Email as Email489_, agencycont0_.Enabled as Enabled489_, agencycont0_.IsBooker as IsBooker489_, agencycont0_.AgencyId as AgencyId489_, agencycont0_.Note as Note489_, agencycont0_.Birthday as Birthday489_ from os_AgencyContact agencycont0_ where datepart(day, agencycont0_.Birthday)=@p0 and datepart(month, agencycont0_.Birthday)=@p1 an error occurred
+2017-12-14 15:38:11,144 [115] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-12-14 15:38:11,144 [115] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:11,144 [60] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+2017-12-14 15:38:11,144 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:11,144 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:11,147 [115] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-12-14 15:38:11,147 [115] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:11,147 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:11,147 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:11,147 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:11,147 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:11,147 [115] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-12-14 15:38:11,147 [115] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:11,147 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:11,147 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:11,147 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:11,147 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:11,148 [75] ERROR CMS.Core.DataAccess.CommonDao [(null)] <(null)> - could not execute query
+[ SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?)) ]
+Positional parameters:  #0>False #1>Portal.Modules.OrientalSails.Domain.RoomClass #2>Portal.Modules.OrientalSails.Domain.RoomTypex #3>Portal.Modules.OrientalSails.Domain.Cruise
+[SQL: SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?))]
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?)) ]
+Positional parameters:  #0>False #1>Portal.Modules.OrientalSails.Domain.RoomClass #2>Portal.Modules.OrientalSails.Domain.RoomTypex #3>Portal.Modules.OrientalSails.Domain.Cruise
+[SQL: SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?))] ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at CMS.Core.DataAccess.CommonDao.CountObjectByCriterion(Type objectType, ICriterion criterion) in d:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Core\DataAccess\CommonDao.cs:line 216
+2017-12-14 15:38:11,148 [36] ERROR CMS.Core.DataAccess.CommonDao [(null)] <(null)> - could not execute query
+[ SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?)) ]
+Positional parameters:  #0>False #1>Portal.Modules.OrientalSails.Domain.RoomClass #2>Portal.Modules.OrientalSails.Domain.RoomTypex #3>Portal.Modules.OrientalSails.Domain.Cruise
+[SQL: SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?))]
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?)) ]
+Positional parameters:  #0>False #1>Portal.Modules.OrientalSails.Domain.RoomClass #2>Portal.Modules.OrientalSails.Domain.RoomTypex #3>Portal.Modules.OrientalSails.Domain.Cruise
+[SQL: SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?))] ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at CMS.Core.DataAccess.CommonDao.CountObjectByCriterion(Type objectType, ICriterion criterion) in d:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Core\DataAccess\CommonDao.cs:line 216
+2017-12-14 15:38:11,680 [82] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT this_.Id as Id204_1_, this_.Deleted as Deleted204_1_, this_.IsApproved as IsApproved204_1_, this_.IsEarlyBird as IsEarlyB4_204_1_, this_.Special as Special204_1_, this_.CreatedDate as CreatedD6_204_1_, this_.Deadline as Deadline204_1_, this_.ModifiedDate as Modified8_204_1_, this_.StartDate as StartDate204_1_, this_.EndDate as EndDate204_1_, this_.Amended as Amended204_1_, this_.Status as Status204_1_, this_.AccountingStatus as Account13_204_1_, this_.AgencyCode as AgencyCode204_1_, this_.TripOption as TripOption204_1_, this_.Total as Total204_1_, this_.TransferCost as Transfe17_204_1_, this_.IsTransferred as IsTrans18_204_1_, this_.Paid as Paid204_1_, this_.Note as Note204_1_, this_.PickupAddress as PickupA21_204_1_, this_.DropoffAddress as Dropoff22_204_1_, this_.SpecialRequest as Special23_204_1_, this_.CurrencyRate as Currenc24_204_1_, this_.PaidBase as PaidBase204_1_, this_.IsPaid as IsPaid204_1_, this_.IsPaymentNeeded as IsPayme27_204_1_, this_.IsCharter as IsCharter204_1_, this_.TransferAdult as Transfe29_204_1_, this_.TransferChildren as Transfe30_204_1_, this_.TransferBaby as Transfe31_204_1_, this_.Invoice as Invoice204_1_, this_.CancelPay as CancelPay204_1_, this_.GuideOnboard as GuideOn34_204_1_, this_.Guide as Guide204_1_, this_.Driver as Driver204_1_, this_.PaidDate as PaidDate204_1_, this_.LockDate as LockDate204_1_, this_.VoucherCode as Voucher39_204_1_, this_.Inspection as Inspection204_1_, this_.CutOffDays as CutOffDays204_1_, this_.IsTotalUsd as IsTotalUsd204_1_, this_.Commission as Commission204_1_, this_.IsCommissionUsd as IsCommi44_204_1_, this_.CancelledReason as Cancell45_204_1_, this_.[Group] as Group46_204_1_, this_.CreatedBy as CreatedBy204_1_, this_.ModifiedBy as ModifiedBy204_1_, this_.ConfirmedBy as Confirm49_204_1_, this_.PartnerId as PartnerId204_1_, this_.SaleId as SaleId204_1_, this_.BookerId as BookerId204_1_, this_.LockBy as LockBy204_1_, this_.TripId as TripId204_1_, this_.BatchId as BatchId204_1_, this_.CruiseId as CruiseId204_1_, this_.AgencyId as AgencyId204_1_, this_.TransferTo as TransferTo204_1_, this_.LockedId as LockedId204_1_, this_.SeriesId as SeriesId204_1_, trip1_.Id as Id203_0_, trip1_.Deleted as Deleted203_0_, trip1_.ModifiedDate as Modified3_203_0_, trip1_.Name as Name203_0_, trip1_.NumberOfDay as NumberOf5_203_0_, trip1_.WhatToTake as WhatToTake203_0_, trip1_.Itinerary as Itinerary203_0_, trip1_.Inclusions as Inclusions203_0_, trip1_.Exclusions as Exclusions203_0_, trip1_.Description as Descrip10_203_0_, trip1_.Image as Image203_0_, trip1_.NumberOfOptions as NumberO12_203_0_, trip1_.TripCode as TripCode203_0_, trip1_.HalfDay as HalfDay203_0_, trip1_.CreatedDate as Created15_203_0_, trip1_.CreatedBy as CreatedBy203_0_, trip1_.ModifiedBy as ModifiedBy203_0_ FROM os_Booking this_ inner join os_SailsTrip trip1_ on this_.TripId=trip1_.Id WHERE this_.Deleted = @p0 and this_.CruiseId = @p1 and ((this_.Status = @p2 or (this_.Deadline >= @p3 and this_.Status = @p4)) and this_.IsTransferred = @p5) and (this_.StartDate < @p6 and this_.EndDate > @p7)
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:2b0d9866-d5c7-4769-9044-14a98d08cc7f
+Error Number:-2,State:0,Class:11
+2017-12-14 15:38:12,110 [61] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT this_.Id as Id204_1_, this_.Deleted as Deleted204_1_, this_.IsApproved as IsApproved204_1_, this_.IsEarlyBird as IsEarlyB4_204_1_, this_.Special as Special204_1_, this_.CreatedDate as CreatedD6_204_1_, this_.Deadline as Deadline204_1_, this_.ModifiedDate as Modified8_204_1_, this_.StartDate as StartDate204_1_, this_.EndDate as EndDate204_1_, this_.Amended as Amended204_1_, this_.Status as Status204_1_, this_.AccountingStatus as Account13_204_1_, this_.AgencyCode as AgencyCode204_1_, this_.TripOption as TripOption204_1_, this_.Total as Total204_1_, this_.TransferCost as Transfe17_204_1_, this_.IsTransferred as IsTrans18_204_1_, this_.Paid as Paid204_1_, this_.Note as Note204_1_, this_.PickupAddress as PickupA21_204_1_, this_.DropoffAddress as Dropoff22_204_1_, this_.SpecialRequest as Special23_204_1_, this_.CurrencyRate as Currenc24_204_1_, this_.PaidBase as PaidBase204_1_, this_.IsPaid as IsPaid204_1_, this_.IsPaymentNeeded as IsPayme27_204_1_, this_.IsCharter as IsCharter204_1_, this_.TransferAdult as Transfe29_204_1_, this_.TransferChildren as Transfe30_204_1_, this_.TransferBaby as Transfe31_204_1_, this_.Invoice as Invoice204_1_, this_.CancelPay as CancelPay204_1_, this_.GuideOnboard as GuideOn34_204_1_, this_.Guide as Guide204_1_, this_.Driver as Driver204_1_, this_.PaidDate as PaidDate204_1_, this_.LockDate as LockDate204_1_, this_.VoucherCode as Voucher39_204_1_, this_.Inspection as Inspection204_1_, this_.CutOffDays as CutOffDays204_1_, this_.IsTotalUsd as IsTotalUsd204_1_, this_.Commission as Commission204_1_, this_.IsCommissionUsd as IsCommi44_204_1_, this_.CancelledReason as Cancell45_204_1_, this_.[Group] as Group46_204_1_, this_.CreatedBy as CreatedBy204_1_, this_.ModifiedBy as ModifiedBy204_1_, this_.ConfirmedBy as Confirm49_204_1_, this_.PartnerId as PartnerId204_1_, this_.SaleId as SaleId204_1_, this_.BookerId as BookerId204_1_, this_.LockBy as LockBy204_1_, this_.TripId as TripId204_1_, this_.BatchId as BatchId204_1_, this_.CruiseId as CruiseId204_1_, this_.AgencyId as AgencyId204_1_, this_.TransferTo as TransferTo204_1_, this_.LockedId as LockedId204_1_, this_.SeriesId as SeriesId204_1_, trip1_.Id as Id203_0_, trip1_.Deleted as Deleted203_0_, trip1_.ModifiedDate as Modified3_203_0_, trip1_.Name as Name203_0_, trip1_.NumberOfDay as NumberOf5_203_0_, trip1_.WhatToTake as WhatToTake203_0_, trip1_.Itinerary as Itinerary203_0_, trip1_.Inclusions as Inclusions203_0_, trip1_.Exclusions as Exclusions203_0_, trip1_.Description as Descrip10_203_0_, trip1_.Image as Image203_0_, trip1_.NumberOfOptions as NumberO12_203_0_, trip1_.TripCode as TripCode203_0_, trip1_.HalfDay as HalfDay203_0_, trip1_.CreatedDate as Created15_203_0_, trip1_.CreatedBy as CreatedBy203_0_, trip1_.ModifiedBy as ModifiedBy203_0_ FROM os_Booking this_ inner join os_SailsTrip trip1_ on this_.TripId=trip1_.Id WHERE this_.Deleted = @p0 and this_.CruiseId = @p1 and ((this_.Status = @p2 or (this_.Deadline >= @p3 and this_.Status = @p4)) and this_.IsTransferred = @p5) and (this_.StartDate < @p6 and this_.EndDate > @p7)
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:f61c5fdd-596d-4769-bd69-b8820d97989c
+Error Number:-2,State:0,Class:11
+2017-12-14 15:38:12,700 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:12,712 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:12,934 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:12,934 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-12-14 15:38:12,934 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:12,934 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:12,934 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:12,934 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:12,934 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:12,934 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:12,934 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:12,934 [36] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:12,934 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741; 
+2017-12-14 15:38:12,934 [75] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:12,934 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-12-14 15:38:12,934 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:12,934 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-12-14 15:38:12,934 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:12,934 [36] ERROR CMS.Core.DataAccess.CommonDao [(null)] <(null)> - could not execute query
+[ SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?)) ]
+Positional parameters:  #0>False #1>Portal.Modules.OrientalSails.Domain.RoomClass #2>Portal.Modules.OrientalSails.Domain.RoomTypex #3>Portal.Modules.OrientalSails.Domain.Cruise
+[SQL: SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?))]
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?)) ]
+Positional parameters:  #0>False #1>Portal.Modules.OrientalSails.Domain.RoomClass #2>Portal.Modules.OrientalSails.Domain.RoomTypex #3>Portal.Modules.OrientalSails.Domain.Cruise
+[SQL: SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?))] ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at CMS.Core.DataAccess.CommonDao.CountObjectByCriterion(Type objectType, ICriterion criterion) in d:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Core\DataAccess\CommonDao.cs:line 216
+2017-12-14 15:38:12,934 [82] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-12-14 15:38:12,935 [82] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:12,934 [75] ERROR CMS.Core.DataAccess.CommonDao [(null)] <(null)> - could not execute query
+[ SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?)) ]
+Positional parameters:  #0>False #1>Portal.Modules.OrientalSails.Domain.RoomClass #2>Portal.Modules.OrientalSails.Domain.RoomTypex #3>Portal.Modules.OrientalSails.Domain.Cruise
+[SQL: SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?))]
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?)) ]
+Positional parameters:  #0>False #1>Portal.Modules.OrientalSails.Domain.RoomClass #2>Portal.Modules.OrientalSails.Domain.RoomTypex #3>Portal.Modules.OrientalSails.Domain.Cruise
+[SQL: SELECT count(*) as y0_ FROM os_Room this_ WHERE (this_.Deleted = ? and ((this_.RoomClassId = ? and this_.RoomTypeId = ?) and this_.CruiseId = ?))] ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=0; handshake=3741;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at CMS.Core.DataAccess.CommonDao.CountObjectByCriterion(Type objectType, ICriterion criterion) in d:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\CMS.Core\DataAccess\CommonDao.cs:line 216
+2017-12-14 15:38:12,936 [82] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-12-14 15:38:12,936 [82] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-14 15:38:12,936 [82] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-12-14 15:38:12,936 [82] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out

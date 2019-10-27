@@ -1,0 +1,48 @@
+2017-12-13 10:30:38,826 [61] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute command: UPDATE os_Booking SET Deleted = @p0, IsApproved = @p1, IsEarlyBird = @p2, Special = @p3, CreatedDate = @p4, Deadline = @p5, ModifiedDate = @p6, StartDate = @p7, EndDate = @p8, Amended = @p9, Status = @p10, AccountingStatus = @p11, AgencyCode = @p12, TripOption = @p13, Total = @p14, TransferCost = @p15, IsTransferred = @p16, Paid = @p17, Note = @p18, PickupAddress = @p19, DropoffAddress = @p20, SpecialRequest = @p21, CurrencyRate = @p22, PaidBase = @p23, IsPaid = @p24, IsPaymentNeeded = @p25, IsCharter = @p26, TransferAdult = @p27, TransferChildren = @p28, TransferBaby = @p29, Invoice = @p30, CancelPay = @p31, GuideOnboard = @p32, Guide = @p33, Driver = @p34, PaidDate = @p35, LockDate = @p36, VoucherCode = @p37, Inspection = @p38, CutOffDays = @p39, IsTotalUsd = @p40, Commission = @p41, IsCommissionUsd = @p42, CancelledReason = @p43, [Group] = @p44, CreatedBy = @p45, ModifiedBy = @p46, ConfirmedBy = @p47, PartnerId = @p48, SaleId = @p49, BookerId = @p50, LockBy = @p51, TripId = @p52, BatchId = @p53, CruiseId = @p54, AgencyId = @p55, TransferTo = @p56, LockedId = @p57, SeriesId = @p58 WHERE Id = @p59
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+ClientConnectionId:23c5e3e1-1919-45d3-ab80-132962709033
+Error Number:-2,State:0,Class:11
+2017-12-13 10:31:11,338 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2017-12-13 10:31:11,338 [61] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - The wait operation timed out
+2017-12-13 10:31:11,671 [61] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] <(null)> - Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not update: [Portal.Modules.OrientalSails.Domain.Booking#55472][SQL: UPDATE os_Booking SET Deleted = ?, IsApproved = ?, IsEarlyBird = ?, Special = ?, CreatedDate = ?, Deadline = ?, ModifiedDate = ?, StartDate = ?, EndDate = ?, Amended = ?, Status = ?, AccountingStatus = ?, AgencyCode = ?, TripOption = ?, Total = ?, TransferCost = ?, IsTransferred = ?, Paid = ?, Note = ?, PickupAddress = ?, DropoffAddress = ?, SpecialRequest = ?, CurrencyRate = ?, PaidBase = ?, IsPaid = ?, IsPaymentNeeded = ?, IsCharter = ?, TransferAdult = ?, TransferChildren = ?, TransferBaby = ?, Invoice = ?, CancelPay = ?, GuideOnboard = ?, Guide = ?, Driver = ?, PaidDate = ?, LockDate = ?, VoucherCode = ?, Inspection = ?, CutOffDays = ?, IsTotalUsd = ?, Commission = ?, IsCommissionUsd = ?, CancelledReason = ?, [Group] = ?, CreatedBy = ?, ModifiedBy = ?, ConfirmedBy = ?, PartnerId = ?, SaleId = ?, BookerId = ?, LockBy = ?, TripId = ?, BatchId = ?, CruiseId = ?, AgencyId = ?, TransferTo = ?, LockedId = ?, SeriesId = ? WHERE Id = ?] ---> System.Data.SqlClient.SqlException: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+   at NHibernate.AdoNet.NonBatchingBatcher.AddToBatch(IExpectation expectation)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   --- End of inner exception stack trace ---
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)

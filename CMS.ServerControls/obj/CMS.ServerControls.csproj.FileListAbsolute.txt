@@ -1,0 +1,17 @@
+D:\Working\CMS\OrientalSails\ServerControls\bin\Debug\CMS.ServerControls.dll
+D:\Working\CMS\OrientalSails\ServerControls\bin\Debug\CMS.ServerControls.pdb
+D:\Working\CMS\OrientalSails\ServerControls\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\CMS\OrientalSails\ServerControls\obj\Debug\CMS.ServerControls.dll
+D:\Working\CMS\OrientalSails\ServerControls\obj\Debug\CMS.ServerControls.pdb
+D:\Working\CMS\OrientalSails\ServerControls\bin\Debug\System.Web.Extensions.dll
+D:\Working\Source\OrientalSails\ServerControls\bin\Debug\CMS.ServerControls.dll
+D:\Working\Source\OrientalSails\ServerControls\bin\Debug\CMS.ServerControls.pdb
+D:\Working\Source\OrientalSails\ServerControls\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\Source\OrientalSails\ServerControls\obj\Debug\CMS.ServerControls.dll
+D:\Working\Source\OrientalSails\ServerControls\obj\Debug\CMS.ServerControls.pdb
+D:\Working\Source\ATMBooking\ServerControls\bin\Debug\CMS.ServerControls.dll
+D:\Working\Source\ATMBooking\ServerControls\bin\Debug\CMS.ServerControls.pdb
+D:\Working\Source\ATMBooking\ServerControls\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\Source\ATMBooking\ServerControls\obj\Debug\CMS.ServerControls.dll
+D:\Working\Source\ATMBooking\ServerControls\obj\Debug\CMS.ServerControls.pdb
+D:\Working\Source\ATMBooking\ServerControls\bin\Debug\System.Web.Extensions.dll

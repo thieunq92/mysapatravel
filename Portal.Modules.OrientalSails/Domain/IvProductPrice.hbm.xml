@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+	<class name="IvProductPrice" table="iv_ProductPrice" batch-size="10">
+		<cache usage="read-write"/>
+		<id name="Id">
+			<generator class="native" />
+		</id>
+		<property name="Price"/>
+		<many-to-one name="Storage" column="StorageId" class="Portal.Modules.OrientalSails.Domain.IvStorage, Portal.Modules.OrientalSails" not-found="ignore"/>
+		<many-to-one name="Product" column="ProductId" class="Portal.Modules.OrientalSails.Domain.IvProduct, Portal.Modules.OrientalSails" not-found="ignore"/>
+		<many-to-one name="Unit" column="UnitId" class="Portal.Modules.OrientalSails.Domain.IvUnit, Portal.Modules.OrientalSails" not-found="ignore"/>
+
+	</class>
+</hibernate-mapping>

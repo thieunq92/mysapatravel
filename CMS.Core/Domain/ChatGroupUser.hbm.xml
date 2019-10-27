@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="CMS.Core.Domain.ChatGroupUser, CMS.Core" table="os_ChatGroupUser">
+
+		<cache usage="read-write" />
+		
+		<id name="Id" column="Id" type="Int32" unsaved-value="0">
+			<generator class="native"></generator>
+		</id>
+	  <many-to-one name="ChatGroup" class="CMS.Core.Domain.ChatGroup, CMS.Core" column="GroupId" not-null="false" />
+		<many-to-one name="User" column="UserId" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore"/>
+	</class>
+</hibernate-mapping>

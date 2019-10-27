@@ -1,0 +1,47 @@
+2018-09-05 14:56:40,144 [119] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - An association from the table os_ExpenseService refers to an unmapped class: Portal.Modules.OrientalSails.Domain.SailExpense
+NHibernate.MappingException: An association from the table os_ExpenseService refers to an unmapped class: Portal.Modules.OrientalSails.Domain.SailExpense
+2018-09-05 14:58:26,927 [118] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.SailExpense.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.SailExpense.hbm.xml ---> NHibernate.MappingException: Problem trying to set property type by reflection ---> NHibernate.MappingException: class Portal.Modules.OrientalSails.Domain.Expense, Portal.Modules.OrientalSails, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null not found while looking for property: Type ---> NHibernate.PropertyNotFoundException: Could not find a getter for property 'Type' in class 'Portal.Modules.OrientalSails.Domain.Expense'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Util.ReflectHelper.GetGetter(Type theClass, String propertyName, String propertyAccessorName)
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.CreateProperty(IEntityPropertyMapping propertyMapping, String propertyOwnerClassName, IValue value, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, Table table, IDictionary`2 inheritedMetas, Action`1 modifier, Action`1 addToModelAction)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas, Action`1 modifier)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2018-09-05 15:03:24,747 [149] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - An association from the table os_ExpensePayment refers to an unmapped class: Portal.Modules.OrientalSails.Domain.SailExpense
+NHibernate.MappingException: An association from the table os_ExpensePayment refers to an unmapped class: Portal.Modules.OrientalSails.Domain.SailExpense
+2018-09-05 15:06:26,226 [110] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT services0_.ExpenseId as ExpenseId2_, services0_.Id as Id2_, services0_.Id as Id219_1_, services0_.Date as Date219_1_, services0_.LockIncome as LockIncome219_1_, services0_.LockOutcome as LockOutc4_219_1_, services0_.NumberOfGroup as NumberOf5_219_1_, services0_.LockDate as LockDate219_1_, services0_.Type as Type219_1_, services0_.Name as Name219_1_, services0_.Cost as Cost219_1_, services0_.CruiseId as CruiseId219_1_, services0_.LockBy as LockBy219_1_, services0_.Guide_AgencyId as Guide12_219_1_, services0_.Operator_UserId as Operator13_219_1_, sailexpens1_.Id as Id220_0_, sailexpens1_.Transfer as Transfer220_0_, sailexpens1_.Ticket as Ticket220_0_, sailexpens1_.Guide as Guide220_0_, sailexpens1_.Meal as Meal220_0_, sailexpens1_.Kayaing as Kayaing220_0_, sailexpens1_.ServiceSupplement as ServiceS7_220_0_, sailexpens1_.Cruise as Cruise220_0_, sailexpens1_.Others as Others220_0_, sailexpens1_.ExpenseId as ExpenseId220_0_ FROM os_Expense services0_ left outer join os_ExpensePayment sailexpens1_ on services0_.Id=sailexpens1_.ExpenseId WHERE services0_.ExpenseId=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ExpenseId'.
+Invalid column name 'ExpenseId'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:0fed3e1d-0e14-46f8-8872-6f21fc536d7d
+Error Number:207,State:1,Class:16
+2018-09-05 15:06:26,296 [110] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'ExpenseId'.
+Invalid column name 'ExpenseId'.
+2018-09-05 15:06:26,296 [110] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'ExpenseId'.
+Invalid column name 'ExpenseId'.

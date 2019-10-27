@@ -1,0 +1,568 @@
+﻿h3, .h3 {
+    font-size: 12px;
+}
+
+.fll {
+    float: left;
+}
+
+.flr {
+    float: right;
+}
+
+.btnHomeSearch {
+    background-color: #eeae27;
+    color: #fff;
+    text-transform: uppercase;
+    background-image: url(images/icon-search.png);
+    background-position: -4px -5px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn-group a {
+    border-bottom: 2px solid #eeae27;
+    border-radius: 0 !important;
+    color: #000;
+    font-weight: bold;
+    border-right: none;
+    padding: 5px 10px;
+}
+
+.btnCharter2day, .btnCharter3day, .btnAddBooking {
+    background-color: #06d6c0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.btnCharter3day {
+    background-color: #61c90d;
+}
+
+.btnAddBooking {
+    background-color: #ff4e00;
+    width: 100%;
+}
+
+    .btnCharter2day:hover, .btnCharter3day:hover, .btnAddBooking:hover {
+        color: #fff;
+    }
+
+a.cruiseActive {
+    background-color: #eeae27;
+}
+
+.btnHomeSearch:hover {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cruise-list {
+    margin-bottom: 20px;
+}
+
+.py-5 {
+}
+
+.h3-currentday {
+    background: #00BCD4;
+    color: #000;
+}
+
+.list-card {
+    width: 100%;
+}
+
+.card {
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    width: 140px;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.customerInfo {
+    overflow: hidden;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    text-transform: lowercase;
+    min-height: 25px;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    width: 100px;
+}
+
+.card-link {
+    width: 40%;
+    float: left;
+}
+
+.card-link-left {
+    width: 80%;
+    float: left;
+    font-size: 9.5px;
+    text-transform: lowercase;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.link-service {
+    font-size: 12px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.card-link-right {
+    width: 15%;
+    float: right;
+    font-size: 15px;
+    text-align: right;
+}
+
+.card-text {
+    font-size: 10px;
+}
+
+.selectRoom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    width: 20%;
+}
+
+.card-block {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    position: relative;
+    height: 100px;
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+}
+
+.card-subtitle {
+    margin-top: -0.375rem;
+    margin-bottom: 0;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.card-link:hover {
+    text-decoration: none;
+}
+
+.card-link + .card-link {
+    margin-left: 1.25rem;
+}
+
+.card > .list-group:first-child .list-group-item:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.card > .list-group:last-child .list-group-item:last-child {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f7f7f9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+    .card-header:first-child {
+        border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+    }
+
+.card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: #f7f7f9;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+    .card-footer:last-child {
+        border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+    }
+
+.card-header-tabs {
+    margin-right: -0.625rem;
+    margin-bottom: -0.75rem;
+    margin-left: -0.625rem;
+    border-bottom: 0;
+}
+
+.card-header-pills {
+    margin-right: -0.625rem;
+    margin-left: -0.625rem;
+}
+
+.card-primary {
+    background-color: #00b0eb;
+    border-color: #00b0eb;
+}
+
+    .card-primary .card-header,
+    .card-primary .card-footer {
+        background-color: transparent;
+    }
+
+.card-success {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+
+    .card-success .card-header,
+    .card-success .card-footer {
+        background-color: transparent;
+    }
+
+.card-info {
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+}
+
+    .card-info .card-header,
+    .card-info .card-footer {
+        background-color: transparent;
+    }
+
+.card-warning {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+
+    .card-warning .card-header,
+    .card-warning .card-footer {
+        background-color: transparent;
+    }
+
+.card-danger {
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+
+    .card-danger .card-header,
+    .card-danger .card-footer {
+        background-color: transparent;
+    }
+
+.card-outline-primary {
+    background-color: transparent;
+    border-color: #00b0eb;
+}
+
+.card-outline-secondary {
+    background-color: transparent;
+    border-color: #ccc;
+}
+
+.card-outline-info {
+    background-color: transparent;
+    border-color: #5bc0de;
+}
+
+.card-outline-success {
+    background-color: transparent;
+    border-color: #5cb85c;
+}
+
+.card-outline-warning {
+    background-color: transparent;
+    border-color: #f0ad4e;
+}
+
+.card-outline-danger {
+    background-color: transparent;
+    border-color: #d9534f;
+}
+
+.card-inverse {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+    .card-inverse .card-header,
+    .card-inverse .card-footer {
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .card-inverse .card-header,
+    .card-inverse .card-footer,
+    .card-inverse .card-title,
+    .card-inverse .card-blockquote {
+        color: #fff;
+    }
+
+        .card-inverse .card-link,
+        .card-inverse .card-text,
+        .card-inverse .card-subtitle,
+        .card-inverse .card-blockquote .blockquote-footer {
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+            .card-inverse .card-link:focus,
+            .card-inverse .card-link:hover {
+                color: #fff;
+            }
+
+.card-blockquote {
+    padding: 0;
+    margin-bottom: 0;
+    border-left: 0;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-img-bottom {
+    width: 100%;
+    border-bottom-right-radius: calc(0.25rem - 1px);
+    border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+@media (min-width: 576px) {
+    .card-deck {
+        display: flex;
+        flex-flow: row wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+        .card-deck .card {
+            display: flex;
+            flex: 1 0 0;
+            flex-direction: column;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+}
+
+@media (min-width: 576px) {
+    .card-group {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+        .card-group .card {
+            flex: 1 0 0;
+        }
+
+            .card-group .card + .card {
+                margin-left: 0;
+                border-left: 0;
+            }
+
+            .card-group .card:first-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+                .card-group .card:first-child .card-img-top {
+                    border-top-right-radius: 0;
+                }
+
+                .card-group .card:first-child .card-img-bottom {
+                    border-bottom-right-radius: 0;
+                }
+
+            .card-group .card:last-child {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+                .card-group .card:last-child .card-img-top {
+                    border-top-left-radius: 0;
+                }
+
+                .card-group .card:last-child .card-img-bottom {
+                    border-bottom-left-radius: 0;
+                }
+
+            .card-group .card:not(:first-child):not(:last-child) {
+                border-radius: 0;
+            }
+
+                .card-group .card:not(:first-child):not(:last-child) .card-img-top,
+                .card-group .card:not(:first-child):not(:last-child) .card-img-bottom {
+                    border-radius: 0;
+                }
+}
+
+.card-block .roomName {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: -3px;
+    left: 5px;
+}
+
+.card-block .bookingCode {
+    position: absolute;
+    top: 11px;
+    right: 0px;
+    left: 75px;
+}
+
+    .card-block .bookingCode a {
+        color: #000;
+    }
+
+.card-link-pax {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    padding: 1px 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+.card-link-roomType {
+    position: absolute;
+    right: 55px;
+    padding: 1px 5px;
+    bottom: 5px;
+}
+
+.round {
+    position: relative;
+}
+
+    .round label {
+        background-color: #fff;
+        border: 1px solid #edaf28;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 20px;
+        right: 5px;
+        position: absolute;
+        top: 5px;
+        width: 20px;
+    }
+
+        .round label:after {
+            border: 2px solid #fff;
+            border-top: none;
+            border-right: none;
+            content: "";
+            height: 6px;
+            left: 3px;
+            opacity: 0;
+            position: absolute;
+            top: 5px;
+            transform: rotate(-45deg);
+            width: 12px;
+        }
+
+    .round input[type="checkbox"] {
+        visibility: hidden;
+    }
+
+        .round input[type="checkbox"]:checked + label {
+            background-color: #edaf28;
+            border-color: #edaf28;
+        }
+
+            .round input[type="checkbox"]:checked + label:after {
+                opacity: 1;
+            }
+
+.roomClass {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.card-link-action {
+    position: absolute;
+    right: 0px;
+    padding: 1px 5px;
+    bottom: 5px;
+}
+
+.checkCusInfo {
+    background: #ff4e00;
+    width: 22px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    transform: rotate(47deg);
+    -ms-transform: skewY(47deg); /* IE 9 */
+    -webkit-transform: skewY(47deg); /* Safari 3-8 */
+}
+
+.roomOnly2D {
+    border: 1px solid #cdcdcd;
+    width: 24px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.only2D {
+    background: #ff4e00;
+    width: 12px;
+    height: 10px;
+    position: absolute;
+    top: -3px;
+    left: 13px;
+    transform: rotate(47deg);
+    -ms-transform: skewY(47deg);
+    -webkit-transform: skewY(47deg);
+}
+
+.export-Pay {
+    background: #fbf8f8;
+    color: #f70606;
+    right: 29px;
+    font-size: 10px;
+}
+
+.export-Paid {
+    background: #f70606;
+    color: #fbf8f8;
+    right: 29px;
+    font-size: 10px;
+}
+
+.btn-group__cruise {
+    width: 100%;
+}
+.btn__cruise {
+    width: 200px !important;
+    margin-left: 0px !important;
+}

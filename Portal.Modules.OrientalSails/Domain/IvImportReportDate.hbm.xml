@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+  <class name="IvImportReportDate" batch-size="10">
+    <cache usage="read-write"/>
+	  <id name="ImportDate">
+		  <generator class="native" />
+	  </id>
+	  <!--property name="ImportDate" type="DateTime">
+		  <column name="ImportDate" length="4" sql-type="datetime" not-null="false"/>
+	  </property>-->
+	  <property name="Total" type="Double">
+		  <column name="Total" length="4" sql-type="money" not-null="false"/>
+	  </property>
+  </class>
+</hibernate-mapping>

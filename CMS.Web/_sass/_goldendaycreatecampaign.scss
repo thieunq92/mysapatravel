@@ -1,0 +1,44 @@
+﻿.wrapper__goldenday-create-campaign{
+	.col__month-label{
+		width:auto;
+	}
+	.col__month{
+		width:auto;
+	}
+	.col__year-label{
+		width:auto;
+	}
+	.col__year{
+		width:auto;
+	}
+	.col__cruise-avaibility{
+		border-right: 1px solid #e5e5e5;
+	}
+	.col__create-date{
+		.col__add-date{
+		}
+		.row__date{
+			.col__button-date{
+				display: flex;
+				flex-flow: row-reverse;
+				.fa-times{
+					font-size:18px;
+				}
+				.a__button-add{
+					margin-right:5px;
+					.fa-plus{
+						font-size:17px;
+					}
+				}
+			}
+			.textbox__policy{
+				height:45px;
+			}
+		}
+		.col__button-save{
+			display: flex;
+			flex-flow:row-reverse;
+		}
+	}
+	
+}

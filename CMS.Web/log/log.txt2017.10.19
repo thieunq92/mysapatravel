@@ -1,0 +1,8 @@
+2017-10-19 10:32:53,647 [10] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - An association from the table tm_Location refers to an unmapped class: CMS.Modules.Gallery.Domain.Album
+NHibernate.MappingException: An association from the table tm_Location refers to an unmapped class: CMS.Modules.Gallery.Domain.Album
+2017-10-19 11:00:36,438 [26] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - An association from the table tm_Location refers to an unmapped class: CMS.Modules.Gallery.Domain.Album
+NHibernate.MappingException: An association from the table tm_Location refers to an unmapped class: CMS.Modules.Gallery.Domain.Album
+2017-10-19 13:16:45,943 [8] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - An association from the table tm_Location refers to an unmapped class: CMS.Modules.Gallery.Domain.Album
+NHibernate.MappingException: An association from the table tm_Location refers to an unmapped class: CMS.Modules.Gallery.Domain.Album
+2017-10-19 13:23:13,555 [7] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - An association from the table tm_Location refers to an unmapped class: CMS.Modules.Gallery.Domain.Album
+NHibernate.MappingException: An association from the table tm_Location refers to an unmapped class: CMS.Modules.Gallery.Domain.Album

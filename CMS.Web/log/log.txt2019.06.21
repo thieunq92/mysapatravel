@@ -1,0 +1,86 @@
+2019-06-21 00:44:37,422 [38] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT bookingroo0_.BookId as BookId1_, bookingroo0_.Id as Id1_, bookingroo0_.Id as Id238_0_, bookingroo0_.BookingType as BookingT2_238_0_, bookingroo0_.IsLocked as IsLocked238_0_, bookingroo0_.ModifiedDate as Modified4_238_0_, bookingroo0_.HasChild as HasChild238_0_, bookingroo0_.HasAddExtraBed as HasAddEx6_238_0_, bookingroo0_.HasAddAdult as HasAddAd7_238_0_, bookingroo0_.HasBaby as HasBaby238_0_, bookingroo0_.IsSingle as IsSingle238_0_, bookingroo0_.Total as Total238_0_, bookingroo0_.TourComment as TourCom11_238_0_, bookingroo0_.RoomComment as RoomCom12_238_0_, bookingroo0_.FoodComment as FoodCom13_238_0_, bookingroo0_.StaffComment as StaffCo14_238_0_, bookingroo0_.GuideComment as GuideCo15_238_0_, bookingroo0_.CustomerIdea as Custome16_238_0_, bookingroo0_.RoomNumber as RoomNumber238_0_, bookingroo0_.BookId as BookId238_0_, bookingroo0_.RoomId as RoomId238_0_, bookingroo0_.RoomClassId as RoomCla20_238_0_, bookingroo0_.RoomTypeId as RoomTypeId238_0_, bookingroo0_.ModifiedBy as ModifiedBy238_0_ FROM os_BookingRoom bookingroo0_ WHERE bookingroo0_.BookId in (@p0, @p1)
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'HasAddAdult'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:41d46524-f95d-47c6-a7a8-e612136be431
+Error Number:207,State:1,Class:16
+2019-06-21 00:44:37,451 [38] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'HasAddAdult'.
+2019-06-21 00:44:37,454 [38] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'HasAddAdult'.
+2019-06-21 00:45:45,046 [35] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT customers0_.BookingRoomId as BookingR1_1_, customers0_.CustomerId as CustomerId1_, customer1_.Id as Id240_0_, customer1_.Fullname as Fullname240_0_, customer1_.Birthday as Birthday240_0_, customer1_.Passport as Passport240_0_, customer1_.Country as Country240_0_, customer1_.IsMale as IsMale240_0_, customer1_.VisaNo as VisaNo240_0_, customer1_.VisaExpired as VisaExpi8_240_0_, customer1_.IsChild as IsChild240_0_, customer1_.IsBaBy as IsBaBy240_0_, customer1_.IsVietKieu as IsVietKieu240_0_, customer1_.HasAddAdult as HasAddA12_240_0_, customer1_.Purpose as Purpose240_0_, customer1_.StayFrom as StayFrom240_0_, customer1_.StayTo as StayTo240_0_, customer1_.StayTerm as StayTerm240_0_, customer1_.StayIn as StayIn240_0_, customer1_.Code as Code240_0_, customer1_.NguyenQuan as NguyenQuan240_0_, customer1_.Total as Total240_0_, customer1_.Type as Type240_0_, customer1_.NationalityId as Nationa22_240_0_, customer1_.PurposeId as PurposeId240_0_, customer1_.BookingId as BookingId240_0_, customer1_.BookingRoomId as Booking25_240_0_ FROM os_BookingRoom_Customer customers0_ left outer join os_Customer customer1_ on customers0_.CustomerId=customer1_.Id WHERE customers0_.BookingRoomId in (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'HasAddAdult'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:41d46524-f95d-47c6-a7a8-e612136be431
+Error Number:207,State:1,Class:16
+2019-06-21 00:45:45,047 [35] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'HasAddAdult'.
+2019-06-21 00:45:45,047 [35] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'HasAddAdult'.
+2019-06-21 00:45:54,805 [37] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT customers0_.BookingRoomId as BookingR1_1_, customers0_.CustomerId as CustomerId1_, customer1_.Id as Id240_0_, customer1_.Fullname as Fullname240_0_, customer1_.Birthday as Birthday240_0_, customer1_.Passport as Passport240_0_, customer1_.Country as Country240_0_, customer1_.IsMale as IsMale240_0_, customer1_.VisaNo as VisaNo240_0_, customer1_.VisaExpired as VisaExpi8_240_0_, customer1_.IsChild as IsChild240_0_, customer1_.IsBaBy as IsBaBy240_0_, customer1_.IsVietKieu as IsVietKieu240_0_, customer1_.HasAddAdult as HasAddA12_240_0_, customer1_.Purpose as Purpose240_0_, customer1_.StayFrom as StayFrom240_0_, customer1_.StayTo as StayTo240_0_, customer1_.StayTerm as StayTerm240_0_, customer1_.StayIn as StayIn240_0_, customer1_.Code as Code240_0_, customer1_.NguyenQuan as NguyenQuan240_0_, customer1_.Total as Total240_0_, customer1_.Type as Type240_0_, customer1_.NationalityId as Nationa22_240_0_, customer1_.PurposeId as PurposeId240_0_, customer1_.BookingId as BookingId240_0_, customer1_.BookingRoomId as Booking25_240_0_ FROM os_BookingRoom_Customer customers0_ left outer join os_Customer customer1_ on customers0_.CustomerId=customer1_.Id WHERE customers0_.BookingRoomId in (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'HasAddAdult'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:41d46524-f95d-47c6-a7a8-e612136be431
+Error Number:207,State:1,Class:16
+2019-06-21 00:45:54,805 [37] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'HasAddAdult'.
+2019-06-21 00:45:54,805 [37] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'HasAddAdult'.
+2019-06-21 00:46:29,772 [35] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT agency0_.Id as Id202_0_, agency0_.Name as Name202_0_, agency0_.Phone as Phone202_0_, agency0_.Address as Address202_0_, agency0_.Fax as Fax202_0_, agency0_.TaxCode as TaxCode202_0_, agency0_.Email as Email202_0_, agency0_.ContractStatus as Contract9_202_0_, agency0_.Description as Descrip10_202_0_, agency0_.Contract as Contract202_0_, agency0_.Accountant as Accountant202_0_, agency0_.PaymentPeriod as Payment13_202_0_, agency0_.CreatedDate as Created14_202_0_, agency0_.ModifiedDate as Modifie15_202_0_, agency0_.SaleStart as SaleStart202_0_, agency0_.Deleted as Deleted202_0_, agency0_.TradingName as Trading18_202_0_, agency0_.Representative as Represe19_202_0_, agency0_.RepresentativePosition as Represe20_202_0_, agency0_.Contact as Contact202_0_, agency0_.ContactAddress as Contact22_202_0_, agency0_.ContactPosition as Contact23_202_0_, agency0_.ContactEmail as Contact24_202_0_, agency0_.Website as Website202_0_, agency0_.ContractAddress as Contrac26_202_0_, agency0_.ContractPhone as Contrac27_202_0_, agency0_.ContractTaxCode as Contrac28_202_0_, agency0_.RoleId as RoleId202_0_, agency0_.SaleId as SaleId202_0_, agency0_.LocationId as LocationId202_0_, agency0_.CreatedBy as CreatedBy202_0_, agency0_.ModifiedBy as ModifiedBy202_0_, agency0_.AgencyType as AgencyType202_0_ FROM os_Agency agency0_ WHERE agency0_.Id in (@p0, @p1)
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ContractAddress'.
+Invalid column name 'ContractPhone'.
+Invalid column name 'ContractTaxCode'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:41d46524-f95d-47c6-a7a8-e612136be431
+Error Number:207,State:1,Class:16
+2019-06-21 00:46:29,772 [35] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'ContractAddress'.
+Invalid column name 'ContractPhone'.
+Invalid column name 'ContractTaxCode'.
+2019-06-21 00:46:29,773 [35] ERROR NHibernate.Util.ADOExceptionReporter [(null)] <(null)> - Invalid column name 'ContractAddress'.
+Invalid column name 'ContractPhone'.
+Invalid column name 'ContractTaxCode'.

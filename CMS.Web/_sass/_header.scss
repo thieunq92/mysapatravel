@@ -1,0 +1,115 @@
+﻿$header-background-color:#FFFFFF;
+$header-text-color:#bab5ab;
+$notify-icon-color:#333333;
+$notify-icon-color-active:#ffffff;
+$notify-badge-bgcolor:#f15636;
+$search-box-bgcolor:#1D601F;
+@mixin getSearchBoxTextStyle(){
+	color:#e6e6e6;
+	font-size:1em;
+}
+.site-header{
+	background-color:$header-background-color;
+	height:auto;
+	padding-bottom:3px;
+	color:$header-text-color;
+	font-family:"Arial";
+	font-size:18.93px;
+	.wrapper__header{
+		height:100%;
+		.site-name{
+			width:auto;
+			a,a:active,a:hover,a:focus{
+				color:$header-text-color;	
+			}
+		}
+		.right-container{
+			float:right;
+			width:auto;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: flex-end;
+			.search-box{
+				display:inline-flex;
+				width:356px;
+				.input-group-addon{
+					height:31px;
+					margin-top:4px;
+					background-color:$search-box-bgcolor;
+					border:none;
+					outline:none;
+					box-shadow:none;
+					padding-top:7px;
+					padding-right:17px;
+					@include getSearchBoxTextStyle();
+				}
+				input{
+					display:inline;
+					width:100%;
+					margin-right:33px;
+					margin-top:4px;	
+					background-color:$search-box-bgcolor;
+					border:none;
+					outline:none;
+					box-shadow:none;
+					height:31px;
+					@include getSearchBoxTextStyle();
+				}
+				input::placeholder{
+					@include getSearchBoxTextStyle();
+				}
+			}
+			
+			.notify{
+				margin-right: 33px;
+				padding-top: 10px;
+				.icon{
+					color:$notify-icon-color;
+				}
+				.icon:hover,.icon:active,.icon:focus{
+					color:$notify-icon-color-active;
+				}
+				.badge{
+					width: 15px;
+					height: 15px;
+					padding: 2px 0px;
+					font-size: 10.5px;
+					background-color: $notify-badge-bgcolor;
+					margin-bottom:5px;
+				}
+			}
+			.notify:last-of-type {
+				margin-right:14px;
+			}
+			.btn-avartar{
+				padding: 0;
+				background-color: transparent;
+				border: none;
+				display: block;			
+				margin-top:2px;
+				.avartar{
+					width: 35px;
+					height: 35px;
+					border-radius: 50px;
+				}
+			}
+			.dropdown{
+				.dropdown-menu{
+					li{
+						a:hover,a:focus{
+							background-color:#428bca;
+							color:#fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

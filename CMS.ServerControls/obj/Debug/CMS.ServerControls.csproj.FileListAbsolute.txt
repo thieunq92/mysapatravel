@@ -1,0 +1,5 @@
+C:\Users\Thieu\Desktop\orientalsails-net45\CMS.ServerControls\bin\Debug\CMS.ServerControls.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\CMS.ServerControls\bin\Debug\CMS.ServerControls.pdb
+C:\Users\Thieu\Desktop\orientalsails-net45\CMS.ServerControls\obj\Debug\CMS.ServerControls.csprojResolveAssemblyReference.cache
+C:\Users\Thieu\Desktop\orientalsails-net45\CMS.ServerControls\obj\Debug\CMS.ServerControls.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\CMS.ServerControls\obj\Debug\CMS.ServerControls.pdb

@@ -1,0 +1,22 @@
+2019-06-08 00:26:15,174 [40] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] <(null)> - Could not execute query: SELECT this_.Id as Id598_1_, this_.Time as Time598_1_, this_.Action as Action598_1_, this_.Url as Url598_1_, this_.Params as Params598_1_, this_.Level as Level598_1_, this_.Note as Note598_1_, this_.ObjectId as ObjectId598_1_, this_.ObjectType as ObjectType598_1_, this_.DateMeeting as DateMee10_598_1_, this_.UpdateTime as UpdateTime598_1_, this_.Type as Type598_1_, this_.NeedManagerAttention as NeedMan13_598_1_, this_.Attachment as Attachment598_1_, this_.AttachmentContentType as Attachm15_598_1_, this_.Problems as Problems598_1_, this_.UserId as UserId598_1_, useralias1_.userid as userid673_0_, useralias1_.updatetimestamp as updateti2_673_0_, useralias1_.username as username673_0_, useralias1_.password as password673_0_, useralias1_.firstname as firstname673_0_, useralias1_.lastname as lastname673_0_, useralias1_.email as email673_0_, useralias1_.website as website673_0_, useralias1_.timezone as timezone673_0_, useralias1_.isactive as isactive673_0_, useralias1_.lastlogin as lastlogin673_0_, useralias1_.lastip as lastip673_0_, useralias1_.inserttimestamp as insertt13_673_0_, useralias1_.IsUsedInDashBoardManager as IsUsedI14_673_0_, useralias1_.Phone as Phone673_0_, useralias1_.FirstName +' '+ useralias1_.LastName as formula1_0_ FROM os_Activity this_ inner join bitportal_user useralias1_ on this_.UserId=useralias1_.userid WHERE (this_.DateMeeting >= @p0 and this_.DateMeeting <= @p1);
+
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Type'.
+Invalid column name 'Attachment'.
+Invalid column name 'AttachmentContentType'.
+Invalid column name 'Problems'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:0b155904-796f-450d-a390-60f4de5aca0a
+Error Number:207,State:1,Class:16

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+  <class name="BusByDate" table="os_BusByDate" batch-size="10">
+    <cache usage="read-write"/>
+    <id name="Id" column="BusByDateId">
+      <generator class="native" />
+    </id>
+    <property name="Driver_Name"/>
+    <property name="Driver_Phone"/>
+    <property name="Date"/>
+    <property name="Group" column="[Group]"/>
+    <property name="Cloned"/>
+    <many-to-one name="BusType" column="BusTypeId"/>
+    <many-to-one name="Route" column="RouteId"/>
+    <many-to-one name="Guide" column="Agency_GuideId"/>
+    <many-to-one name="Supplier" column="Agency_SupplierId"/>
+    <many-to-one name="BusByDateRouteBackRef" column="BusByDateRouteBackRef_BusByDateId"/>
+    <bag name="ListExpense" inverse="true" batch-size="10" cascade="all-delete-orphan">
+      <key column="BusByDateId"/>
+      <one-to-many class="Expense"/>
+    </bag>
+    <bag name="ListBookingBusByDate" inverse="true" batch-size="10" cascade="all-delete-orphan">
+      <key column="BusByDateId"/>
+      <one-to-many class="BookingBusByDate"/>
+    </bag>
+    <bag name="BusByDatesGuides" inverse="true" batch-size="10" cascade="all-delete-orphan" >
+      <key column="BusByDateId"/>
+      <one-to-many class="BusByDateGuide"/>
+    </bag>
+  </class>
+</hibernate-mapping>

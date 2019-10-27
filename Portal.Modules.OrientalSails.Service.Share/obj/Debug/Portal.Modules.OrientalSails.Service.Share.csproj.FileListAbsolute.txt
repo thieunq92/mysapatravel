@@ -1,0 +1,5 @@
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.csprojResolveAssemblyReference.cache
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Thieu\Desktop\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
