@@ -21,7 +21,7 @@ namespace CMS.Web.Server
 
             Backup bkpDBFull = new Backup();
             bkpDBFull.Action = BackupActionType.Database;
-            bkpDBFull.Database = "mys";
+            bkpDBFull.Database = "mys05843_mysapatravel";
             bkpDBFull.Devices.AddDevice(Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"mys.bak"), DeviceType.File);
             bkpDBFull.BackupSetName = "mys";
             bkpDBFull.BackupSetDescription = "mys database - Full Backup";

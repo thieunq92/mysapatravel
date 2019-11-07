@@ -84,7 +84,9 @@
                     </HeaderTemplate>
                     <ItemTemplate>
                         <tr class="
-                            <%# ((Booking)(Container.DataItem)).StartDate < Date ? "custom-warning":""%>
+                            <%# DateTime.Compare(((Booking)(Container.DataItem)).StartDate.AddDays(1),Date)==0 ? "booking__day2":""%>
+                            <%# DateTime.Compare(((Booking)(Container.DataItem)).StartDate.AddDays(2),Date)==0 ? "booking__day3":""%>
+                            <%# DateTime.Compare(((Booking)(Container.DataItem)).StartDate.AddDays(3),Date)==0 ? "booking__day4":""%>
                             <%# ((Booking)(Container.DataItem)).Status == StatusType.Pending ? "custom-info":"" %>
                             ">
                             <td <%= ((List<Booking>)(rptBookingList.DataSource)).Any(x=>x.Inspection == true) ? "" : "class='hide'" %>>
@@ -242,7 +244,7 @@
                                 <a href="BookingReport.aspx?NodeId=1&SectionId=15&date=<%# ((Booking)Container.DataItem).StartDate.ToString("dd/MM/yyyy") %>">
                                     <%# ((Booking)Container.DataItem).ModifiedDate.ToString("dd/MM/yyyy")%>
                                 </a>
-                            </td>                                             
+                            </td>
                         </tr>
                     </ItemTemplate>
                 </asp:Repeater>

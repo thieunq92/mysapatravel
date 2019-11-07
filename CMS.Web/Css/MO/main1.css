@@ -532,10 +532,34 @@ body, .navbar-fixed-top, .navbar-fixed-bottom {
   width: max-content;
 }
 
+.booking__day2 {
+  color: #ffffff;
+  background-color: #FFA500;
+}
+.booking__day2 a {
+  color: #ffffff !important;
+}
+
+.booking__day3 {
+  color: #333333;
+  background-color: #FFFF00;
+}
+.booking__day3 a {
+  color: #333333 !important;
+}
+
+.booking__day4 {
+  color: #ffffff;
+  background-color: #FF4500;
+}
+.booking__day4 a {
+  color: #ffffff !important;
+}
+
 footer {
   background-color: #1D601F;
   margin-top: 5%;
-  min-height: 7.7%;
+  min-height: 8%;
   width: 100%;
 }
 
