@@ -117,7 +117,7 @@
 }
 
 .container__body {
-  min-height: 85%;
+  min-height: 87vh;
 }
 
 .wrapper.wrapper__body {
@@ -558,8 +558,8 @@ body, .navbar-fixed-top, .navbar-fixed-bottom {
 
 footer {
   background-color: #1D601F;
-  margin-top: 5%;
-  min-height: 8%;
+  margin-top: 5vh;
+  min-height: 8vh;
   width: 100%;
 }
 

@@ -586,5 +586,12 @@ namespace Portal.Modules.OrientalSails.Repository
             query = query.OrderBy(b => b.CreatedDate).Asc;
             return query.Take(pageSize).Skip(pageSize * pageIndex).List<Booking>();
         }
+
+        public List<Booking> BookingGetAllFromDateToDate(DateTime fromDate, DateTime toDate)
+        {
+            var query = _session.QueryOver<Booking>().Where(x => x.Deleted == false && x.Status == StatusType.Approved);
+            query.Where(b => b.StartDate >= fromDate && b.StartDate <= toDate);
+            return query.Future().ToList();
+        }
     }
 }

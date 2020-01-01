@@ -256,6 +256,150 @@ namespace Portal.Modules.OrientalSails.Web.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkEarlyBird;
         
         /// <summary>
+        /// txtGuideExpense control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtGuideExpense;
+        
+        /// <summary>
+        /// ddlGuideExpenseCurrencyType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlGuideExpenseCurrencyType;
+        
+        /// <summary>
+        /// txtMealExpense control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMealExpense;
+        
+        /// <summary>
+        /// ddlMealExpenseCurrencyType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlMealExpenseCurrencyType;
+        
+        /// <summary>
+        /// txtHotelExpense control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtHotelExpense;
+        
+        /// <summary>
+        /// ddlHotelExpenseCurrencyType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlHotelExpenseCurrencyType;
+        
+        /// <summary>
+        /// txtTicketExpense control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTicketExpense;
+        
+        /// <summary>
+        /// ddlTicketExpenseCurrencyType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlTicketExpenseCurrencyType;
+        
+        /// <summary>
+        /// txtBusExpense control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtBusExpense;
+        
+        /// <summary>
+        /// ddlBusExpenseCurrencyType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlBusExpenseCurrencyType;
+        
+        /// <summary>
+        /// txtLimousineExpense control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLimousineExpense;
+        
+        /// <summary>
+        /// ddlLimousineExpenseCurrencyType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlLimousineExpenseCurrencyType;
+        
+        /// <summary>
+        /// txtBusHaNoiSapaExpense control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtBusHaNoiSapaExpense;
+        
+        /// <summary>
+        /// ddlBusHaNoiSapaExpenseCurrencyType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlBusHaNoiSapaExpenseCurrencyType;
+        
+        /// <summary>
+        /// txtCommissionExpense control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCommissionExpense;
+        
+        /// <summary>
+        /// ddlCommissionExpenseCurrencyType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCommissionExpenseCurrencyType;
+        
+        /// <summary>
         /// txtCommission control.
         /// </summary>
         /// <remarks>

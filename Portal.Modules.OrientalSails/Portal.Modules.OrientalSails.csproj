@@ -64,6 +64,7 @@
     <Compile Include="BusinessLogic\AddSeriesBookingsBLL.cs" />
     <Compile Include="BusinessLogic\AgencyEditBLL.cs" />
     <Compile Include="BusinessLogic\AgencyViewBLL.cs" />
+    <Compile Include="BusinessLogic\BalanceReportBLL.cs" />
     <Compile Include="BusinessLogic\BookingListBLL.cs" />
     <Compile Include="BusinessLogic\BookingPaymentBLL.cs" />
     <Compile Include="BusinessLogic\BookingReportBLL.cs" />

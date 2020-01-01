@@ -75,226 +75,200 @@
         </div>
     </div>
     <br />
-    <div class="receivable-table">
-        <div class="table-responsive">
-            <table class="table table-bordered table-hover">
-                <asp:Repeater ID="rptBookingList" runat="server" OnItemDataBound="rptBookingList_ItemDataBound">
-                    <HeaderTemplate>
-                        <tr class="header custom-warning">
-                            <th rowspan="2">Booking code
-                            </th>
-                            <th rowspan="2">TA Code
-                            </th>
-                            <th rowspan="2">Sale in charge
-                            </th>
-                            <th rowspan="2">Partner
-                            </th>
-                            <th rowspan="2">Cruise
-                            </th>
-                            <th rowspan="2">Service
-                            </th>
-                            <th rowspan="2">Date
-                            </th>
-                            <th colspan="3">No of pax
-                            </th>
-                            <th colspan="2">No of cabin
-                            </th>
-                            <th colspan="2">Transfer
-                            </th>
-                            <th colspan="2">Total
-                            </th>
-                            <th colspan="2">Paid
-                            </th>
-                            <th rowspan="2">Applied rate
-                            </th>
-                            <th rowspan="2">Receivables
-                            </th>
-                            <th rowspan="2">Action
-                            </th>
-                            <th rowspan="2">Pay
-                                <input type="checkbox" id="chkTemplate" />
-                            </th>
-                            <th rowspan="2">Paid date
-                            </th>
-                        </tr>
-                        <tr class="custom-warning">
-                            <th>Adult
-                            </th>
-                            <th>Child
-                            </th>
-                            <th>Infant
-                            </th>
-                            <th>Double
-                            </th>
-                            <th>Twin
-                            </th>
-                            <th>Adult
-                            </th>
-                            <th>Child
-                            </th>
-                            <th>USD
-                            </th>
-                            <th>VND
-                            </th>
-                            <th>USD
-                            </th>
-                            <th>VND
-                            </th>
-                        </tr>
-                    </HeaderTemplate>
-                    <ItemTemplate>
-                        <tr id="trItem" runat="server" class="item">
-                            <td>
-                                <a href="BookingView.aspx?NodeId=1&SectionId=15&bi=<%# Eval("Id") %>">
-                                    <%# DataBinder.Eval(Container.DataItem,"Id","OS{0:00000}") %></a>
-                            </td>
-                            <td>
-                                <%# Eval("AgencyCode")%>
-                            </td>
-                            <td>
-                                <asp:Label ID="lblSalesInCharge" runat="server"></asp:Label>
-                            </td>
-                            <td>
-                                <asp:HyperLink runat="server" ID="hlAgency"></asp:HyperLink>
-                            </td>
-                            <td>
-                                <asp:HyperLink runat="server" ID="hlCruise"></asp:HyperLink>
-                            </td>
-                            <td>
-                                <%# Eval("Trip.TripCode") %>
-                            </td>
-                            <td>
-                                <%# DataBinder.Eval(Container.DataItem,"StartDate","{0:dd/MM/yyyy}") %>
-                            </td>
-                            <td>
-                                <asp:Label ID="label_NoOfAdult" runat="server"></asp:Label>
-                            </td>
-                            <td>
-                                <asp:Label ID="label_NoOfChild" runat="server"></asp:Label>
-                            </td>
-                            <td>
-                                <asp:Label ID="label_NoOfBaby" runat="server"></asp:Label>
-                            </td>
-                            <td>
-                                <asp:Label ID="label_NoOfDoubleCabin" runat="server"></asp:Label>
-                            </td>
-                            <td>
-                                <asp:Label ID="label_NoOfTwinCabin" runat="server"></asp:Label>
-                            </td>
-                            <td>
-                                <asp:Label ID="label_NoOfTransferAdult" runat="server"></asp:Label>
-                            </td>
-                            <td>
-                                <asp:Label ID="label_NoOfTransferChild" runat="server"></asp:Label>
-                            </td>
-                            <td>
-                                <asp:Label ID="label_TotalPrice" runat="server"></asp:Label>
-                            </td>
-                            <td>
-                                <asp:Label ID="label_TotalPriceVnd" runat="server"></asp:Label>
-                            </td>
-                            <td>
-                                <%# DataBinder.Eval(Container.DataItem,"Paid","{0:#,0.#}") %>
-                            </td>
-                            <td>
-                                <%# DataBinder.Eval(Container.DataItem,"PaidBase","{0:#,0.#}") %>
-                            </td>
-                            <td>
-                                <%# DataBinder.Eval(Container.DataItem,"CurrencyRate","{0:#,0.#}") %>
-                            </td>
-                            <td>
-                                <%# DataBinder.Eval(Container.DataItem,"MoneyLeft","{0:#,0.#}") %>
-                            </td>
-                            <td>
-                                <a class="payment" href='BookingPayment.aspx?NodeId=1&SectionId=15&bi=<%# Eval("Id") %>'>Payment</a>
-                            </td>
-                            <td>
-                                <%# (!((bool)Eval("IsPaid")) && ((double)Eval("MoneyLeft")) >0)? "<input type='checkbox' data-id='chkPay' data-restaurantbookingid='"+Eval("Id")+"' />":"" %>
 
-                            </td>
-                            <td>
-                                <%# DataBinder.Eval(Container.DataItem,"PaidDate","{0:dd/MM/yyyy}") %>
-                            </td>
-                        </tr>
-                    </ItemTemplate>
-                    <FooterTemplate>
-                        <tr class="item">
-                            <td colspan="7">GRAND TOTAL
-                            </td>
-                            <td>
-                                <strong>
-                                    <asp:Label ID="label_NoOfAdult" runat="server"></asp:Label></strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    <asp:Label ID="label_NoOfChild" runat="server"></asp:Label></strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    <asp:Label ID="label_NoOfBaby" runat="server"></asp:Label></strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    <asp:Label ID="label_NoOfDoubleCabin" runat="server"></asp:Label></strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    <asp:Label ID="label_NoOfTwinCabin" runat="server"></asp:Label></strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    <asp:Label ID="label_NoOfTransferAdult" runat="server"></asp:Label></strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    <asp:Label ID="label_NoOfTransferChild" runat="server"></asp:Label></strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    <asp:Label ID="label_TotalPrice" runat="server"></asp:Label></strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    <asp:Label ID="label_TotalPriceVnd" runat="server"></asp:Label></strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    <asp:Literal ID="litPaid" runat="server"></asp:Literal></strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    <asp:Literal ID="litPaidBase" runat="server"></asp:Literal></strong>
-                            </td>
-                            <td></td>
-                            <td>
-                                <strong>
-                                    <asp:Literal ID="litReceivable" runat="server"></asp:Literal></strong>
-                            </td>
-                            <td colspan="2">
-                                <a id="btnSelectedPayment" data-toggle="modal" data-target=".modal-bookingselectedpayment">
-                                    <i class="fa fa-money-check-alt fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Thanh toán tất cả booking đã chọn"></i>
-                                    Thanh toán nhiều
-                                </a>
-                            </td>
-                        </tr>
-                    </FooterTemplate>
-                </asp:Repeater>
-            </table>
+    <table class="table table-bordered table-common">
+        <asp:Repeater ID="rptBookingList" runat="server" OnItemDataBound="rptBookingList_ItemDataBound">
+            <HeaderTemplate>
+                <tr class="active">
+                    <th rowspan="2">Booking code
+                    </th>
+                    <th rowspan="2">TA Code
+                    </th>
+                    <th rowspan="2">Sale in charge
+                    </th>
+                    <th rowspan="2">Partner
+                    </th>
+                    <th rowspan="2">Service
+                    </th>
+                    <th rowspan="2">Date
+                    </th>
+                    <th colspan="3">No of pax
+                    </th>
+                    <th colspan="2">Transfer
+                    </th>
+                    <th colspan="2">Total
+                    </th>
+                    <th colspan="2">Paid
+                    </th>
+                    <th rowspan="2">Applied rate
+                    </th>
+                    <th rowspan="2">Receivables
+                    </th>
+                    <th rowspan="2">Action
+                    </th>
+                    <th rowspan="2">Pay
+                                <input type="checkbox" id="chkTemplate" />
+                    </th>
+                    <th rowspan="2">Paid date
+                    </th>
+                </tr>
+                <tr class="active">
+                    <th>Adult
+                    </th>
+                    <th>Child
+                    </th>
+                    <th>Infant
+                    </th>
+                    <th>Adult
+                    </th>
+                    <th>Child
+                    </th>
+                    <th>USD
+                    </th>
+                    <th>VND
+                    </th>
+                    <th>USD
+                    </th>
+                    <th>VND
+                    </th>
+                </tr>
+            </HeaderTemplate>
+            <ItemTemplate>
+                <tr id="trItem" runat="server" class="item">
+                    <td>
+                        <a href="BookingView.aspx?NodeId=1&SectionId=15&bi=<%# Eval("Id") %>">
+                            <%# DataBinder.Eval(Container.DataItem,"Id","MYS{0:00000}") %></a>
+                    </td>
+                    <td class="--text-left">
+                        <%# Eval("AgencyCode")%>
+                    </td>
+                    <td class="--text-left">
+                        <asp:Label ID="lblSalesInCharge" runat="server"></asp:Label>
+                    </td>
+                    <td class="--text-left">
+                        <asp:HyperLink runat="server" ID="hlAgency"></asp:HyperLink>
+                    </td>
+                    <td class="--text-left">
+                        <%# Eval("Trip.TripCode") %>
+                    </td>
+                    <td>
+                        <%# DataBinder.Eval(Container.DataItem,"StartDate","{0:dd/MM/yyyy}") %>
+                    </td>
+                    <td class="--text-right">
+                        <asp:Label ID="label_NoOfAdult" runat="server"></asp:Label>
+                    </td>
+                    <td class="--text-right">
+                        <asp:Label ID="label_NoOfChild" runat="server"></asp:Label>
+                    </td>
+                    <td class="--text-right">
+                        <asp:Label ID="label_NoOfBaby" runat="server"></asp:Label>
+                    </td>
+
+                    <td class="--text-right">
+                        <asp:Label ID="label_NoOfTransferAdult" runat="server"></asp:Label>
+                    </td>
+                    <td class="--text-right">
+                        <asp:Label ID="label_NoOfTransferChild" runat="server"></asp:Label>
+                    </td>
+                    <td class="--text-right">
+                        <asp:Label ID="label_TotalPrice" runat="server"></asp:Label>
+                    </td>
+                    <td class="--text-right">
+                        <asp:Label ID="label_TotalPriceVnd" runat="server"></asp:Label>
+                    </td>
+                    <td class="--text-right">
+                        <%# DataBinder.Eval(Container.DataItem,"Paid","{0:#,0.#}") %>
+                    </td>
+                    <td class="--text-right">
+                        <%# DataBinder.Eval(Container.DataItem,"PaidBase","{0:#,0.#}") %>
+                    </td>
+                    <td class="--text-right">
+                        <%# DataBinder.Eval(Container.DataItem,"CurrencyRate","{0:#,0.#}") %>
+                    </td>
+                    <td class="--text-right">
+                        <%# DataBinder.Eval(Container.DataItem,"MoneyLeft","{0:#,0.#}") %>
+                    </td>
+                    <td>
+                        <a class="payment" href='BookingPayment.aspx?NodeId=1&SectionId=15&bi=<%# Eval("Id") %>'>Payment</a>
+                    </td>
+                    <td>
+                        <%# (!((bool)Eval("IsPaid")) && ((double)Eval("MoneyLeft")) >0)? "<input type='checkbox' data-id='chkPay' data-restaurantbookingid='"+Eval("Id")+"' />":"" %>
+
+                    </td>
+                    <td>
+                        <%# DataBinder.Eval(Container.DataItem,"PaidDate","{0:dd/MM/yyyy}") %>
+                    </td>
+                </tr>
+            </ItemTemplate>
+            <FooterTemplate>
+                <tr class="item">
+                    <td colspan="6" class="--text-bold">GRAND TOTAL
+                    </td>
+                    <td class="--text-right">
+                        <strong>
+                            <asp:Label ID="label_NoOfAdult" runat="server"></asp:Label></strong>
+                    </td>
+                    <td class="--text-right">
+                        <strong>
+                            <asp:Label ID="label_NoOfChild" runat="server"></asp:Label></strong>
+                    </td>
+                    <td class="--text-right">
+                        <strong>
+                            <asp:Label ID="label_NoOfBaby" runat="server"></asp:Label></strong>
+                    </td>
+                    <td class="--text-right">
+                        <strong>
+                            <asp:Label ID="label_NoOfTransferAdult" runat="server"></asp:Label></strong>
+                    </td>
+                    <td class="--text-right">
+                        <strong>
+                            <asp:Label ID="label_NoOfTransferChild" runat="server"></asp:Label></strong>
+                    </td>
+                    <td class="--text-right">
+                        <strong>
+                            <asp:Label ID="label_TotalPrice" runat="server"></asp:Label></strong>
+                    </td>
+                    <td class="--text-right">
+                        <strong>
+                            <asp:Label ID="label_TotalPriceVnd" runat="server"></asp:Label></strong>
+                    </td>
+                    <td class="--text-right">
+                        <strong>
+                            <asp:Literal ID="litPaid" runat="server"></asp:Literal></strong>
+                    </td>
+                    <td class="--text-right">
+                        <strong>
+                            <asp:Literal ID="litPaidBase" runat="server"></asp:Literal></strong>
+                    </td>
+                    <td></td>
+                    <td class="--text-right">
+                        <strong>
+                            <asp:Literal ID="litReceivable" runat="server"></asp:Literal></strong>
+                    </td>
+                    <td colspan="2">
+                        <a id="btnSelectedPayment" data-toggle="modal" data-target=".modal-bookingselectedpayment">
+                            <i class="fa fa-money-check-alt fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Thanh toán tất cả booking đã chọn"></i>
+                            Thanh toán nhiều
+                        </a>
+                    </td>
+                </tr>
+            </FooterTemplate>
+        </asp:Repeater>
+    </table>
+
+    <div class="modal fade modal-bookingselectedpayment" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document" style="width: 1230px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closePoup();"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title">Thanh toán</h3>
+                </div>
+                <div class="modal-body">
+                    <iframe frameborder="0" width="1200" scrolling="no" onload="resizeIframe(this)"></iframe>
+                </div>
+            </div>
         </div>
     </div>
-<div class="modal fade modal-bookingselectedpayment" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" data-backdrop="static" data-keyboard="false">
-    <div class="modal-dialog" role="document" style="width: 1230px">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closePoup();"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title">Thanh toán</h3>
-            </div>
-            <div class="modal-body">
-                <iframe frameborder="0" width="1200" scrolling="no" onload="resizeIframe(this)"></iframe>
-            </div>
-        </div>
-    </div>
-</div>
 </asp:Content>
 <asp:Content ID="Scripts" ContentPlaceHolderID="Scripts" runat="server">
     <script>

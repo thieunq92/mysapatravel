@@ -72,38 +72,36 @@
                     <ContentTemplate>
                         <asp:PlaceHolder ID="plhTableBooking" runat="server" Visible="false">
                             <table class="table table-bordered table-hover table-common">
-                                <tbody>
-                                    <tr class="active">
-                                        <th>Booking code
-                                        </th>
-                                        <th>Trip
-                                        </th>
-                                        <th>Cruise
-                                        </th>
-                                        <th>Start date
-                                        </th>
-                                        <th>Agency
-                                        </th>
-                                        <th>No of room  
-                                        </th>
-                                        <th>No of pax
-                                        </th>
-                                    </tr>
-                                    <asp:Repeater runat="server" ID="rptBooking" OnItemCommand="rptBooking_ItemCommand">
-                                        <ItemTemplate>
-                                            <tr class="<%# ((Booking)Container.DataItem).Status == StatusType.Cancelled ? "--cancelled" : ""%>
+                                <tr class="active">
+                                    <th>Booking code
+                                    </th>
+                                    <th>Trip
+                                    </th>
+                                    <th>Cruise
+                                    </th>
+                                    <th>Start date
+                                    </th>
+                                    <th>Agency
+                                    </th>
+                                    <th>No of room  
+                                    </th>
+                                    <th>No of pax
+                                    </th>
+                                </tr>
+                                <asp:Repeater runat="server" ID="rptBooking" OnItemCommand="rptBooking_ItemCommand">
+                                    <ItemTemplate>
+                                        <tr class="<%# ((Booking)Container.DataItem).Status == StatusType.Cancelled ? "--cancelled" : ""%>
                                                 <%# ((Booking)Container.DataItem).Status == StatusType.Pending ? "--pending" : ""%>">
-                                                <td><a href="BookingView.aspx?NodeId=1&SectionId=15&bi=<%#((Booking)Container.DataItem).Id %>"><%#((Booking)Container.DataItem).BookingIdOS%></td>
-                                                <td><%#((Booking)Container.DataItem).Trip.TripCode%></td>
-                                                <td><%#((Booking)Container.DataItem).Cruise.Code%></td>
-                                                <td><%#((Booking)Container.DataItem).StartDate.ToString("dd/MM/yyyy")%></td>
-                                                <td><a href="BookingView.aspx?NodeId=1&SectionId=15&ai=<%#((Booking)Container.DataItem).Agency.Id %>"><%#((Booking)Container.DataItem).Agency.Name%></a></td>
-                                                <td><%#((Booking)Container.DataItem).BookingRooms.Count %></td>
-                                                <td><%#((Booking)Container.DataItem).Adult + ((Booking)Container.DataItem).Baby + ((Booking)Container.DataItem).Child%></td>
-                                            </tr>
-                                        </ItemTemplate>
-                                    </asp:Repeater>
-                                </tbody>
+                                            <td><a href="BookingView.aspx?NodeId=1&SectionId=15&bi=<%#((Booking)Container.DataItem).Id %>"><%#((Booking)Container.DataItem).BookingIdOS%></td>
+                                            <td><%#((Booking)Container.DataItem).Trip.TripCode%></td>
+                                            <td><%#((Booking)Container.DataItem).Cruise.Code%></td>
+                                            <td><%#((Booking)Container.DataItem).StartDate.ToString("dd/MM/yyyy")%></td>
+                                            <td><a href="BookingView.aspx?NodeId=1&SectionId=15&ai=<%#((Booking)Container.DataItem).Agency.Id %>"><%#((Booking)Container.DataItem).Agency.Name%></a></td>
+                                            <td><%#((Booking)Container.DataItem).BookingRooms.Count %></td>
+                                            <td><%#((Booking)Container.DataItem).Adult + ((Booking)Container.DataItem).Baby + ((Booking)Container.DataItem).Child%></td>
+                                        </tr>
+                                    </ItemTemplate>
+                                </asp:Repeater>
                                 <% if (((IEnumerable<Booking>)rptBooking.DataSource).Count() <= 0)
                                    {
                                 %>

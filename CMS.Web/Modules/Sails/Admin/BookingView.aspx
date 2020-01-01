@@ -126,7 +126,7 @@
                 <div class="col-xs-2 nopadding-left --width-auto">
 
                     <asp:Button ID="lbtCalculate" CssClass="btn btn-primary" runat="server" OnClick="lbtCalculate_Click" Text="Calculate"
-                        Style="width: auto;display:none"></asp:Button>
+                        Style="width: auto; display: none"></asp:Button>
                     <asp:Button runat="server" ID="btnLockIncome" CssClass="btn btn-primary" Visible="false" Text="Lock this booking"
                         OnClick="btnLockIncome_Click" />
                     <asp:Button runat="server" ID="btnUnlockIncome" Visible="false" CssClass="btn btn-primary"
@@ -135,7 +135,7 @@
 
                 </div>
                 <div class="col-xs-5 nopadding-left">
-                    <div class="checkbox" style="display:none">
+                    <div class="checkbox" style="display: none">
                         <label class="checkbox-inline">
                             <input runat="server" id="chkSpecial" type="checkbox" />Upgrade/Special price</label>
                         <label class="checkbox-inline">
@@ -148,6 +148,145 @@
                             <input runat="server" id="chkEarlyBird" type="checkbox" />Early Bird
                         </label>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-3 --no-padding-left" style="width: calc(8.33333333 * (300% + 90px) / 100);">
+                                <label>Chi phí guide</label>
+                            </div>
+                            <div class="col-xs-6 --no-padding-right" style="width: calc((16.666667 * (300% + 90px) / 100 ) - 15px); padding-right: 8px; padding-left: 0px;">
+                                <asp:TextBox ID="txtGuideExpense" runat="server" placeholder="Chi phí guide" CssClass="form-control" data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': true, 'placeholder': '0'"></asp:TextBox>
+                            </div>
+                            <div class="col-xs-3 nopadding-left --no-padding-right" style="width: calc((8.33333333 * (300% + 90px) / 100) - 15px);">
+                                <asp:DropDownList runat="server" ID="ddlGuideExpenseCurrencyType" CssClass="form-control">
+                                    <asp:ListItem Value="VND">VND</asp:ListItem>
+                                    <asp:ListItem Value="USD">USD</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-3 --no-padding-left" style="width: calc(8.33333333 * (300% + 90px) / 100);">
+                                <label>Chi phí ăn</label>
+                            </div>
+                            <div class="col-xs-6 --no-padding-right" style="width: calc((16.666667 * (300% + 90px) / 100 ) - 15px); padding-right: 8px; padding-left: 0px;">
+                                <asp:TextBox ID="txtMealExpense" runat="server" placeholder="Chi phí ăn" CssClass="form-control" data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': true, 'placeholder': '0'"></asp:TextBox>
+                            </div>
+                            <div class="col-xs-3 nopadding-left --no-padding-right" style="width: calc((8.33333333 * (300% + 90px) / 100) - 15px);">
+                                <asp:DropDownList runat="server" ID="ddlMealExpenseCurrencyType" CssClass="form-control">
+                                    <asp:ListItem Value="VND">VND</asp:ListItem>
+                                    <asp:ListItem Value="USD">USD</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-3 --no-padding-left" style="width: calc(8.33333333 * (300% + 90px) / 100);">
+                                <label>Chi phí hotel</label>
+                            </div>
+                            <div class="col-xs-6 --no-padding-right" style="width: calc((16.666667 * (300% + 90px) / 100 ) - 15px); padding-right: 8px; padding-left: 0px;">
+                                <asp:TextBox ID="txtHotelExpense" runat="server" placeholder="Chi phí hotel" CssClass="form-control" data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': true, 'placeholder': '0'"></asp:TextBox>
+                            </div>
+                            <div class="col-xs-3 nopadding-left --no-padding-right" style="width: calc((8.33333333 * (300% + 90px) / 100) - 15px);">
+                                <asp:DropDownList runat="server" ID="ddlHotelExpenseCurrencyType" CssClass="form-control">
+                                    <asp:ListItem Value="VND">VND</asp:ListItem>
+                                    <asp:ListItem Value="USD">USD</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-3 --no-padding-left" style="width: calc(12.33333333 * (300% + 90px) / 100);">
+                                <label>Chi phí vé thắng cảnh</label>
+                            </div>
+                            <div class="col-xs-6 --no-padding-right" style="width: calc((12.666667 * (300% + 90px) / 100 ) - 15px); padding-right: 8px; padding-left: 0px;">
+                                <asp:TextBox ID="txtTicketExpense" runat="server" placeholder="Chi phí vé thắng cảnh" CssClass="form-control" data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': true, 'placeholder': '0'"></asp:TextBox>
+                            </div>
+                            <div class="col-xs-3 nopadding-left --no-padding-right" style="width: calc((8.33333333 * (300% + 90px) / 100) - 15px);">
+                                <asp:DropDownList runat="server" ID="ddlTicketExpenseCurrencyType" CssClass="form-control">
+                                    <asp:ListItem Value="VND">VND</asp:ListItem>
+                                    <asp:ListItem Value="USD">USD</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-3 --no-padding-left" style="width: calc(12.33333333 * (300% + 90px) / 100);">
+                                <label>Chi phí xe tại Sapa</label>
+                            </div>
+                            <div class="col-xs-6 --no-padding-right" style="width: calc((12.666667 * (300% + 90px) / 100 ) - 15px); padding-right: 8px; padding-left: 0px;">
+                                <asp:TextBox ID="txtBusExpense" runat="server" placeholder="Chi phí xe tại Sapa " CssClass="form-control" data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': true, 'placeholder': '0'"></asp:TextBox>
+                            </div>
+                            <div class="col-xs-3 nopadding-left --no-padding-right" style="width: calc((8.33333333 * (300% + 90px) / 100) - 15px);">
+                                <asp:DropDownList runat="server" ID="ddlBusExpenseCurrencyType" CssClass="form-control">
+                                    <asp:ListItem Value="VND">VND</asp:ListItem>
+                                    <asp:ListItem Value="USD">USD</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-3 --no-padding-left" style="width: calc(12.33333333 * (300% + 90px) / 100);">
+                                <label>Chi phí xe Limousine</label>
+                            </div>
+                            <div class="col-xs-6 --no-padding-right" style="width: calc((12.666667 * (300% + 90px) / 100 ) - 15px); padding-right: 8px; padding-left: 0px;">
+                                <asp:TextBox ID="txtLimousineExpense" runat="server" placeholder="Chi phí xe Limousine" CssClass="form-control" data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': true, 'placeholder': '0'"></asp:TextBox>
+                            </div>
+                            <div class="col-xs-3 nopadding-left --no-padding-right" style="width: calc((8.33333333 * (300% + 90px) / 100) - 15px);">
+                                <asp:DropDownList runat="server" ID="ddlLimousineExpenseCurrencyType" CssClass="form-control">
+                                    <asp:ListItem Value="VND">VND</asp:ListItem>
+                                    <asp:ListItem Value="USD">USD</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-3 --no-padding-left" style="width: calc(12.33333333 * (300% + 90px) / 100);">
+                                <label>Chi phí xe Ha Nội Sapa </label>
+                            </div>
+                            <div class="col-xs-6 --no-padding-right" style="width: calc((12.666667 * (300% + 90px) / 100 ) - 15px); padding-right: 8px; padding-left: 0px;">
+                                <asp:TextBox ID="txtBusHaNoiSapaExpense" runat="server" placeholder="Chi phí xe Hà Nội Sapa" CssClass="form-control" data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': true, 'placeholder': '0'"></asp:TextBox>
+                            </div>
+                            <div class="col-xs-3 nopadding-left --no-padding-right" style="width: calc((8.33333333 * (300% + 90px) / 100) - 15px);">
+                                <asp:DropDownList runat="server" ID="ddlBusHaNoiSapaExpenseCurrencyType" CssClass="form-control">
+                                    <asp:ListItem Value="VND">VND</asp:ListItem>
+                                    <asp:ListItem Value="USD">USD</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-3 --no-padding-left" style="width: calc(12.33333333 * (300% + 90px) / 100);">
+                                <label>Chi phí Commission</label>
+                            </div>
+                            <div class="col-xs-6 --no-padding-right" style="width: calc((12.666667 * (300% + 90px) / 100 ) - 15px); padding-right: 8px; padding-left: 0px;">
+                                <asp:TextBox ID="txtCommissionExpense" runat="server" placeholder="Chi phí Commission" CssClass="form-control" data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': true, 'placeholder': '0'"></asp:TextBox>
+                            </div>
+                            <div class="col-xs-3 nopadding-left --no-padding-right" style="width: calc((8.33333333 * (300% + 90px) / 100) - 15px);">
+                                <asp:DropDownList runat="server" ID="ddlCommissionExpenseCurrencyType" CssClass="form-control">
+                                    <asp:ListItem Value="VND">VND</asp:ListItem>
+                                    <asp:ListItem Value="USD">USD</asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                </div>
+                <div class="col-xs-4">
                 </div>
             </div>
         </div>
@@ -180,10 +319,10 @@
         </div>
         <div class="form-group">
             <div class="row">
-                <div class="col-xs-1 --no-padding-right" style="display:none">
+                <div class="col-xs-1 --no-padding-right" style="display: none">
                     Voucher Code
                 </div>
-                <div class="col-xs-4 nopadding-right" style="display:none">
+                <div class="col-xs-4 nopadding-right" style="display: none">
                     <div class="input-group" style="width: 97%">
                         <asp:TextBox ID="txtAllVoucher" placeholder="Voucher code" runat="server" CssClass="form-control"></asp:TextBox>
                         <span class="input-group-btn">

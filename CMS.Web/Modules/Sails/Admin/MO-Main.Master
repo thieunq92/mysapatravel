@@ -90,7 +90,7 @@
                                     <li id="pPayable" runat="server">
                                         <asp:HyperLink ID="hlExpenseDebt" runat="server">Payable Report</asp:HyperLink></li>
                                     <li id="pBalance" runat="server">
-                                        <asp:HyperLink ID="hlBalance" runat="server">Balance</asp:HyperLink></li>
+                                        <asp:HyperLink ID="hlBalance" runat="server">Báo cáo thu chi</asp:HyperLink></li>
                                     <li id="pSummary" runat="server">
                                         <asp:HyperLink ID="hlReceiablePayable" runat="server">Receivable/Payable Summary</asp:HyperLink></li>
                                     <li id="pInspection" runat="server">

@@ -56,6 +56,23 @@
     <property name="Transfer_DateTo"/>
     <property name="Transfer_DateBack"/>
     <property name="Transfer_Note"/>
+    <property name="Expense_Guide"/>
+    <property name="Expense_Meal"/>
+    <property name="Expense_Hotel"/>
+    <property name="Expense_Bus"/>
+    <property name="Expense_Ticket"/>
+    <property name="Expense_Limousine"/>
+    <property name="Expense_Bus_HanoiSapa"/>
+    <property name="Expense_Commission"/>
+    <property name="Expense_Guide_CurrencyType"/>
+    <property name="Expense_Meal_CurrencyType"/>
+    <property name="Expense_Hotel_CurrencyType"/>
+    <property name="Expense_Bus_CurrencyType"/>
+    <property name="Expense_Ticket_CurrencyType"/>
+    <property name="Expense_Limousine_CurrencyType"/>
+    <property name="Expense_Bus_HanoiSapa_CurrencyType"/>
+    <property name="Expense_Commission_CurrencyType"/>
+
     <many-to-one name="CreatedBy" column="CreatedBy" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore"/>
     <many-to-one name="ModifiedBy" column="ModifiedBy" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore"/>
     <many-to-one name="ConfirmedBy" column="ConfirmedBy" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore"/>
