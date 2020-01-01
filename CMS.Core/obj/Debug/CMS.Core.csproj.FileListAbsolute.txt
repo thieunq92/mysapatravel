@@ -1,6 +1,0 @@
-C:\Users\Thieu\Desktop\orientalsails-net45\CMS.Core\bin\Debug\CMS.Core.dll.config
-C:\Users\Thieu\Desktop\orientalsails-net45\CMS.Core\bin\Debug\CMS.Core.dll
-C:\Users\Thieu\Desktop\orientalsails-net45\CMS.Core\bin\Debug\CMS.Core.pdb
-C:\Users\Thieu\Desktop\orientalsails-net45\CMS.Core\obj\Debug\CMS.Core.csprojResolveAssemblyReference.cache
-C:\Users\Thieu\Desktop\orientalsails-net45\CMS.Core\obj\Debug\CMS.Core.dll
-C:\Users\Thieu\Desktop\orientalsails-net45\CMS.Core\obj\Debug\CMS.Core.pdb
